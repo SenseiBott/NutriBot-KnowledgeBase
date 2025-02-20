@@ -1,0 +1,787 @@
+[
+    {
+        "title": "Health benefits, antimicrobial activities, and potential applications of probiotics: A review.",
+        "abstract": "Gut microbiota and its metabolic activities can influence the physiology and pathology of the human body. It is well established that alterations in the balance of living microbiota can contribute to various health problems, such as inflammatory bowel disease and autoimmune disorders. Probiotics administered in sufficient quantities as functional food ingredients provide health benefits to hosts. They help to maintain the stability and composition of the gut microbiota and provide resistance to infection by pathogens. The most important probiotic bacteria are Lactobacillus spp. and Bifidobacteria spp., which protect the intestine through various mechanisms such as the production of organic acids and bacteriocins. Scientific and clinical research has demonstrated that probiotics play a role in modulating immune response and preventing cancer and chronic inflammatory diseases, especially in the gastrointestinal tract. This article summarizes the potential health benefits, antimicrobial activities, and purposes for which probiotics can be used as functional foods to improve human health.",
+        "keywords": [
+            "No Keywords"
+        ],
+        "spacy_entities": [],
+        "spacy_matched_terms": [
+            "Probiotics"
+        ]
+    },
+    {
+        "title": "Effects of dietary live microbes intake on a newly proposed classification system for steatotic liver disease.",
+        "abstract": "Steatotic liver disease (SLD) is a common chronic liver disease without effective therapeutic options. Some studies suggest potential health benefits of dietary live microbes. This study aims to investigate the association between dietary live microbes intake and metabolic dysfunction-associated steatotic liver disease (MASLD) / metabolic alcohol-related liver disease (MetALD) / alcoholic liver disease (ALD) in adults. Data from the National Health and Nutrition Examination Survey 1999-2018 were analyzed. MASLD was defined according to the latest Delphi Consensus standard. Participants were grouped based on estimated dietary live microbe intake: low (< 10<sup>4</sup> CFU/g), moderate (10<sup>4</sup>-10<sup>7</sup> CFU/g), and high (> 10<sup>7</sup> CFU/g). Multivariable logistic regression analysis was employed to assess the impact of dietary live microbes on MASLD/MetALD/ALD, along with further investigations into non-dietary probiotic/prebiotic relationships. Participants had a weighted mean age of 47.05 years (SE, 0.24) and 50.59% were female. MASLD proportions differ among low (21.76%), moderate (22.24%), and high (18.96%) microbe groups. Similarly, for MetALD, proportions are 7.75%, 6.95%, and 6.44%, and for ALD, 5.42%, 3.59%, and 2.97% in respective groups. The high dietary live microbe intake group was associated with a 16% lower risk of MASLD compared to those in the low intake group (trend test, P = 0.02), while the risk of ALD was reduced by 25% in the moderate intake group. A lack of association was identified between non-dietary prebiotic/probiotic and MASLD/MetALD/ALD. Our study suggests that a relatively high intake of live microbes diets in adults is associated with a lower risk of SLD.",
+        "keywords": [
+            "ALD",
+            "Dietary live microbes",
+            "MetALD",
+            "Metabolic dysfunction-associated steatotic liver disease",
+            "NHANES",
+            "Steatotic liver disease"
+        ],
+        "spacy_entities": [
+            [
+                "the National Health and Nutrition Examination Survey",
+                "ORG"
+            ],
+            [
+                "1999-2018",
+                "DATE"
+            ],
+            [
+                "47.05 years",
+                "DATE"
+            ],
+            [
+                "0.24",
+                "CARDINAL"
+            ],
+            [
+                "50.59%",
+                "PERCENT"
+            ],
+            [
+                "21.76%",
+                "PERCENT"
+            ],
+            [
+                "22.24%",
+                "PERCENT"
+            ],
+            [
+                "18.96%",
+                "PERCENT"
+            ],
+            [
+                "7.75%",
+                "PERCENT"
+            ],
+            [
+                "6.95%",
+                "PERCENT"
+            ],
+            [
+                "6.44%",
+                "PERCENT"
+            ],
+            [
+                "5.42%",
+                "PERCENT"
+            ],
+            [
+                "3.59%",
+                "PERCENT"
+            ],
+            [
+                "2.97%",
+                "PERCENT"
+            ],
+            [
+                "16%",
+                "PERCENT"
+            ],
+            [
+                "0.02",
+                "CARDINAL"
+            ],
+            [
+                "25%",
+                "PERCENT"
+            ]
+        ],
+        "spacy_matched_terms": []
+    },
+    {
+        "title": "Does Resveratrol Impact Oxidative Stress Markers in Patients with Head and Neck Cancer Receiving Home Enteral Nutrition?",
+        "abstract": "<b>Objectives</b>: Resveratrol (RES) is well documented for its multiple health benefits, with a notable impact on cancer prevention and therapy. This study aimed to evaluate the effect of RES supplementation on oxidative stress in patients with head and neck cancer (HNC) receiving home enteral nutrition (HEN). <b>Methods</b>: This randomized, single-center, open-label study involved 72 adult patients, with 40 completing the intervention. Participants in the intervention group received 400 mg of liposomal RES daily for 12 weeks alongside HEN, while the control group received HEN only. Body composition and oxidative stress markers-including total antioxidant capacity (TAC), malondialdehyde (MDA), superoxide dismutase (SOD), glutathione peroxidase (GPx), and reduced glutathione (GSH)-were measured at baseline and after 12 weeks. <b>Results</b>: Significant increases in TAC and SOD activity were observed in both groups. GPx activity increased significantly only in the RES group. MDA levels rose in both groups but were more pronounced in the RES group. GSH levels showed no significant changes. Phase angle (PhA) increased significantly in the RES group, while no significant change was observed in the control group. <b>Conclusions</b>: RES supplementation may enhance antioxidant defenses, as evidenced by increased GPx activity and improvements in TAC and SOD levels, supporting oxidative balance in patients with HNC receiving HEN. The higher MDA levels in the RES group may reflect RES's dual antioxidant and pro-oxidant activities. Additionally, the observed increase in PhA suggests potential cellular health benefits. These findings highlight the potential of RES as a complementary antioxidant intervention in clinical oncology, warranting further investigation to clarify its therapeutic effects on oxidative stress and cellular health in cancer care.",
+        "keywords": [
+            "antioxidants",
+            "bioactive nutrients",
+            "head and neck cancer",
+            "home enteral nutrition",
+            "malnutrition",
+            "nutraceuticals",
+            "oxidative stress",
+            "resveratrol"
+        ],
+        "spacy_entities": [
+            [
+                "72",
+                "CARDINAL"
+            ],
+            [
+                "40",
+                "CARDINAL"
+            ],
+            [
+                "400 mg",
+                "QUANTITY"
+            ],
+            [
+                "daily",
+                "DATE"
+            ],
+            [
+                "12 weeks",
+                "DATE"
+            ],
+            [
+                "12 weeks",
+                "DATE"
+            ],
+            [
+                "RES",
+                "ORG"
+            ],
+            [
+                "RES",
+                "ORG"
+            ],
+            [
+                "RES",
+                "ORG"
+            ]
+        ],
+        "spacy_matched_terms": [
+            "Resveratrol"
+        ]
+    },
+    {
+        "title": "Probiotics and Synbiotics Administered to Young Infants: Perceptions and Acceptability Amongst Carers and Healthcare Workers in Western Kenya.",
+        "abstract": "A contributory factor to childhood undernutrition is poor gut health occurring within the first 6-12 weeks of life despite exclusive breastfeeding. Pro/synbiotic administration may protect gut health. A qualitative study was conducted amongst mothers/carers and healthcare workers (HCWs) to explore their perceptions and the acceptability of pro/synbiotics administration in early life. This study was nested within a randomised, open, clinical trial of pro/synbiotics with 32 doses administered under supervision to infants between ages 0 and 5 months in western Kenya. Semi-structured interviews were conducted with 14 mothers/carers, 12 Peer Mothers and 7 healthcare workers (HCWs) selected by purposive critical and key informant sampling. Interviews were transcribed and analysed using a thematic coding framework. The satisfaction with the pro/synbiotic administration was very high amongst all three groups. Commonly perceived benefits included protection from diseases, healthy growth of the infant and improved appetite. The main barriers were working mothers and other commitments making it difficult to stick to scheduled administration visits, adverse judgement and opinions in the community, and a lack of engagement from fathers. Insights were gained into different means of administering pro/synbiotics to young infants. Triangulation of the findings of the mothers/carers with HCWs showed that most identified motivations and challenges were similar. Pro/synbiotic administration was well accepted by the mothers/carers and HCWs and generally perceived to have health benefits. The administration of pro/synbiotics by the mothers/carers themselves to their infants may be feasible and overcome logistical challenges. Greater efforts to sensitise and engage fathers and communities would likely be critical for a community-based program.",
+        "keywords": [
+            "Peer Mothers",
+            "acceptability",
+            "carers",
+            "malnutrition",
+            "perceptions",
+            "probiotics",
+            "synbiotics"
+        ],
+        "spacy_entities": [
+            [
+                "the first 6-12 weeks",
+                "DATE"
+            ],
+            [
+                "32",
+                "CARDINAL"
+            ],
+            [
+                "between ages 0 and 5 months",
+                "DATE"
+            ],
+            [
+                "Kenya",
+                "GPE"
+            ],
+            [
+                "14",
+                "CARDINAL"
+            ],
+            [
+                "12",
+                "CARDINAL"
+            ],
+            [
+                "7",
+                "CARDINAL"
+            ],
+            [
+                "three",
+                "CARDINAL"
+            ]
+        ],
+        "spacy_matched_terms": []
+    },
+    {
+        "title": "Cannabidiol in Foods and Food Supplements: Evaluation of Health Risks and Health Claims.",
+        "abstract": "Cannabidiol (CBD) is a cannabinoid present in the hemp plant (<i>Cannabis sativa</i> L.). Non-medicinal CBD oils with typically 5-40% CBD are advertised for various alleged positive health effects. While such foodstuffs containing cannabinoids are covered by the Novel Food Regulation in the European Union (EU), none of these products have yet been authorized. Nevertheless, they continue to be available on the European market. The Permanent Senate Commission on Food Safety (SKLM) of the German Research Foundation (DFG) reviewed the currently available data on adverse and potential beneficial effects of CBD in the dose range relevant for foods. Increased liver enzyme activities were observed in healthy volunteers following administration of 4.3 mg CBD/kg bw/day and higher for 3-4 weeks. As lower doses were not tested, a no observed adverse effect level (NOAEL) could not be derived, and the dose of 4.3 mg/kg bw/day was identified as the lowest observed adverse effect level (LOAEL). Based on the CBD content and dose recommendations of CBD products on the market, the SKLM considered several exposure scenarios and concluded that the LOAEL for liver toxicity may be easily reached, e.g., via consumption of 30 drops of an oil containing 20% CBD, or even exceeded. A critical evaluation of the available data on potential beneficial health effects of CBD in the dose range at or below the LOAEL of 4.3 mg/kg bw/day revealed no scientific evidence that would substantiate health claims, e.g., in relation to physical performance, the cardiovascular, immune, and nervous system, anxiety, relaxation, stress, sleep, pain, or menstrual health. The SKLM concluded that consumption of CBD-containing foods/food supplements may not provide substantiated health benefits and may even pose a health risk to consumers.",
+        "keywords": [
+            "CBD",
+            "beneficial effects",
+            "cannabidiol",
+            "food",
+            "food supplements",
+            "health claims",
+            "health risk",
+            "hepatotoxicity",
+            "neurotoxicity"
+        ],
+        "spacy_entities": [
+            [
+                "5-40%",
+                "PERCENT"
+            ],
+            [
+                "the Novel Food Regulation",
+                "LAW"
+            ],
+            [
+                "the European Union",
+                "ORG"
+            ],
+            [
+                "EU",
+                "ORG"
+            ],
+            [
+                "European",
+                "NORP"
+            ],
+            [
+                "The Permanent Senate Commission on Food Safety",
+                "ORG"
+            ],
+            [
+                "SKLM",
+                "ORG"
+            ],
+            [
+                "the German Research Foundation",
+                "ORG"
+            ],
+            [
+                "DFG",
+                "ORG"
+            ],
+            [
+                "4.3 mg",
+                "QUANTITY"
+            ],
+            [
+                "3-4 weeks",
+                "DATE"
+            ],
+            [
+                "4.3 mg",
+                "QUANTITY"
+            ],
+            [
+                "SKLM",
+                "ORG"
+            ],
+            [
+                "30",
+                "CARDINAL"
+            ],
+            [
+                "20%",
+                "PERCENT"
+            ],
+            [
+                "4.3 mg/kg",
+                "QUANTITY"
+            ],
+            [
+                "SKLM",
+                "ORG"
+            ]
+        ],
+        "spacy_matched_terms": []
+    },
+    {
+        "title": "Enhancing Gut Microbiome and Metabolic Health in Mice Through Administration of Presumptive Probiotic Strain <i>Lactiplantibacillus pentosus</i> PE11.",
+        "abstract": "<b>Background:</b> Over the past decade, probiotics have gained increasing recognition for their health benefits to the host. While most research has focused on the therapeutic effects of probiotics in the treatment of various diseases, recent years have seen a shift towards exploring their role in enhancing and supporting overall health. <b>Methods:</b> In this work, we have studied the effects of a novel potential probiotic strain, <i>Lactiplantibacillus pentosus</i> PE11, in healthy mice following a six-week dietary intervention. The assessment included monitoring the general health of the animals, biochemical analyses, profiling of the gut and fecal microbial communities, and gene expression analysis. <b>Results:</b> Our results showed that the administration of <i>Lactiplantibacillus pentosus</i> PE11 led to changes in the composition of the fecal microbiome, specifically an increase in the Firmicutes/Bacteroidetes ratio and in the relative abundance of the Lachnospiraceae, Ruminococcaceae, and Rikenellaceae families. Reduced <i>Tnf</i> expression and elevated <i>Zo1</i> expression were also observed in the cecum, pointing to anti-inflammatory properties and improved intestinal barrier integrity. Additionally, a significant reduction in triglycerides and alanine aminotransferase levels-within physiological ranges-was observed, along with a trend toward decreased total cholesterol levels. <b>Conclusions:</b> These findings suggest that in healthy mice, <i>Lactiplantibacillus pentosus</i> PE11 has the potential to positively influence gut microbiome structure and metabolism, thereby supporting improved overall health.",
+        "keywords": [
+            "Lactiplantibacillus pentosus PE11",
+            "alanine aminotransferase levels",
+            "gut microbiota",
+            "overall health",
+            "triglycerides levels"
+        ],
+        "spacy_entities": [
+            [
+                "the past decade",
+                "DATE"
+            ],
+            [
+                "recent years",
+                "DATE"
+            ],
+            [
+                "six-week",
+                "DATE"
+            ]
+        ],
+        "spacy_matched_terms": []
+    },
+    {
+        "title": "Lactobacillomics as a new notion in lactic acid bacteria research through omics integration.",
+        "abstract": "Omics technologies are a set of disciplines that analyze large-scale molecular data to understand biological systems in a holistic way. These technologies aim to reveal the structure, functions and interactions of organisms by studying processes at many levels of biomolecules, from the genome to metabolism. Lactobacillomics is introduced as an interdisciplinary field that integrates multiple \"omics\" technologies-including genomics, transcriptomics, proteomics, metabolomics, and metagenomics- to provide a comprehensive insight into \"lactic acid bacteria\" species. Lactobacillomics aims to elucidate the genetic, metabolic, and functional characteristics of lactic acid bacteria (LAB) species, providing insights into the mechanisms underlying their probiotic effects and contributions to the host microbiome. By analyzing genomes and metabolic pathways, researchers can identify specific genes responsible for health-promoting functions and desirable fermentation characteristics, which can guide the development of targeted probiotic strains with optimized health benefits. The integration of these omics data allows facilitating the discovery of biomarkers for health and disease states, the development of new probiotics tailored to specific populations or health conditions, and the optimization of fermentation processes to enhance the safety, flavor, and nutritional profile of fermented foods. A comprehensive review and bibliometric analysis were conducted to provide an overview of this promising field between 2005 and 2025 by examining Web of Science Core Collection data. Research results reveal trending topics, future perspectives, and key areas of growth within lactic acid bacteria (LAB) studies, particularly as they intersect with omics technologies.",
+        "keywords": [
+            "LAB",
+            "Lactic acid bacteria",
+            "Lactobacillomics",
+            "Omics",
+            "Probiotics"
+        ],
+        "spacy_entities": [
+            [
+                "between 2005 and 2025",
+                "DATE"
+            ]
+        ],
+        "spacy_matched_terms": []
+    },
+    {
+        "title": "Wild Edible Flowers of Indian Himalayan Region, Their Traditional Uses and Potential Health Benefits: A Way Forward for Food and Nutritional Security.",
+        "abstract": "Wild edible flowers (WEFs) have long been an integral part of the diets and cultures of various communities worldwide. WEFs have untapped potential for use in human diets as food, supplements, or additives. These flowers contain compounds like flavonoids, carotenoids, nutrients, and minerals that contribute to their health-promoting properties. The Indian Himalayan Region (IHR), known for its biodiversity, hosts a wide array of underutilized WEFs with significant potential as food sources. Indigenous communities have long recognized the nutritional and medicinal benefits of these flowers, incorporating them into traditional medicine and culinary practices. However, systematic research on the nutritional and phytochemical properties of WEFs in this region remains limited. Therefore, gaining novel insights into the nutraceutical compounds of these flowers is crucial, highlighting their significance in promoting consumption. This review article focuses on the nutritional and phytochemical profiles of WEFs and their associated health benefits.The review also addresses the issue of toxicity in wildflowers, as well as various limitations on their consumption. Additionally, it explores the traditional and contemporary uses of these flowers in the IHR, highlighting the importance of preserving traditional knowledge and biodiversity.",
+        "keywords": [
+            "Bioactive compounds",
+            "Indian Himalayan Region",
+            "Nutraceutical",
+            "Wild edible flowers"
+        ],
+        "spacy_entities": [
+            [
+                "The Indian Himalayan Region",
+                "LOC"
+            ]
+        ],
+        "spacy_matched_terms": []
+    },
+    {
+        "title": "Personalizing Dietary Polyphenols for Health Maintenance and Disease Management: A Nutrigenetic Approach.",
+        "abstract": "This literature review provides examples of the influence of certain genetic variants on health outcomes after dietary polyphenol consumption or supplementation. Available evidence is organized according to the major classes of polyphenols (flavonoids, phenolic acids, stilbenes, lignans, and tannins) and their derived subgroups. Nutrigenetic studies have identified mainly single nucleotide polymorphisms located within genes involved in the biotransformation of phenolic acids, stilbenes, lignans and several flavonoid molecules. These genetic variants may affect polyphenol metabolism rates and related predisposition to chronic non-communicable diseases. Moreover, differential cardiometabolic outcomes upon polyphenol supplementation as dietary sources or nutraceuticals have been modulated by specific genotypes. Although current evidence is still limited, growing gene-polyphenol interactions are contributing to systematically elucidate the biological functions of polyphenols; determine individual risk phenotypes to specific diseases or particular responses upon polyphenol exposure; and facilitate the prescription of personalized genotype-based doses of dietary polyphenols to optimize related health benefits. Additionally, the integration of genetics with other omics insights (epigenomics, transcriptomics, metagenomics, and metabolomics) trough biological systems and high-dimensional data analyses and interpretation may provide a more comprehensive understanding of polyphenol metabolism for precision nutrition applications in health and disease.",
+        "keywords": [
+            "Genetics",
+            "Nutrigenetics",
+            "Polymorphism",
+            "Polyphenols",
+            "Precision nutrition"
+        ],
+        "spacy_entities": [],
+        "spacy_matched_terms": []
+    },
+    {
+        "title": "Harnessing Sacha Inchi By-Products: Innovations in Functional Food Development.",
+        "abstract": "Sacha inchi (Plukenetia volubilis L.), native to the Amazon rainforest, is widely known for its oil-rich seeds. Its by-products, particularly the press cake, husks, and shells left after oil extraction, have significant nutritional and functional potential. These by-products contain high levels of proteins, dietary fiber, and bioactive compounds that can be repurposed to develop functional foods, nutraceuticals, and dietary supplements. This review article provides a detailed overview of the composition of sacha inchi by-products, recent findings on optimizing extraction processes for proteins, bioactive peptides, and antioxidant compounds, and product innovations using sacha inchi residues. It highlights the health benefits of consuming these products, such as functional bakery items and plant-based beverages with high sensory acceptance, protein hydrolysates with antioxidant and anti-inflammatory properties, beneficial effects on gut microbiota, and oligosaccharides with prebiotic properties, positioning sacha inchi by-products as key ingredients for developing plant-based nutraceutical and functional products. Additionally, the article emphasizes the potential of these by-products to contribute to a circular economy, reduce waste, and align with global efforts to achieve Sustainable Development Goals (SDGs) related to health, sustainable production, and environmental impact.",
+        "keywords": [
+            "By-products",
+            "Circular economy",
+            "Plant-based foods",
+            "Sacha inchi",
+            "Sustainable development goals (SDGs)"
+        ],
+        "spacy_entities": [
+            [
+                "Amazon",
+                "LOC"
+            ]
+        ],
+        "spacy_matched_terms": []
+    },
+    {
+        "title": "Conjugated linoleic acid in cheese: A review of the factors affecting its presence.",
+        "abstract": "Several health benefits of conjugated linoleic acid (CLA) have been documented. The present work is aimed to review data on the various factors affecting the CLA content in cheese of studies accomplished in the last decade and also indicating the factors that increase the CLA levels. The CLA content in cheese depends on CLA levels present in milk, since the lipids with the CLA are transferred from milk into the cheese. Feed types rich in α-linolenic and linoleic acids such as pasture grass, plant oils, cereals rich in oil, or fish oils can affect the CLA level in milk. In contrast to findings of previous reviews made in previous decade, which stated that the CLA levels in cheese were stable during ripening time, the present review reveals that certain lactic acid bacteria, that is, probiotic Lactiplantibacillus plantarum, Lactobacillus acidophilus, or Lacticaseibacillus casei, as well as Bifidobacterium lactis can increase the CLA levels in cheese by converting linoleic acid during ripening time. These bacteria starters increased the CLA levels by 1.19, 1.6, and 6.6 times as much as the control in Ovine model, Miniature, and Cheddar cheese, respectively. Lipid oxidation due to factors like fluorescent light or aerobic conditions can decrease the CLA levels during storage.",
+        "keywords": [
+            "cheese conjugated linoleic acid",
+            "cheese ripening",
+            "cheese storage",
+            "conjugated linoleic acid",
+            "lipid oxidation",
+            "milk conjugated linoleic acid"
+        ],
+        "spacy_entities": [
+            [
+                "the last decade",
+                "DATE"
+            ],
+            [
+                "previous decade",
+                "DATE"
+            ],
+            [
+                "1.19",
+                "CARDINAL"
+            ],
+            [
+                "1.6",
+                "CARDINAL"
+            ],
+            [
+                "6.6",
+                "CARDINAL"
+            ],
+            [
+                "Ovine",
+                "PRODUCT"
+            ],
+            [
+                "Miniature",
+                "PRODUCT"
+            ],
+            [
+                "Cheddar",
+                "PRODUCT"
+            ]
+        ],
+        "spacy_matched_terms": []
+    },
+    {
+        "title": "Improving the selenium supply of vegans and omnivores with Brazil nut butter compared to a dietary supplement in a randomized controlled trial.",
+        "abstract": "A vegan diet is associated with health benefits but may also lead to inadequate intake of essential nutrients. Due to the lower selenium content in plant-based compared to animal-based foods, many vegans do not reach the recommended selenium intake in Europe. The only plant-based food with high selenium content is the Brazil nut, even though there is also a high variability. Therefore, we investigated the effectiveness of Brazil nut butter compared to a dietary supplement as selenium source to improve the selenium status of vegans and omnivores. 44 vegans and 42 omnivores were randomly assigned to one of three intervention groups, either receiving placebo or consuming additional 55 µg of selenium daily as Brazil nut butter or supplement for two weeks. Serum selenium concentrations, glutathione peroxidase 3 (GPX3), and selenoprotein P (SELENOP) were measured at baseline and after intervention. Additionally, dietary selenium intake was estimated using a five-day dietary protocol. The estimated selenium intake was significantly lower in vegans compared to omnivores and correlated with all three selenium biomarkers. Independent of the dietary pattern (vegan or omnivore), Brazil nut butter as well as supplement significantly increased serum selenium and SELENOP concentrations, while there were no changes in the placebo groups. Both interventions were equally effective in increasing selenium levels, but the upregulation of SELENOP was more pronounced in vegans than in omnivores. Brazil nuts are a plant-based source of selenium suitable for vegans and omnivores to improve their selenium status when consumed once in a while. Clinical trials registration number: NCT05814874, April 18 2023.",
+        "keywords": [
+            "Brazil nut",
+            "Selenium status",
+            "Selenium supplement",
+            "Veganism"
+        ],
+        "spacy_entities": [
+            [
+                "Europe",
+                "LOC"
+            ],
+            [
+                "Brazil",
+                "GPE"
+            ],
+            [
+                "Brazil",
+                "GPE"
+            ],
+            [
+                "44",
+                "CARDINAL"
+            ],
+            [
+                "42",
+                "CARDINAL"
+            ],
+            [
+                "one",
+                "CARDINAL"
+            ],
+            [
+                "three",
+                "CARDINAL"
+            ],
+            [
+                "55 ",
+                "QUANTITY"
+            ],
+            [
+                "daily",
+                "DATE"
+            ],
+            [
+                "Brazil",
+                "GPE"
+            ],
+            [
+                "two weeks",
+                "DATE"
+            ],
+            [
+                "five-day",
+                "DATE"
+            ],
+            [
+                "three",
+                "CARDINAL"
+            ],
+            [
+                "Brazil",
+                "GPE"
+            ],
+            [
+                "Brazil",
+                "GPE"
+            ],
+            [
+                "April 18 2023",
+                "DATE"
+            ]
+        ],
+        "spacy_matched_terms": []
+    },
+    {
+        "title": "Impact of Fermented Milk On Gut Microbiota And Human Health: A Comprehensive Review.",
+        "abstract": "The beneficial impact of gut microbiota on human health has encouraged studies on factors modulating it. Among the different factors, diet plays a vital role in this area. Many studies on animals and humans have been concerned with the effects of fermented milk products on gut microbiota and how they relate to health benefits. Yoghurt, kefir, Koumiss, and fermented kinds of milk made using different probiotic strains were tested for their capability to modulate gut microbiota. It is apparent that the microflora present in fermented milk, specifically probiotics, are capable of enduring the gastrointestinal tract's adverse conditions primarily through transit microorganisms. Meanwhile, they can alter the gut microbiota in several ways that benefit human health. The present article gives a comprehensive overview of the modulation of gut microbiota by consumption of fermented milk, particularly those containing probiotics, and their impact on human health.",
+        "keywords": [
+            "No Keywords"
+        ],
+        "spacy_entities": [],
+        "spacy_matched_terms": []
+    },
+    {
+        "title": "Assessment of Opuntia ficus-indica supplementation on enhancing antioxidant levels.",
+        "abstract": "Opuntia ficus-indica (OFi) is a major fruit source prevalent in semiarid and arid regions across various countries worldwide. It is widely recognised for its potential health benefits; however, most studies investigating its effects have been limited to pre-clinical models, highlighting the need for further validation through clinical trials. This study aimed to evaluate the effectiveness of OFi supplementation in enhancing antioxidant levels. Fifty healthy participants, aged 18 years and older, including males and females, received a daily OFi supplement of 1500 mg for 3 months. These findings revealed a significant 48.1% increase in salivary total antioxidant capacity (TAC) (P < 0.001), indicating improved antioxidant activity. Simultaneously, oxidative stress biomarkers showed substantial reductions: malondialdehyde (MDA) decreased by 28.3%, nitrotyrosine (3-NT) decreased by 51.5%, and 8-hydroxy-2'-deoxyguanosine (8-OHdG) decreased by 59.8% (P < 0.001). Furthermore, participants reported a 20.1% improvement (P < 0.001) in Visual Analogue Scales (VAS), reflecting a notable enhancement in overall well-being. In conclusion, OFi exhibited promising efficacy in elevating antioxidant levels and mitigating oxidative stress. These findings suggest its potential as an adjuvant therapy for managing chronic conditions associated with oxidative stress.",
+        "keywords": [
+            "Opuntia ficus-indica",
+            "Antioxidant",
+            "Clinical trial",
+            "Reactive oxygen species (ROS)",
+            "Supplement"
+        ],
+        "spacy_entities": [
+            [
+                "Fifty",
+                "CARDINAL"
+            ],
+            [
+                "18 years and older",
+                "DATE"
+            ],
+            [
+                "daily",
+                "DATE"
+            ],
+            [
+                "1500 ",
+                "QUANTITY"
+            ],
+            [
+                "3 months",
+                "DATE"
+            ],
+            [
+                "48.1%",
+                "PERCENT"
+            ],
+            [
+                "0.001",
+                "CARDINAL"
+            ],
+            [
+                "28.3%",
+                "PERCENT"
+            ],
+            [
+                "51.5%",
+                "PERCENT"
+            ],
+            [
+                "59.8%",
+                "PERCENT"
+            ],
+            [
+                "0.001",
+                "CARDINAL"
+            ],
+            [
+                "20.1%",
+                "PERCENT"
+            ],
+            [
+                "0.001",
+                "CARDINAL"
+            ]
+        ],
+        "spacy_matched_terms": []
+    },
+    {
+        "title": "Oyster powder supplementation enhances immune function in mice partly through modulating the gut microbiota and arginine metabolism.",
+        "abstract": "Oysters are well-known for their health benefits such as immuno-modulatory functions. The intestinal microbiome serves as a key mediator between diet and immune regulation. This study aimed to investigate whether oyster consumption could alleviate cyclophosphamide (Cy)-induced immunosuppression by promoting intestinal homeostasis. In mice treated with Cy, a significant decrease in immune cells and cytokines was observed. In contrast, mice supplemented with oyster powder demonstrated elevated numbers of immune cells in the spleen and small intestine, as well as enhanced serum production of IL-1β, IL-2, TNF-α, and IFN-γ. Furthermore, oyster consumption improved the composition of the gut microbiota by promoting beneficial bacteria and inhibiting harmful ones. Metabolomics analysis revealed that oyster powder treatment significantly enhanced the arginine biosynthesis pathway, and further analysis found that the consumption of oysters led to increased arginine levels. Correlation analysis showed a significant positive correlation between L-arginine and immune-related markers. Collectively, these findings suggest that oyster consumption may enhance immunity by modulating the gut microbiota and boosting arginine biosynthesis pathways. Dietary oyster consumption could be an effective strategy to support immune health.",
+        "keywords": [
+            "No Keywords"
+        ],
+        "spacy_entities": [],
+        "spacy_matched_terms": []
+    },
+    {
+        "title": "Examining the Influence of Omega-3 Fatty Acids on Performance, Recovery, and Injury Management for Health Optimization: A Systematic Review Focused on Military Service Members.",
+        "abstract": "Omega-3 fatty acids (<i>n</i>-3), recognized for their anti-inflammatory and brain health benefits, are being studied to enhance cognitive function, aid physical recovery, and reduce injury rates among military service members (SMs). Given the unique demands faced by this tactical population, this systematic review aims to evaluate the evidence of <i>n</i>-3 to support physical and mental resilience and overall performance. This review was conducted in accordance with Preferred Reporting Items for Systematic reviews and Meta-Analyses (PRISMA) guidelines and includes articles that assessed <i>n</i>-3 status or implemented <i>n</i>-3 interventions in relation to physical and cognitive performance, recovery, and injury outcomes (2006 to 2024). Of the 1606 articles yielded in screening through Covidence, 755 were irrelevant, leaving 226 studies for full-text eligibility. Of those 226 studies, 165 studies were excluded, and 61 studies were included in this review. The results highlighted evidence-based findings in five key areas where omega-3 fatty acids are being evaluated to benefit military service members. These key areas include cardiopulmonary function, exercise recovery, cognitive function, injury recovery, and strength and power. While existing research suggests promising benefits, the most significant evidence was seen with cardiopulmonary function, exercise recovery, and cognitive function. Current research is promising and shows potential benefits, but the results are inconclusive and inconsistent. Future research is needed to determine optimal <i>n</i>-3 status, dose, and possibly type of <i>n</i>-3 across the various performance outcomes. Understanding these gaps in research will be essential to creating evidence-based <i>n</i>-3 guidelines for optimal performance of SMs.",
+        "keywords": [
+            "injury",
+            "military",
+            "omega-3 fatty acids",
+            "omega-3 index",
+            "performance",
+            "recovery"
+        ],
+        "spacy_entities": [
+            [
+                "2006 to 2024",
+                "DATE"
+            ],
+            [
+                "1606",
+                "CARDINAL"
+            ],
+            [
+                "Covidence",
+                "ORG"
+            ],
+            [
+                "755",
+                "CARDINAL"
+            ],
+            [
+                "226",
+                "CARDINAL"
+            ],
+            [
+                "226",
+                "CARDINAL"
+            ],
+            [
+                "165",
+                "CARDINAL"
+            ],
+            [
+                "61",
+                "CARDINAL"
+            ],
+            [
+                "five",
+                "CARDINAL"
+            ]
+        ],
+        "spacy_matched_terms": [
+            "Omega-3 fatty acids"
+        ]
+    },
+    {
+        "title": "Vitamin D: Evidence-Based Health Benefits and Recommendations for Population Guidelines.",
+        "abstract": "Vitamin D offers numerous under-recognized health benefits beyond its well-known role in musculoskeletal health. It is vital for extra-renal tissues, prenatal health, brain function, immunity, pregnancy, cancer prevention, and cardiovascular health. Existing guidelines issued by governmental and health organizations are bone-centric and largely overlook the abovementioned extra-skeletal benefits and optimal thresholds for vitamin D. In addition, they rely on randomized controlled trials (RCTs), which seldom show benefits due to high baseline 25-hydroxyvitamin D [25(OH)D] concentrations, moderate supplementation doses, and flawed study designs. This review emphasizes the findings from prospective cohort studies showing that higher 25(OH)D concentrations reduce the risks of major diseases and mortality, including pregnancy and birth outcomes. Serum concentrations > 30 ng/mL (75 nmol/L) significantly lower disease and mortality risks compared to <20 ng/mL. With 25% of the U.S. population and 60% of Central Europeans having levels <20 ng/mL, concentrations should be raised above 30 ng/mL. This is achievable through daily supplementation with 2000 IU/day (50 mcg/day) of vitamin D<sub>3</sub>, which prevent diseases and deaths. Furthermore, a daily dose between 4000 and 6000 IU of vitamin D<sub>3</sub> to achieve serum 25(OH)D levels between 40 and 70 ng/mL would provide greater protection against many adverse health outcomes. Future guidelines and recommendations should integrate the findings from observational prospective cohort studies and well-designed RCTs to improve public health and personalized care.",
+        "keywords": [
+            "COVID-19",
+            "Endocrine Society",
+            "cancer",
+            "cardiovascular disease",
+            "chronic kidney disease",
+            "chronic lower respiratory diseases",
+            "dementia",
+            "diabetes mellitus",
+            "pregnancy"
+        ],
+        "spacy_entities": [
+            [
+                "> 30 ng/mL",
+                "QUANTITY"
+            ],
+            [
+                "75 nmol/L",
+                "QUANTITY"
+            ],
+            [
+                "<20 ng/mL.",
+                "QUANTITY"
+            ],
+            [
+                "25%",
+                "PERCENT"
+            ],
+            [
+                "U.S.",
+                "GPE"
+            ],
+            [
+                "60%",
+                "PERCENT"
+            ],
+            [
+                "Central Europeans",
+                "NORP"
+            ],
+            [
+                "<20 ng/mL",
+                "QUANTITY"
+            ],
+            [
+                "30 ng/mL.",
+                "QUANTITY"
+            ],
+            [
+                "2000 IU",
+                "QUANTITY"
+            ],
+            [
+                "50 mcg",
+                "QUANTITY"
+            ],
+            [
+                "daily",
+                "DATE"
+            ],
+            [
+                "between 4000 and 6000 IU",
+                "QUANTITY"
+            ],
+            [
+                "between 40 and 70 ng",
+                "QUANTITY"
+            ]
+        ],
+        "spacy_matched_terms": [
+            "Vitamin D"
+        ]
+    },
+    {
+        "title": "Dietary Taurine Regulation of the Intestinal Microbiome in Chinese Stripe-Necked Turtle (<i>Mauremys sinensis</i>).",
+        "abstract": "Taurine is essential for sustaining the body's physiological equilibrium and is extensively utilized as a dietary supplement and immune system enhancer for aquatic creatures. The gut microbiota serves as a vital health indicator in animals. In this study, our goal was to evaluate the effects of dietary taurine on the gut microbiome of Chinese stripe-necked turtles (<i>Mauremys sinensis</i>). Turtles were evenly divided into three supplementation groups: a control group with no taurine in the diet, a low group with 0.1% taurine, and a high group with 0.4% taurine. High-throughput sequencing was employed to analyze the gut microbiome's composition and structure. The results showed that the impact of taurine supplementation on the α-diversity and β-diversity of the gut microbiome was not statistically significant. At the phylum level, Firmicutes and Bacteroidetes predominated the gut microbiome. At the genus level, three beneficial bacteria, <i>Clostridium_sensu_stricto_13</i>, <i>Pygmaiobacter</i>, and <i>Terrisporobacter</i> showed significant differences under different levels of taurine supplementation and increased in abundance with the supplementation of taurine, while the harmful bacterium <i>Brucella</i> decreased in abundance with the addition of taurine and exhibited significant differences. Furthermore, LEfSe analysis and functional predictions highlighted significant variations in the functional traits of gram-positive intestinal bacteria among the different taurine supplementation levels. These findings imply that dietary taurine may alter the intestinal microbiome structure in Chinese stripe-necked turtles, offering valuable insights for the scientific assessment of taurine's health benefits as a feed additive and potentially guiding the formulation of more informed and healthier feeding practices.",
+        "keywords": [
+            "Mauremys sinensis",
+            "animal health",
+            "gut microbiota",
+            "nutrient additives"
+        ],
+        "spacy_entities": [
+            [
+                "Chinese",
+                "NORP"
+            ],
+            [
+                "three",
+                "CARDINAL"
+            ],
+            [
+                "0.1%",
+                "PERCENT"
+            ],
+            [
+                "0.4%",
+                "PERCENT"
+            ],
+            [
+                "three",
+                "CARDINAL"
+            ],
+            [
+                "Chinese",
+                "NORP"
+            ]
+        ],
+        "spacy_matched_terms": []
+    },
+    {
+        "title": "l-theanine: From tea leaf to trending supplement - does the science match the hype for brain health and relaxation?",
+        "abstract": "l-Theanine is a unique non-protein amino acid found abundantly in tea leaves. Interest in its potential use as a dietary supplement has surged recently, especially claims related to promoting relaxation and cognitive enhancement. This review surveys the chemistry, metabolism, and purported biological activities of l-theanine. It is well absorbed from the intestine and can cross the blood-brain barrier. Some studies suggest l-theanine may increase alpha waves in the brain associated with relaxation and selective attention, reduce stress and anxiety, and improve sleep quality, though findings are often inconsistent. Potential neuroprotective and anti-seizure effects have also been reported in animal models. When combined with caffeine, l-theanine may improve cognitive performance, alertness and focus. However, the evidence supporting many health claims remains limited, especially the lack of rigorous human clinical trials. While l-theanine exhibits a good safety profile based on toxicology studies, caution is warranted regarding the purported health benefits, until stronger scientific substantiation emerges. Overall, the mechanisms of action and therapeutic potential of l-theanine require further investigation, given the current interest and increasing popularity of this nutraceutical supplement marketed for brain health and relaxation. In the absence of well-designed and carefully controlled human clinical trials, we would urge caution in the use of l-theanine supplements at pharmacologic doses by the wider population, and believe that the science does not yet match the hype behind this trending supplement for brain health and relaxation.",
+        "keywords": [
+            "Brain health",
+            "Clinical trials",
+            "Cognitive function",
+            "Green tea",
+            "Relaxation",
+            "l-theanine"
+        ],
+        "spacy_entities": [],
+        "spacy_matched_terms": []
+    },
+    {
+        "title": "Review on bioproduction of sialylated human milk oligosaccharides: Synthesis methods, physiologic functions, and applications.",
+        "abstract": "Human milk oligosaccharides (HMOs) are crucial for promoting neonatal health, with sialylated oligosaccharides, a significant subclass, offering a variety of health benefits such as prebiotic effects, anti-inflammatory and antimicrobial properties, antiviral defense, and cognitive development support. Among these, 3'-sialyllactose (3'-SL) and 6'-sialyllactose (6'-SL) have received \"GRAS\" status from the U.S. Food and Drug Administration and approval from the European Food Safety Authority for use as novel food additives in infant formula and supplements. This review focuses on the synthesis methods of sialylated human milk oligosaccharides (SHMOs), their functional properties, downstreaming developments and application technologies. Given the challenges associated with achieving sufficient availability for food and medical applications, the review emphasizes the viability and efficiency of various production strategies. The review also highlights recent research advancements and offers insights for optimizing large-scale production to support future applications in the food and pharmaceutical industries.",
+        "keywords": [
+            "Applications",
+            "Downstreaming policies",
+            "Physiologic functions",
+            "Sialylated oligosaccharides",
+            "Synthesis methods"
+        ],
+        "spacy_entities": [
+            [
+                "the U.S. Food and Drug Administration",
+                "ORG"
+            ],
+            [
+                "the European Food Safety Authority",
+                "ORG"
+            ]
+        ],
+        "spacy_matched_terms": []
+    }
+]

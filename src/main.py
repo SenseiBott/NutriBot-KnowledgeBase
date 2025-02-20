@@ -25,8 +25,8 @@ def main():
     configure_entrez(email, api_key)
 
     # Define the search query
-    query = '("dietary supplements" OR "nutritional supplements") AND ("disease prevention" OR "health benefits")'
-    max_articles = 10
+    query = '("dietary supplements"[MeSH] OR "nutritional supplements") AND ("disease prevention"[MeSH] OR "health benefits")'
+    max_articles = 20
 
     # Search for articles on PubMed
     print("🔎 Searching for articles on PubMed...")

@@ -1,14 +1,14 @@
 import requests
 import json
 
-def search_europe_pmc(query, max_results=10):
+def search_europe_pmc(query, max_results=20):
     """Search for articles in Europe PMC."""
     url = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
     params = {
         "query": query,
         "resultType": "core",
         "pageSize": max_results,
-        "format": "json"
+        "format": "json" 
     }
     
     response = requests.get(url, params=params)
