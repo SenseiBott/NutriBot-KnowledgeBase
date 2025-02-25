@@ -1,0 +1,6903 @@
+[
+    {
+        "title": "Mycochemistry, Traditional Uses, and Nutraceutical Potential of Laricifomes officinalis: A Biotechnological and Pharmacological Perspective.",
+        "abstract": "Laricifomes officinalis is a medicinal wood-inhabiting fungus renowned for its health benefits, particularly in traditional European medicine for the prevention and treatment of pulmonary conditions such as asthma, pneumonia, and tuberculosis. Beyond its therapeutic applications, L. officinalis plays an important ecological role by contributing to nutrient cycling in forest ecosystems. This review provides a comprehensive analysis of the current literature on L. officinalis, focusing on its phytochemical composition, traditional uses, pharmacological potential, and conservation status. The species is a rich source of bioactive compounds, including coumarin derivatives, indole compounds, phenolic compounds, polysaccharides, terpenoids and sterols, which exhibit a wide array of biological activities, such as antibacterial, anticancer, antifungal, anti-inflammatory, antioxidant, and antiviral effects. Drawing on extensive searches in scientific databases including Google Scholar, PubMed, Scopus, and Web of Science, this review examines the distribution, ecological significance, taxonomy, and pharmacological applications of L. officinalis. Given the growing threats of overexploitation and habitat loss, the conservation of L. officinalis is crucial. This review discusses various sustainable cultivation strategies, including establishing culture collections and regulating biosynthetic activity through LED and laser light techniques, show potential for preserving and enhancing the production of its bioactive compounds. Despite recent advances, further research is required to better understand the pharmacological efficacy and safety of L. officinalis, thereby unlocking its full medicinal potential for future therapeutic applications. This review underscores the necessity of integrating ecological conservation with pharmaceutical research, highlighting the dual importance of L. officinalis in natural ecosystems and therapeutic applications.",
+        "keywords": [
+            "Bioactivity",
+            "Ethnomedicine",
+            "Fungal metabolites",
+            "Health benefits",
+            "Medicinal macrofungi",
+            "Sustainable cultivation"
+        ],
+        "authors": [
+            "Yusufjon Gafforov",
+            "Milena Rašeta",
+            "Oksana Mykchaylova",
+            "Sylvie Rapior",
+            "Maja Karaman",
+            "Jovana Mišković",
+            "Şule İnci",
+            "Manzura Yarasheva",
+            "Arshad Mehmood Abbasi",
+            "Soumya Ghosh"
+        ],
+        "journal": "Plant foods for human nutrition (Dordrecht, Netherlands)",
+        "doi": "10.1007/s11130-025-01316-9",
+        "spacy_entities": [
+            [
+                "Laricifomes officinalis",
+                "ENTITY"
+            ],
+            [
+                "medicinal wood-inhabiting fungus",
+                "ENTITY"
+            ],
+            [
+                "health benefits",
+                "ENTITY"
+            ],
+            [
+                "traditional",
+                "ENTITY"
+            ],
+            [
+                "European medicine",
+                "ENTITY"
+            ],
+            [
+                "prevention",
+                "ENTITY"
+            ],
+            [
+                "treatment",
+                "ENTITY"
+            ],
+            [
+                "pulmonary conditions",
+                "ENTITY"
+            ],
+            [
+                "asthma",
+                "ENTITY"
+            ],
+            [
+                "pneumonia",
+                "ENTITY"
+            ],
+            [
+                "tuberculosis",
+                "ENTITY"
+            ],
+            [
+                "therapeutic applications",
+                "ENTITY"
+            ],
+            [
+                "L. officinalis",
+                "ENTITY"
+            ],
+            [
+                "ecological",
+                "ENTITY"
+            ],
+            [
+                "nutrient",
+                "ENTITY"
+            ],
+            [
+                "forest ecosystems",
+                "ENTITY"
+            ],
+            [
+                "review",
+                "ENTITY"
+            ],
+            [
+                "comprehensive",
+                "ENTITY"
+            ],
+            [
+                "analysis",
+                "ENTITY"
+            ],
+            [
+                "literature",
+                "ENTITY"
+            ],
+            [
+                "L. officinalis",
+                "ENTITY"
+            ],
+            [
+                "phytochemical composition",
+                "ENTITY"
+            ],
+            [
+                "traditional uses",
+                "ENTITY"
+            ],
+            [
+                "pharmacological potential",
+                "ENTITY"
+            ],
+            [
+                "conservation",
+                "ENTITY"
+            ],
+            [
+                "status",
+                "ENTITY"
+            ],
+            [
+                "species",
+                "ENTITY"
+            ],
+            [
+                "bioactive compounds",
+                "ENTITY"
+            ],
+            [
+                "coumarin derivatives",
+                "ENTITY"
+            ],
+            [
+                "indole compounds",
+                "ENTITY"
+            ],
+            [
+                "phenolic compounds",
+                "ENTITY"
+            ],
+            [
+                "polysaccharides",
+                "ENTITY"
+            ],
+            [
+                "terpenoids",
+                "ENTITY"
+            ],
+            [
+                "sterols",
+                "ENTITY"
+            ],
+            [
+                "array",
+                "ENTITY"
+            ],
+            [
+                "biological activities",
+                "ENTITY"
+            ],
+            [
+                "antibacterial",
+                "ENTITY"
+            ],
+            [
+                "anticancer",
+                "ENTITY"
+            ],
+            [
+                "antifungal",
+                "ENTITY"
+            ],
+            [
+                "anti-inflammatory",
+                "ENTITY"
+            ],
+            [
+                "antioxidant",
+                "ENTITY"
+            ],
+            [
+                "antiviral effects",
+                "ENTITY"
+            ],
+            [
+                "searches",
+                "ENTITY"
+            ],
+            [
+                "scientific databases",
+                "ENTITY"
+            ],
+            [
+                "Google Scholar",
+                "ENTITY"
+            ],
+            [
+                "PubMed",
+                "ENTITY"
+            ],
+            [
+                "Scopus",
+                "ENTITY"
+            ],
+            [
+                "Web of Science",
+                "ENTITY"
+            ],
+            [
+                "review",
+                "ENTITY"
+            ],
+            [
+                "distribution",
+                "ENTITY"
+            ],
+            [
+                "ecological significance",
+                "ENTITY"
+            ],
+            [
+                "taxonomy",
+                "ENTITY"
+            ],
+            [
+                "pharmacological",
+                "ENTITY"
+            ],
+            [
+                "L. officinalis",
+                "ENTITY"
+            ],
+            [
+                "threats",
+                "ENTITY"
+            ],
+            [
+                "overexploitation",
+                "ENTITY"
+            ],
+            [
+                "habitat",
+                "ENTITY"
+            ],
+            [
+                "loss",
+                "ENTITY"
+            ],
+            [
+                "conservation",
+                "ENTITY"
+            ],
+            [
+                "L. officinalis",
+                "ENTITY"
+            ],
+            [
+                "review",
+                "ENTITY"
+            ],
+            [
+                "cultivation",
+                "ENTITY"
+            ],
+            [
+                "strategies",
+                "ENTITY"
+            ],
+            [
+                "culture collections",
+                "ENTITY"
+            ],
+            [
+                "biosynthetic activity",
+                "ENTITY"
+            ],
+            [
+                "LED",
+                "ENTITY"
+            ],
+            [
+                "laser light techniques",
+                "ENTITY"
+            ],
+            [
+                "potential",
+                "ENTITY"
+            ],
+            [
+                "preserving",
+                "ENTITY"
+            ],
+            [
+                "production",
+                "ENTITY"
+            ],
+            [
+                "bioactive compounds",
+                "ENTITY"
+            ],
+            [
+                "advances",
+                "ENTITY"
+            ],
+            [
+                "research",
+                "ENTITY"
+            ],
+            [
+                "pharmacological efficacy",
+                "ENTITY"
+            ],
+            [
+                "safety",
+                "ENTITY"
+            ],
+            [
+                "L. officinalis",
+                "ENTITY"
+            ],
+            [
+                "medicinal potential",
+                "ENTITY"
+            ],
+            [
+                "therapeutic",
+                "ENTITY"
+            ],
+            [
+                "applications",
+                "ENTITY"
+            ],
+            [
+                "necessity",
+                "ENTITY"
+            ],
+            [
+                "ecological",
+                "ENTITY"
+            ],
+            [
+                "conservation",
+                "ENTITY"
+            ],
+            [
+                "pharmaceutical research",
+                "ENTITY"
+            ],
+            [
+                "L. officinalis",
+                "ENTITY"
+            ],
+            [
+                "natural ecosystems",
+                "ENTITY"
+            ],
+            [
+                "therapeutic applications",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Comparative evaluation of free radical scavenging activity and total metabolite profiles among 30 macrofungi species.",
+        "abstract": "The high antioxidant content of mushrooms such as polyphenols, polysaccharides, carotenoids, ergothioneine, glutathione, vitamins, and other compounds, has sparked interest in their potential use in preventive and therapeutic medicine. Therefore, this study aimed to evaluate the antioxidant potential of various macrofungi by measuring 1,1-diphenyl-2-picryl-hydrazyl (DPPH) radical scavenging activity and quantifying two classes of compounds: phenolics (TPC) and polysaccharides, both endo- (IPS) and exopolysaccharides (EPS). Species-specific abilities to produce mycelium, polysaccharides, and polyphenols were observed under submerged cultivation without agitation over 14 days. Mycelium productivity (P<sub>M</sub>) ranged significantly from 292 ± 11 to 1110 ± 37 mg·L⁻<sup>1</sup>·day⁻<sup>1</sup>, with the highest values observed in Ophiocordyceps sinensis (1110 ± 37 mg·L⁻<sup>1</sup> ·day⁻<sup>1</sup>), Pleurotus djamor (1090 ± 14 mg·L⁻<sup>1</sup>·day⁻<sup>1</sup>), and Cordyceps militaris (1080 ± 90 mg· L⁻<sup>1</sup>·day⁻<sup>1</sup>). The DPPH inhibition values of the extracts varied from 4.30 ± 0.20 to 87.9 ± 0.80%, while TPC ranged from 0.35 ± 0.10 to 34.6 ± 0.80 mg GAE/g d.w. Lentinula edodes was the best source of produced IPS (10.3 ± 0.35 g·L<sup>-1</sup>), while Hypsizygus marmoreus exhibited the highest EPS content (2.24 ± 0.30 g·L<sup>-1</sup>). Overall, IPS levels across species were higher, ranging from 1.56 to 10.3 g·L<sup>-1</sup>. In half of the fungal species, the mycelium exhibited superior antioxidant activity compared to culture broth. However, in the majority (66.7%), TPC was higher in the culture broth than in the fungal mycelium. Distinct scavenging abilities and metabolite profiles were observed among different isolates. Notably, the mycelium of Fomitopsis pinicola and L. edodes showed the highest DPPH inhibition and TPC. The antioxidant activity and TPC varied depending on the culture medium, and solvents used. The highest DPPH inhibition (90%) and TPC (38.5 ± 0.40 mg GAE/g d.w.) were observed in the methanol (MeOH) extract of F. pinicola mycelium grown in Sabouraud dextrose medium. Similarly, MeOH and ethyl acetate (EtOAc) extracts demonstrated strong DPPH inhibition (over 87%), while the maximum TPC (40.0 ± 0.60 mg GAE/g d.w.) was detected in the water (H<sub>2</sub>O) extract of L. edodes mycelium cultivated in glucose-peptone-yeast medium. A positive correlation was found between TPC and antioxidant activity, with Pearson's coefficient of 0.6615 for fungal mycelium, 0.1192 for culture broth, and 0.8924 and 0.7143 for F. pinicola and L. edodes, respectively. Both fungal mycelium and culture broth exhibit significant potential as natural antioxidants. These can be applied in nutraceuticals, food products, and nutritional supplements, offering diverse health benefits. Additionally, this study is a pioneering exploration of Auriporia aurea, Hohenbuehelia myxotricha, Lepista luscina, Oxyporus obducens, and Pseudospongipellis litschaueri, highlighting their largely unexplored potential for antioxidant applications.",
+        "keywords": [
+            "Culture broth",
+            "DPPH",
+            "Endopolysaccharides",
+            "Exopolysaccharides",
+            "Extracts",
+            "Media",
+            "Mycelium",
+            "Phenolic compounds",
+            "Secondary metabolites",
+            "Submerged cultivation"
+        ],
+        "authors": [
+            "Tetiana Krupodorova",
+            "Victor Barshteyn",
+            "Yusufjon Gafforov",
+            "Milena Rašeta",
+            "Tetiana Zaichenko",
+            "Yaroslav Blume"
+        ],
+        "journal": "Bioresources and bioprocessing",
+        "doi": "10.1186/s40643-025-00841-4",
+        "spacy_entities": [
+            [
+                "antioxidant",
+                "ENTITY"
+            ],
+            [
+                "content",
+                "ENTITY"
+            ],
+            [
+                "mushrooms",
+                "ENTITY"
+            ],
+            [
+                "polyphenols",
+                "ENTITY"
+            ],
+            [
+                "polysaccharides",
+                "ENTITY"
+            ],
+            [
+                "carotenoids",
+                "ENTITY"
+            ],
+            [
+                "ergothioneine",
+                "ENTITY"
+            ],
+            [
+                "glutathione",
+                "ENTITY"
+            ],
+            [
+                "vitamins",
+                "ENTITY"
+            ],
+            [
+                "compounds",
+                "ENTITY"
+            ],
+            [
+                "sparked",
+                "ENTITY"
+            ],
+            [
+                "potential",
+                "ENTITY"
+            ],
+            [
+                "preventive",
+                "ENTITY"
+            ],
+            [
+                "therapeutic medicine",
+                "ENTITY"
+            ],
+            [
+                "study",
+                "ENTITY"
+            ],
+            [
+                "evaluate",
+                "ENTITY"
+            ],
+            [
+                "antioxidant",
+                "ENTITY"
+            ],
+            [
+                "potential",
+                "ENTITY"
+            ],
+            [
+                "macrofungi",
+                "ENTITY"
+            ],
+            [
+                "measuring",
+                "ENTITY"
+            ],
+            [
+                "radical scavenging activity",
+                "ENTITY"
+            ],
+            [
+                "quantifying",
+                "ENTITY"
+            ],
+            [
+                "classes",
+                "ENTITY"
+            ],
+            [
+                "compounds",
+                "ENTITY"
+            ],
+            [
+                "phenolics",
+                "ENTITY"
+            ],
+            [
+                "TPC",
+                "ENTITY"
+            ],
+            [
+                "polysaccharides",
+                "ENTITY"
+            ],
+            [
+                "IPS",
+                "ENTITY"
+            ],
+            [
+                "exopolysaccharides",
+                "ENTITY"
+            ],
+            [
+                "EPS",
+                "ENTITY"
+            ],
+            [
+                "Species-specific",
+                "ENTITY"
+            ],
+            [
+                "mycelium",
+                "ENTITY"
+            ],
+            [
+                "polysaccharides",
+                "ENTITY"
+            ],
+            [
+                "polyphenols",
+                "ENTITY"
+            ],
+            [
+                "submerged cultivation",
+                "ENTITY"
+            ],
+            [
+                "agitation",
+                "ENTITY"
+            ],
+            [
+                "days",
+                "ENTITY"
+            ],
+            [
+                "Mycelium productivity",
+                "ENTITY"
+            ],
+            [
+                "mg·L⁻<sup>1</sup>·day⁻<sup>1</sup",
+                "ENTITY"
+            ],
+            [
+                "highest",
+                "ENTITY"
+            ],
+            [
+                "values",
+                "ENTITY"
+            ],
+            [
+                "Ophiocordyceps",
+                "ENTITY"
+            ],
+            [
+                "sinensis",
+                "ENTITY"
+            ],
+            [
+                "Pleurotus djamor",
+                "ENTITY"
+            ],
+            [
+                "mg·L⁻<sup>1</sup>·day⁻<sup>1</sup",
+                "ENTITY"
+            ],
+            [
+                "Cordyceps militaris",
+                "ENTITY"
+            ],
+            [
+                "DPPH",
+                "ENTITY"
+            ],
+            [
+                "inhibition",
+                "ENTITY"
+            ],
+            [
+                "extracts",
+                "ENTITY"
+            ],
+            [
+                "TPC",
+                "ENTITY"
+            ],
+            [
+                "Lentinula edodes",
+                "ENTITY"
+            ],
+            [
+                "IPS",
+                "ENTITY"
+            ],
+            [
+                "sup>-1</sup",
+                "ENTITY"
+            ],
+            [
+                "Hypsizygus marmoreus",
+                "ENTITY"
+            ],
+            [
+                "EPS",
+                "ENTITY"
+            ],
+            [
+                "content",
+                "ENTITY"
+            ],
+            [
+                "sup>-1</sup",
+                "ENTITY"
+            ],
+            [
+                "IPS",
+                "ENTITY"
+            ],
+            [
+                "levels",
+                "ENTITY"
+            ],
+            [
+                "species",
+                "ENTITY"
+            ],
+            [
+                "higher",
+                "ENTITY"
+            ],
+            [
+                "sup>-1</sup>.",
+                "ENTITY"
+            ],
+            [
+                "fungal species",
+                "ENTITY"
+            ],
+            [
+                "mycelium",
+                "ENTITY"
+            ],
+            [
+                "antioxidant activity",
+                "ENTITY"
+            ],
+            [
+                "culture broth",
+                "ENTITY"
+            ],
+            [
+                "TPC",
+                "ENTITY"
+            ],
+            [
+                "culture broth",
+                "ENTITY"
+            ],
+            [
+                "fungal",
+                "ENTITY"
+            ],
+            [
+                "mycelium",
+                "ENTITY"
+            ],
+            [
+                "scavenging abilities",
+                "ENTITY"
+            ],
+            [
+                "metabolite profiles",
+                "ENTITY"
+            ],
+            [
+                "isolates",
+                "ENTITY"
+            ],
+            [
+                "mycelium",
+                "ENTITY"
+            ],
+            [
+                "Fomitopsis pinicola",
+                "ENTITY"
+            ],
+            [
+                "L. edodes",
+                "ENTITY"
+            ],
+            [
+                "DPPH",
+                "ENTITY"
+            ],
+            [
+                "inhibition",
+                "ENTITY"
+            ],
+            [
+                "TPC",
+                "ENTITY"
+            ],
+            [
+                "antioxidant activity",
+                "ENTITY"
+            ],
+            [
+                "TPC",
+                "ENTITY"
+            ],
+            [
+                "culture medium",
+                "ENTITY"
+            ],
+            [
+                "solvents",
+                "ENTITY"
+            ],
+            [
+                "DPPH",
+                "ENTITY"
+            ],
+            [
+                "inhibition",
+                "ENTITY"
+            ],
+            [
+                "TPC",
+                "ENTITY"
+            ],
+            [
+                "methanol",
+                "ENTITY"
+            ],
+            [
+                "MeOH",
+                "ENTITY"
+            ],
+            [
+                "extract",
+                "ENTITY"
+            ],
+            [
+                "F. pinicola",
+                "ENTITY"
+            ],
+            [
+                "mycelium",
+                "ENTITY"
+            ],
+            [
+                "Sabouraud",
+                "ENTITY"
+            ],
+            [
+                "dextrose medium",
+                "ENTITY"
+            ],
+            [
+                "MeOH",
+                "ENTITY"
+            ],
+            [
+                "EtOAc",
+                "ENTITY"
+            ],
+            [
+                "extracts",
+                "ENTITY"
+            ],
+            [
+                "DPPH",
+                "ENTITY"
+            ],
+            [
+                "inhibition",
+                "ENTITY"
+            ],
+            [
+                "maximum",
+                "ENTITY"
+            ],
+            [
+                "TPC",
+                "ENTITY"
+            ],
+            [
+                "detected",
+                "ENTITY"
+            ],
+            [
+                "water",
+                "ENTITY"
+            ],
+            [
+                "L. edodes",
+                "ENTITY"
+            ],
+            [
+                "mycelium",
+                "ENTITY"
+            ],
+            [
+                "glucose-peptone-yeast medium",
+                "ENTITY"
+            ],
+            [
+                "positive",
+                "ENTITY"
+            ],
+            [
+                "correlation",
+                "ENTITY"
+            ],
+            [
+                "TPC",
+                "ENTITY"
+            ],
+            [
+                "antioxidant activity",
+                "ENTITY"
+            ],
+            [
+                "Pearson's coefficient",
+                "ENTITY"
+            ],
+            [
+                "fungal",
+                "ENTITY"
+            ],
+            [
+                "mycelium",
+                "ENTITY"
+            ],
+            [
+                "culture broth",
+                "ENTITY"
+            ],
+            [
+                "F. pinicola",
+                "ENTITY"
+            ],
+            [
+                "L. edodes",
+                "ENTITY"
+            ],
+            [
+                "fungal",
+                "ENTITY"
+            ],
+            [
+                "mycelium",
+                "ENTITY"
+            ],
+            [
+                "culture broth",
+                "ENTITY"
+            ],
+            [
+                "potential",
+                "ENTITY"
+            ],
+            [
+                "natural antioxidants",
+                "ENTITY"
+            ],
+            [
+                "nutraceuticals",
+                "ENTITY"
+            ],
+            [
+                "food products",
+                "ENTITY"
+            ],
+            [
+                "nutritional supplements",
+                "ENTITY"
+            ],
+            [
+                "health benefits",
+                "ENTITY"
+            ],
+            [
+                "study",
+                "ENTITY"
+            ],
+            [
+                "pioneering",
+                "ENTITY"
+            ],
+            [
+                "exploration",
+                "ENTITY"
+            ],
+            [
+                "Auriporia",
+                "ENTITY"
+            ],
+            [
+                "aurea",
+                "ENTITY"
+            ],
+            [
+                "Hohenbuehelia myxotricha",
+                "ENTITY"
+            ],
+            [
+                "Lepista luscina",
+                "ENTITY"
+            ],
+            [
+                "Oxyporus obducens",
+                "ENTITY"
+            ],
+            [
+                "Pseudospongipellis litschaueri",
+                "ENTITY"
+            ],
+            [
+                "potential",
+                "ENTITY"
+            ],
+            [
+                "antioxidant",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [
+                "nutritional supplements"
+            ],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Health benefits, antimicrobial activities, and potential applications of probiotics: A review.",
+        "abstract": "Gut microbiota and its metabolic activities can influence the physiology and pathology of the human body. It is well established that alterations in the balance of living microbiota can contribute to various health problems, such as inflammatory bowel disease and autoimmune disorders. Probiotics administered in sufficient quantities as functional food ingredients provide health benefits to hosts. They help to maintain the stability and composition of the gut microbiota and provide resistance to infection by pathogens. The most important probiotic bacteria are Lactobacillus spp. and Bifidobacteria spp., which protect the intestine through various mechanisms such as the production of organic acids and bacteriocins. Scientific and clinical research has demonstrated that probiotics play a role in modulating immune response and preventing cancer and chronic inflammatory diseases, especially in the gastrointestinal tract. This article summarizes the potential health benefits, antimicrobial activities, and purposes for which probiotics can be used as functional foods to improve human health.",
+        "keywords": [
+            "No Keywords"
+        ],
+        "authors": [
+            "Amin Sepehr",
+            "Seyedeh Tina Miri",
+            "Shadi Aghamohammad",
+            "Nazanin Rahimirad",
+            "Mahnaz Milani",
+            "Mohammad-Reza Pourshafie",
+            "Mahdi Rohani"
+        ],
+        "journal": "Medicine",
+        "doi": "10.1097/md.0000000000032412",
+        "spacy_entities": [
+            [
+                "Gut microbiota",
+                "ENTITY"
+            ],
+            [
+                "metabolic activities",
+                "ENTITY"
+            ],
+            [
+                "influence",
+                "ENTITY"
+            ],
+            [
+                "physiology",
+                "ENTITY"
+            ],
+            [
+                "pathology",
+                "ENTITY"
+            ],
+            [
+                "human",
+                "ENTITY"
+            ],
+            [
+                "body",
+                "ENTITY"
+            ],
+            [
+                "alterations",
+                "ENTITY"
+            ],
+            [
+                "balance",
+                "ENTITY"
+            ],
+            [
+                "living microbiota",
+                "ENTITY"
+            ],
+            [
+                "health problems",
+                "ENTITY"
+            ],
+            [
+                "inflammatory bowel disease",
+                "ENTITY"
+            ],
+            [
+                "autoimmune disorders",
+                "ENTITY"
+            ],
+            [
+                "Probiotics",
+                "ENTITY"
+            ],
+            [
+                "administered",
+                "ENTITY"
+            ],
+            [
+                "quantities",
+                "ENTITY"
+            ],
+            [
+                "functional food ingredients",
+                "ENTITY"
+            ],
+            [
+                "health benefits",
+                "ENTITY"
+            ],
+            [
+                "hosts",
+                "ENTITY"
+            ],
+            [
+                "stability",
+                "ENTITY"
+            ],
+            [
+                "composition",
+                "ENTITY"
+            ],
+            [
+                "gut microbiota",
+                "ENTITY"
+            ],
+            [
+                "resistance",
+                "ENTITY"
+            ],
+            [
+                "infection",
+                "ENTITY"
+            ],
+            [
+                "pathogens",
+                "ENTITY"
+            ],
+            [
+                "probiotic bacteria",
+                "ENTITY"
+            ],
+            [
+                "Lactobacillus spp",
+                "ENTITY"
+            ],
+            [
+                "Bifidobacteria spp",
+                "ENTITY"
+            ],
+            [
+                "intestine",
+                "ENTITY"
+            ],
+            [
+                "mechanisms",
+                "ENTITY"
+            ],
+            [
+                "production",
+                "ENTITY"
+            ],
+            [
+                "organic acids",
+                "ENTITY"
+            ],
+            [
+                "bacteriocins",
+                "ENTITY"
+            ],
+            [
+                "Scientific",
+                "ENTITY"
+            ],
+            [
+                "clinical research",
+                "ENTITY"
+            ],
+            [
+                "probiotics",
+                "ENTITY"
+            ],
+            [
+                "modulating",
+                "ENTITY"
+            ],
+            [
+                "immune response",
+                "ENTITY"
+            ],
+            [
+                "preventing",
+                "ENTITY"
+            ],
+            [
+                "cancer",
+                "ENTITY"
+            ],
+            [
+                "chronic inflammatory diseases",
+                "ENTITY"
+            ],
+            [
+                "gastrointestinal tract",
+                "ENTITY"
+            ],
+            [
+                "potential",
+                "ENTITY"
+            ],
+            [
+                "health benefits",
+                "ENTITY"
+            ],
+            [
+                "antimicrobial activities",
+                "ENTITY"
+            ],
+            [
+                "probiotics",
+                "ENTITY"
+            ],
+            [
+                "functional foods",
+                "ENTITY"
+            ],
+            [
+                "human",
+                "ENTITY"
+            ],
+            [
+                "health",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [
+                "Probiotics"
+            ],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Effects of dietary live microbes intake on a newly proposed classification system for steatotic liver disease.",
+        "abstract": "Steatotic liver disease (SLD) is a common chronic liver disease without effective therapeutic options. Some studies suggest potential health benefits of dietary live microbes. This study aims to investigate the association between dietary live microbes intake and metabolic dysfunction-associated steatotic liver disease (MASLD) / metabolic alcohol-related liver disease (MetALD) / alcoholic liver disease (ALD) in adults. Data from the National Health and Nutrition Examination Survey 1999-2018 were analyzed. MASLD was defined according to the latest Delphi Consensus standard. Participants were grouped based on estimated dietary live microbe intake: low (< 10<sup>4</sup> CFU/g), moderate (10<sup>4</sup>-10<sup>7</sup> CFU/g), and high (> 10<sup>7</sup> CFU/g). Multivariable logistic regression analysis was employed to assess the impact of dietary live microbes on MASLD/MetALD/ALD, along with further investigations into non-dietary probiotic/prebiotic relationships. Participants had a weighted mean age of 47.05 years (SE, 0.24) and 50.59% were female. MASLD proportions differ among low (21.76%), moderate (22.24%), and high (18.96%) microbe groups. Similarly, for MetALD, proportions are 7.75%, 6.95%, and 6.44%, and for ALD, 5.42%, 3.59%, and 2.97% in respective groups. The high dietary live microbe intake group was associated with a 16% lower risk of MASLD compared to those in the low intake group (trend test, P = 0.02), while the risk of ALD was reduced by 25% in the moderate intake group. A lack of association was identified between non-dietary prebiotic/probiotic and MASLD/MetALD/ALD. Our study suggests that a relatively high intake of live microbes diets in adults is associated with a lower risk of SLD.",
+        "keywords": [
+            "ALD",
+            "Dietary live microbes",
+            "MetALD",
+            "Metabolic dysfunction-associated steatotic liver disease",
+            "NHANES",
+            "Steatotic liver disease"
+        ],
+        "authors": [
+            "Zhikun Dai",
+            "Zihong Bao",
+            "Hanyuan Lin",
+            "Qinglong Yang",
+            "Jingtao Huang",
+            "Xuan Zhang",
+            "Nan Luo",
+            "Haoxian Tang",
+            "Xiaohui Zhou"
+        ],
+        "journal": "Scientific reports",
+        "doi": "10.1038/s41598-025-88420-7",
+        "spacy_entities": [
+            [
+                "Steatotic liver disease",
+                "ENTITY"
+            ],
+            [
+                "SLD",
+                "ENTITY"
+            ],
+            [
+                "chronic liver disease",
+                "ENTITY"
+            ],
+            [
+                "therapeutic options",
+                "ENTITY"
+            ],
+            [
+                "studies",
+                "ENTITY"
+            ],
+            [
+                "potential",
+                "ENTITY"
+            ],
+            [
+                "health benefits",
+                "ENTITY"
+            ],
+            [
+                "dietary live microbes",
+                "ENTITY"
+            ],
+            [
+                "study",
+                "ENTITY"
+            ],
+            [
+                "investigate",
+                "ENTITY"
+            ],
+            [
+                "association",
+                "ENTITY"
+            ],
+            [
+                "dietary live",
+                "ENTITY"
+            ],
+            [
+                "microbes",
+                "ENTITY"
+            ],
+            [
+                "intake",
+                "ENTITY"
+            ],
+            [
+                "metabolic dysfunction-associated steatotic liver disease",
+                "ENTITY"
+            ],
+            [
+                "MASLD",
+                "ENTITY"
+            ],
+            [
+                "metabolic",
+                "ENTITY"
+            ],
+            [
+                "alcohol-related liver disease",
+                "ENTITY"
+            ],
+            [
+                "MetALD",
+                "ENTITY"
+            ],
+            [
+                "alcoholic liver disease",
+                "ENTITY"
+            ],
+            [
+                "ALD",
+                "ENTITY"
+            ],
+            [
+                "adults",
+                "ENTITY"
+            ],
+            [
+                "Data",
+                "ENTITY"
+            ],
+            [
+                "National Health and Nutrition Examination Survey 1999-2018",
+                "ENTITY"
+            ],
+            [
+                "analyzed",
+                "ENTITY"
+            ],
+            [
+                "MASLD",
+                "ENTITY"
+            ],
+            [
+                "Delphi",
+                "ENTITY"
+            ],
+            [
+                "Consensus standard",
+                "ENTITY"
+            ],
+            [
+                "Participants",
+                "ENTITY"
+            ],
+            [
+                "grouped",
+                "ENTITY"
+            ],
+            [
+                "estimated",
+                "ENTITY"
+            ],
+            [
+                "dietary live",
+                "ENTITY"
+            ],
+            [
+                "intake",
+                "ENTITY"
+            ],
+            [
+                "low",
+                "ENTITY"
+            ],
+            [
+                "moderate",
+                "ENTITY"
+            ],
+            [
+                "high",
+                "ENTITY"
+            ],
+            [
+                "Multivariable logistic regression analysis",
+                "ENTITY"
+            ],
+            [
+                "impact",
+                "ENTITY"
+            ],
+            [
+                "dietary live microbes",
+                "ENTITY"
+            ],
+            [
+                "MASLD/MetALD/ALD",
+                "ENTITY"
+            ],
+            [
+                "investigations",
+                "ENTITY"
+            ],
+            [
+                "probiotic/prebiotic relationships",
+                "ENTITY"
+            ],
+            [
+                "Participants",
+                "ENTITY"
+            ],
+            [
+                "weighted mean",
+                "ENTITY"
+            ],
+            [
+                "age",
+                "ENTITY"
+            ],
+            [
+                "SE",
+                "ENTITY"
+            ],
+            [
+                "female",
+                "ENTITY"
+            ],
+            [
+                "MASLD",
+                "ENTITY"
+            ],
+            [
+                "proportions",
+                "ENTITY"
+            ],
+            [
+                "low",
+                "ENTITY"
+            ],
+            [
+                "moderate",
+                "ENTITY"
+            ],
+            [
+                "high",
+                "ENTITY"
+            ],
+            [
+                "microbe groups",
+                "ENTITY"
+            ],
+            [
+                "MetALD",
+                "ENTITY"
+            ],
+            [
+                "proportions",
+                "ENTITY"
+            ],
+            [
+                "ALD",
+                "ENTITY"
+            ],
+            [
+                "groups",
+                "ENTITY"
+            ],
+            [
+                "dietary live",
+                "ENTITY"
+            ],
+            [
+                "microbe",
+                "ENTITY"
+            ],
+            [
+                "intake",
+                "ENTITY"
+            ],
+            [
+                "group",
+                "ENTITY"
+            ],
+            [
+                "associated with",
+                "ENTITY"
+            ],
+            [
+                "lower risk",
+                "ENTITY"
+            ],
+            [
+                "MASLD",
+                "ENTITY"
+            ],
+            [
+                "low intake",
+                "ENTITY"
+            ],
+            [
+                "trend test",
+                "ENTITY"
+            ],
+            [
+                "risk",
+                "ENTITY"
+            ],
+            [
+                "ALD",
+                "ENTITY"
+            ],
+            [
+                "reduced",
+                "ENTITY"
+            ],
+            [
+                "moderate",
+                "ENTITY"
+            ],
+            [
+                "intake",
+                "ENTITY"
+            ],
+            [
+                "group",
+                "ENTITY"
+            ],
+            [
+                "association",
+                "ENTITY"
+            ],
+            [
+                "non-dietary prebiotic/probiotic",
+                "ENTITY"
+            ],
+            [
+                "MASLD/MetALD/ALD",
+                "ENTITY"
+            ],
+            [
+                "study",
+                "ENTITY"
+            ],
+            [
+                "intake",
+                "ENTITY"
+            ],
+            [
+                "live",
+                "ENTITY"
+            ],
+            [
+                "microbes",
+                "ENTITY"
+            ],
+            [
+                "diets",
+                "ENTITY"
+            ],
+            [
+                "adults",
+                "ENTITY"
+            ],
+            [
+                "associated with",
+                "ENTITY"
+            ],
+            [
+                "lower risk",
+                "ENTITY"
+            ],
+            [
+                "SLD",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Does Resveratrol Impact Oxidative Stress Markers in Patients with Head and Neck Cancer Receiving Home Enteral Nutrition?",
+        "abstract": "<b>Objectives</b>: Resveratrol (RES) is well documented for its multiple health benefits, with a notable impact on cancer prevention and therapy. This study aimed to evaluate the effect of RES supplementation on oxidative stress in patients with head and neck cancer (HNC) receiving home enteral nutrition (HEN). <b>Methods</b>: This randomized, single-center, open-label study involved 72 adult patients, with 40 completing the intervention. Participants in the intervention group received 400 mg of liposomal RES daily for 12 weeks alongside HEN, while the control group received HEN only. Body composition and oxidative stress markers-including total antioxidant capacity (TAC), malondialdehyde (MDA), superoxide dismutase (SOD), glutathione peroxidase (GPx), and reduced glutathione (GSH)-were measured at baseline and after 12 weeks. <b>Results</b>: Significant increases in TAC and SOD activity were observed in both groups. GPx activity increased significantly only in the RES group. MDA levels rose in both groups but were more pronounced in the RES group. GSH levels showed no significant changes. Phase angle (PhA) increased significantly in the RES group, while no significant change was observed in the control group. <b>Conclusions</b>: RES supplementation may enhance antioxidant defenses, as evidenced by increased GPx activity and improvements in TAC and SOD levels, supporting oxidative balance in patients with HNC receiving HEN. The higher MDA levels in the RES group may reflect RES's dual antioxidant and pro-oxidant activities. Additionally, the observed increase in PhA suggests potential cellular health benefits. These findings highlight the potential of RES as a complementary antioxidant intervention in clinical oncology, warranting further investigation to clarify its therapeutic effects on oxidative stress and cellular health in cancer care.",
+        "keywords": [
+            "antioxidants",
+            "bioactive nutrients",
+            "head and neck cancer",
+            "home enteral nutrition",
+            "malnutrition",
+            "nutraceuticals",
+            "oxidative stress",
+            "resveratrol"
+        ],
+        "authors": [
+            "Michał Ławiński",
+            "Katarzyna Zadka",
+            "Natalia Ksepka",
+            "Maima Matin",
+            "Kamil Wysocki",
+            "Dominika Karkocha",
+            "Aleksandra Gradowska",
+            "Atanas G Atanasov",
+            "Maciej Słodkowski",
+            "Agnieszka Wierzbicka",
+            "Artur Jóźwik"
+        ],
+        "journal": "Nutrients",
+        "doi": "10.3390/nu17030504",
+        "spacy_entities": [
+            [
+                "Objectives</b",
+                "ENTITY"
+            ],
+            [
+                "Resveratrol",
+                "ENTITY"
+            ],
+            [
+                "RES",
+                "ENTITY"
+            ],
+            [
+                "documented",
+                "ENTITY"
+            ],
+            [
+                "multiple health benefits",
+                "ENTITY"
+            ],
+            [
+                "impact",
+                "ENTITY"
+            ],
+            [
+                "cancer prevention",
+                "ENTITY"
+            ],
+            [
+                "therapy",
+                "ENTITY"
+            ],
+            [
+                "study",
+                "ENTITY"
+            ],
+            [
+                "evaluate",
+                "ENTITY"
+            ],
+            [
+                "effect",
+                "ENTITY"
+            ],
+            [
+                "RES",
+                "ENTITY"
+            ],
+            [
+                "supplementation",
+                "ENTITY"
+            ],
+            [
+                "oxidative stress",
+                "ENTITY"
+            ],
+            [
+                "patients",
+                "ENTITY"
+            ],
+            [
+                "head",
+                "ENTITY"
+            ],
+            [
+                "neck cancer",
+                "ENTITY"
+            ],
+            [
+                "HNC",
+                "ENTITY"
+            ],
+            [
+                "home enteral nutrition (",
+                "ENTITY"
+            ],
+            [
+                "HEN",
+                "ENTITY"
+            ],
+            [
+                "Methods</b",
+                "ENTITY"
+            ],
+            [
+                "single-center",
+                "ENTITY"
+            ],
+            [
+                "open-label study",
+                "ENTITY"
+            ],
+            [
+                "adult",
+                "ENTITY"
+            ],
+            [
+                "patients",
+                "ENTITY"
+            ],
+            [
+                "intervention",
+                "ENTITY"
+            ],
+            [
+                "Participants",
+                "ENTITY"
+            ],
+            [
+                "intervention group",
+                "ENTITY"
+            ],
+            [
+                "liposomal",
+                "ENTITY"
+            ],
+            [
+                "weeks",
+                "ENTITY"
+            ],
+            [
+                "HEN",
+                "ENTITY"
+            ],
+            [
+                "control group",
+                "ENTITY"
+            ],
+            [
+                "HEN",
+                "ENTITY"
+            ],
+            [
+                "Body composition",
+                "ENTITY"
+            ],
+            [
+                "oxidative stress",
+                "ENTITY"
+            ],
+            [
+                "TAC",
+                "ENTITY"
+            ],
+            [
+                "malondialdehyde",
+                "ENTITY"
+            ],
+            [
+                "MDA",
+                "ENTITY"
+            ],
+            [
+                "superoxide dismutase",
+                "ENTITY"
+            ],
+            [
+                "SOD",
+                "ENTITY"
+            ],
+            [
+                "glutathione peroxidase",
+                "ENTITY"
+            ],
+            [
+                "GPx",
+                "ENTITY"
+            ],
+            [
+                "reduced",
+                "ENTITY"
+            ],
+            [
+                "glutathione",
+                "ENTITY"
+            ],
+            [
+                "measured",
+                "ENTITY"
+            ],
+            [
+                "baseline",
+                "ENTITY"
+            ],
+            [
+                "weeks",
+                "ENTITY"
+            ],
+            [
+                "Results</b",
+                "ENTITY"
+            ],
+            [
+                "Significant",
+                "ENTITY"
+            ],
+            [
+                "increases",
+                "ENTITY"
+            ],
+            [
+                "TAC",
+                "ENTITY"
+            ],
+            [
+                "SOD",
+                "ENTITY"
+            ],
+            [
+                "activity",
+                "ENTITY"
+            ],
+            [
+                "groups",
+                "ENTITY"
+            ],
+            [
+                "GPx",
+                "ENTITY"
+            ],
+            [
+                "activity",
+                "ENTITY"
+            ],
+            [
+                "increased",
+                "ENTITY"
+            ],
+            [
+                "RES",
+                "ENTITY"
+            ],
+            [
+                "group",
+                "ENTITY"
+            ],
+            [
+                "MDA",
+                "ENTITY"
+            ],
+            [
+                "levels",
+                "ENTITY"
+            ],
+            [
+                "groups",
+                "ENTITY"
+            ],
+            [
+                "RES",
+                "ENTITY"
+            ],
+            [
+                "group",
+                "ENTITY"
+            ],
+            [
+                "GSH",
+                "ENTITY"
+            ],
+            [
+                "levels",
+                "ENTITY"
+            ],
+            [
+                "changes",
+                "ENTITY"
+            ],
+            [
+                "Phase angle",
+                "ENTITY"
+            ],
+            [
+                "PhA",
+                "ENTITY"
+            ],
+            [
+                "increased",
+                "ENTITY"
+            ],
+            [
+                "RES",
+                "ENTITY"
+            ],
+            [
+                "group",
+                "ENTITY"
+            ],
+            [
+                "no significant",
+                "ENTITY"
+            ],
+            [
+                "control group",
+                "ENTITY"
+            ],
+            [
+                "Conclusions</b",
+                "ENTITY"
+            ],
+            [
+                "RES",
+                "ENTITY"
+            ],
+            [
+                "supplementation",
+                "ENTITY"
+            ],
+            [
+                "antioxidant defenses",
+                "ENTITY"
+            ],
+            [
+                "increased",
+                "ENTITY"
+            ],
+            [
+                "GPx",
+                "ENTITY"
+            ],
+            [
+                "improvements",
+                "ENTITY"
+            ],
+            [
+                "TAC",
+                "ENTITY"
+            ],
+            [
+                "SOD",
+                "ENTITY"
+            ],
+            [
+                "levels",
+                "ENTITY"
+            ],
+            [
+                "oxidative balance",
+                "ENTITY"
+            ],
+            [
+                "patients",
+                "ENTITY"
+            ],
+            [
+                "HNC",
+                "ENTITY"
+            ],
+            [
+                "HEN",
+                "ENTITY"
+            ],
+            [
+                "higher",
+                "ENTITY"
+            ],
+            [
+                "MDA",
+                "ENTITY"
+            ],
+            [
+                "levels",
+                "ENTITY"
+            ],
+            [
+                "RES",
+                "ENTITY"
+            ],
+            [
+                "group",
+                "ENTITY"
+            ],
+            [
+                "RES's",
+                "ENTITY"
+            ],
+            [
+                "antioxidant",
+                "ENTITY"
+            ],
+            [
+                "pro-oxidant activities",
+                "ENTITY"
+            ],
+            [
+                "increase",
+                "ENTITY"
+            ],
+            [
+                "PhA",
+                "ENTITY"
+            ],
+            [
+                "cellular health benefits",
+                "ENTITY"
+            ],
+            [
+                "findings",
+                "ENTITY"
+            ],
+            [
+                "potential",
+                "ENTITY"
+            ],
+            [
+                "RES",
+                "ENTITY"
+            ],
+            [
+                "antioxidant",
+                "ENTITY"
+            ],
+            [
+                "intervention",
+                "ENTITY"
+            ],
+            [
+                "clinical oncology",
+                "ENTITY"
+            ],
+            [
+                "investigation",
+                "ENTITY"
+            ],
+            [
+                "therapeutic effects",
+                "ENTITY"
+            ],
+            [
+                "oxidative stress",
+                "ENTITY"
+            ],
+            [
+                "cellular health",
+                "ENTITY"
+            ],
+            [
+                "cancer care",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [
+                "Resveratrol"
+            ],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Probiotics and Synbiotics Administered to Young Infants: Perceptions and Acceptability Amongst Carers and Healthcare Workers in Western Kenya.",
+        "abstract": "A contributory factor to childhood undernutrition is poor gut health occurring within the first 6-12 weeks of life despite exclusive breastfeeding. Pro/synbiotic administration may protect gut health. A qualitative study was conducted amongst mothers/carers and healthcare workers (HCWs) to explore their perceptions and the acceptability of pro/synbiotics administration in early life. This study was nested within a randomised, open, clinical trial of pro/synbiotics with 32 doses administered under supervision to infants between ages 0 and 5 months in western Kenya. Semi-structured interviews were conducted with 14 mothers/carers, 12 Peer Mothers and 7 healthcare workers (HCWs) selected by purposive critical and key informant sampling. Interviews were transcribed and analysed using a thematic coding framework. The satisfaction with the pro/synbiotic administration was very high amongst all three groups. Commonly perceived benefits included protection from diseases, healthy growth of the infant and improved appetite. The main barriers were working mothers and other commitments making it difficult to stick to scheduled administration visits, adverse judgement and opinions in the community, and a lack of engagement from fathers. Insights were gained into different means of administering pro/synbiotics to young infants. Triangulation of the findings of the mothers/carers with HCWs showed that most identified motivations and challenges were similar. Pro/synbiotic administration was well accepted by the mothers/carers and HCWs and generally perceived to have health benefits. The administration of pro/synbiotics by the mothers/carers themselves to their infants may be feasible and overcome logistical challenges. Greater efforts to sensitise and engage fathers and communities would likely be critical for a community-based program.",
+        "keywords": [
+            "Peer Mothers",
+            "acceptability",
+            "carers",
+            "malnutrition",
+            "perceptions",
+            "probiotics",
+            "synbiotics"
+        ],
+        "authors": [
+            "Mary Iwaret Otiti",
+            "Florence Achieng Were",
+            "Sevim Zaim",
+            "Helen Nabwera",
+            "Simon Kariuki",
+            "Stephen Allen"
+        ],
+        "journal": "Nutrients",
+        "doi": "10.3390/nu17030495",
+        "spacy_entities": [
+            [
+                "contributory factor",
+                "ENTITY"
+            ],
+            [
+                "childhood",
+                "ENTITY"
+            ],
+            [
+                "undernutrition",
+                "ENTITY"
+            ],
+            [
+                "gut health",
+                "ENTITY"
+            ],
+            [
+                "weeks of life",
+                "ENTITY"
+            ],
+            [
+                "breastfeeding",
+                "ENTITY"
+            ],
+            [
+                "Pro/synbiotic administration",
+                "ENTITY"
+            ],
+            [
+                "gut health",
+                "ENTITY"
+            ],
+            [
+                "qualitative study",
+                "ENTITY"
+            ],
+            [
+                "mothers/carers",
+                "ENTITY"
+            ],
+            [
+                "healthcare workers",
+                "ENTITY"
+            ],
+            [
+                "HCWs",
+                "ENTITY"
+            ],
+            [
+                "perceptions",
+                "ENTITY"
+            ],
+            [
+                "acceptability",
+                "ENTITY"
+            ],
+            [
+                "pro/synbiotics",
+                "ENTITY"
+            ],
+            [
+                "administration",
+                "ENTITY"
+            ],
+            [
+                "early life",
+                "ENTITY"
+            ],
+            [
+                "study",
+                "ENTITY"
+            ],
+            [
+                "nested",
+                "ENTITY"
+            ],
+            [
+                "randomised",
+                "ENTITY"
+            ],
+            [
+                "open",
+                "ENTITY"
+            ],
+            [
+                "clinical trial",
+                "ENTITY"
+            ],
+            [
+                "pro/synbiotics",
+                "ENTITY"
+            ],
+            [
+                "doses",
+                "ENTITY"
+            ],
+            [
+                "administered",
+                "ENTITY"
+            ],
+            [
+                "supervision",
+                "ENTITY"
+            ],
+            [
+                "infants",
+                "ENTITY"
+            ],
+            [
+                "ages",
+                "ENTITY"
+            ],
+            [
+                "months",
+                "ENTITY"
+            ],
+            [
+                "western Kenya",
+                "ENTITY"
+            ],
+            [
+                "Semi-structured interviews",
+                "ENTITY"
+            ],
+            [
+                "mothers/carers",
+                "ENTITY"
+            ],
+            [
+                "Peer",
+                "ENTITY"
+            ],
+            [
+                "Mothers",
+                "ENTITY"
+            ],
+            [
+                "healthcare workers",
+                "ENTITY"
+            ],
+            [
+                "HCWs",
+                "ENTITY"
+            ],
+            [
+                "purposive critical",
+                "ENTITY"
+            ],
+            [
+                "informant sampling",
+                "ENTITY"
+            ],
+            [
+                "Interviews",
+                "ENTITY"
+            ],
+            [
+                "transcribed",
+                "ENTITY"
+            ],
+            [
+                "analysed",
+                "ENTITY"
+            ],
+            [
+                "thematic coding framework",
+                "ENTITY"
+            ],
+            [
+                "satisfaction",
+                "ENTITY"
+            ],
+            [
+                "pro/synbiotic administration",
+                "ENTITY"
+            ],
+            [
+                "groups",
+                "ENTITY"
+            ],
+            [
+                "perceived",
+                "ENTITY"
+            ],
+            [
+                "benefits",
+                "ENTITY"
+            ],
+            [
+                "protection",
+                "ENTITY"
+            ],
+            [
+                "diseases",
+                "ENTITY"
+            ],
+            [
+                "healthy growth",
+                "ENTITY"
+            ],
+            [
+                "infant",
+                "ENTITY"
+            ],
+            [
+                "improved",
+                "ENTITY"
+            ],
+            [
+                "appetite",
+                "ENTITY"
+            ],
+            [
+                "barriers",
+                "ENTITY"
+            ],
+            [
+                "working mothers",
+                "ENTITY"
+            ],
+            [
+                "commitments",
+                "ENTITY"
+            ],
+            [
+                "stick",
+                "ENTITY"
+            ],
+            [
+                "scheduled",
+                "ENTITY"
+            ],
+            [
+                "administration visits",
+                "ENTITY"
+            ],
+            [
+                "adverse judgement",
+                "ENTITY"
+            ],
+            [
+                "opinions",
+                "ENTITY"
+            ],
+            [
+                "community",
+                "ENTITY"
+            ],
+            [
+                "engagement",
+                "ENTITY"
+            ],
+            [
+                "fathers",
+                "ENTITY"
+            ],
+            [
+                "administering",
+                "ENTITY"
+            ],
+            [
+                "pro/synbiotics",
+                "ENTITY"
+            ],
+            [
+                "young infants",
+                "ENTITY"
+            ],
+            [
+                "Triangulation",
+                "ENTITY"
+            ],
+            [
+                "findings",
+                "ENTITY"
+            ],
+            [
+                "mothers/carers",
+                "ENTITY"
+            ],
+            [
+                "HCWs",
+                "ENTITY"
+            ],
+            [
+                "identified",
+                "ENTITY"
+            ],
+            [
+                "motivations",
+                "ENTITY"
+            ],
+            [
+                "challenges",
+                "ENTITY"
+            ],
+            [
+                "Pro/synbiotic administration",
+                "ENTITY"
+            ],
+            [
+                "accepted",
+                "ENTITY"
+            ],
+            [
+                "mothers/carers",
+                "ENTITY"
+            ],
+            [
+                "HCWs",
+                "ENTITY"
+            ],
+            [
+                "perceived",
+                "ENTITY"
+            ],
+            [
+                "health benefits",
+                "ENTITY"
+            ],
+            [
+                "administration",
+                "ENTITY"
+            ],
+            [
+                "pro/synbiotics",
+                "ENTITY"
+            ],
+            [
+                "mothers/carers",
+                "ENTITY"
+            ],
+            [
+                "infants",
+                "ENTITY"
+            ],
+            [
+                "overcome",
+                "ENTITY"
+            ],
+            [
+                "logistical",
+                "ENTITY"
+            ],
+            [
+                "engage fathers",
+                "ENTITY"
+            ],
+            [
+                "communities",
+                "ENTITY"
+            ],
+            [
+                "community-based program",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Cannabidiol in Foods and Food Supplements: Evaluation of Health Risks and Health Claims.",
+        "abstract": "Cannabidiol (CBD) is a cannabinoid present in the hemp plant (<i>Cannabis sativa</i> L.). Non-medicinal CBD oils with typically 5-40% CBD are advertised for various alleged positive health effects. While such foodstuffs containing cannabinoids are covered by the Novel Food Regulation in the European Union (EU), none of these products have yet been authorized. Nevertheless, they continue to be available on the European market. The Permanent Senate Commission on Food Safety (SKLM) of the German Research Foundation (DFG) reviewed the currently available data on adverse and potential beneficial effects of CBD in the dose range relevant for foods. Increased liver enzyme activities were observed in healthy volunteers following administration of 4.3 mg CBD/kg bw/day and higher for 3-4 weeks. As lower doses were not tested, a no observed adverse effect level (NOAEL) could not be derived, and the dose of 4.3 mg/kg bw/day was identified as the lowest observed adverse effect level (LOAEL). Based on the CBD content and dose recommendations of CBD products on the market, the SKLM considered several exposure scenarios and concluded that the LOAEL for liver toxicity may be easily reached, e.g., via consumption of 30 drops of an oil containing 20% CBD, or even exceeded. A critical evaluation of the available data on potential beneficial health effects of CBD in the dose range at or below the LOAEL of 4.3 mg/kg bw/day revealed no scientific evidence that would substantiate health claims, e.g., in relation to physical performance, the cardiovascular, immune, and nervous system, anxiety, relaxation, stress, sleep, pain, or menstrual health. The SKLM concluded that consumption of CBD-containing foods/food supplements may not provide substantiated health benefits and may even pose a health risk to consumers.",
+        "keywords": [
+            "CBD",
+            "beneficial effects",
+            "cannabidiol",
+            "food",
+            "food supplements",
+            "health claims",
+            "health risk",
+            "hepatotoxicity",
+            "neurotoxicity"
+        ],
+        "authors": [
+            "Barbara E Engeli",
+            "Dirk W Lachenmeier",
+            "Patrick Diel",
+            "Sabine Guth",
+            "Maria A Villar Fernandez",
+            "Angelika Roth",
+            "Alfonso Lampen",
+            "Alexander T Cartus",
+            "Wim Wätjen",
+            "Jan G Hengstler",
+            "Angela Mally"
+        ],
+        "journal": "Nutrients",
+        "doi": "10.3390/nu17030489",
+        "spacy_entities": [
+            [
+                "Cannabidiol",
+                "ENTITY"
+            ],
+            [
+                "CBD",
+                "ENTITY"
+            ],
+            [
+                "cannabinoid",
+                "ENTITY"
+            ],
+            [
+                "hemp",
+                "ENTITY"
+            ],
+            [
+                "plant",
+                "ENTITY"
+            ],
+            [
+                "Cannabis sativa</i> L.",
+                "ENTITY"
+            ],
+            [
+                "Non-medicinal",
+                "ENTITY"
+            ],
+            [
+                "CBD",
+                "ENTITY"
+            ],
+            [
+                "oils",
+                "ENTITY"
+            ],
+            [
+                "CBD",
+                "ENTITY"
+            ],
+            [
+                "advertised",
+                "ENTITY"
+            ],
+            [
+                "alleged",
+                "ENTITY"
+            ],
+            [
+                "positive",
+                "ENTITY"
+            ],
+            [
+                "health effects",
+                "ENTITY"
+            ],
+            [
+                "foodstuffs",
+                "ENTITY"
+            ],
+            [
+                "cannabinoids",
+                "ENTITY"
+            ],
+            [
+                "Novel Food Regulation",
+                "ENTITY"
+            ],
+            [
+                "European Union",
+                "ENTITY"
+            ],
+            [
+                "EU",
+                "ENTITY"
+            ],
+            [
+                "products",
+                "ENTITY"
+            ],
+            [
+                "European market",
+                "ENTITY"
+            ],
+            [
+                "Permanent Senate",
+                "ENTITY"
+            ],
+            [
+                "Commission",
+                "ENTITY"
+            ],
+            [
+                "Food Safety",
+                "ENTITY"
+            ],
+            [
+                "SKLM",
+                "ENTITY"
+            ],
+            [
+                "German Research Foundation (DFG",
+                "ENTITY"
+            ],
+            [
+                "reviewed",
+                "ENTITY"
+            ],
+            [
+                "data",
+                "ENTITY"
+            ],
+            [
+                "adverse",
+                "ENTITY"
+            ],
+            [
+                "beneficial",
+                "ENTITY"
+            ],
+            [
+                "CBD",
+                "ENTITY"
+            ],
+            [
+                "dose range",
+                "ENTITY"
+            ],
+            [
+                "foods",
+                "ENTITY"
+            ],
+            [
+                "Increased",
+                "ENTITY"
+            ],
+            [
+                "liver",
+                "ENTITY"
+            ],
+            [
+                "healthy volunteers",
+                "ENTITY"
+            ],
+            [
+                "administration",
+                "ENTITY"
+            ],
+            [
+                "CBD/kg",
+                "ENTITY"
+            ],
+            [
+                "bw/day",
+                "ENTITY"
+            ],
+            [
+                "higher",
+                "ENTITY"
+            ],
+            [
+                "weeks",
+                "ENTITY"
+            ],
+            [
+                "lower doses",
+                "ENTITY"
+            ],
+            [
+                "adverse effect level",
+                "ENTITY"
+            ],
+            [
+                "NOAEL",
+                "ENTITY"
+            ],
+            [
+                "dose",
+                "ENTITY"
+            ],
+            [
+                "bw/day",
+                "ENTITY"
+            ],
+            [
+                "identified",
+                "ENTITY"
+            ],
+            [
+                "adverse effect level",
+                "ENTITY"
+            ],
+            [
+                "LOAEL",
+                "ENTITY"
+            ],
+            [
+                "CBD",
+                "ENTITY"
+            ],
+            [
+                "content",
+                "ENTITY"
+            ],
+            [
+                "dose",
+                "ENTITY"
+            ],
+            [
+                "recommendations",
+                "ENTITY"
+            ],
+            [
+                "CBD products",
+                "ENTITY"
+            ],
+            [
+                "market",
+                "ENTITY"
+            ],
+            [
+                "SKLM",
+                "ENTITY"
+            ],
+            [
+                "exposure",
+                "ENTITY"
+            ],
+            [
+                "scenarios",
+                "ENTITY"
+            ],
+            [
+                "LOAEL",
+                "ENTITY"
+            ],
+            [
+                "liver",
+                "ENTITY"
+            ],
+            [
+                "toxicity",
+                "ENTITY"
+            ],
+            [
+                "consumption",
+                "ENTITY"
+            ],
+            [
+                "drops",
+                "ENTITY"
+            ],
+            [
+                "oil",
+                "ENTITY"
+            ],
+            [
+                "CBD",
+                "ENTITY"
+            ],
+            [
+                "exceeded",
+                "ENTITY"
+            ],
+            [
+                "evaluation",
+                "ENTITY"
+            ],
+            [
+                "data",
+                "ENTITY"
+            ],
+            [
+                "beneficial",
+                "ENTITY"
+            ],
+            [
+                "health effects",
+                "ENTITY"
+            ],
+            [
+                "CBD",
+                "ENTITY"
+            ],
+            [
+                "dose",
+                "ENTITY"
+            ],
+            [
+                "LOAEL",
+                "ENTITY"
+            ],
+            [
+                "scientific evidence",
+                "ENTITY"
+            ],
+            [
+                "substantiate health",
+                "ENTITY"
+            ],
+            [
+                "physical performance",
+                "ENTITY"
+            ],
+            [
+                "cardiovascular",
+                "ENTITY"
+            ],
+            [
+                "immune",
+                "ENTITY"
+            ],
+            [
+                "nervous system",
+                "ENTITY"
+            ],
+            [
+                "anxiety",
+                "ENTITY"
+            ],
+            [
+                "relaxation",
+                "ENTITY"
+            ],
+            [
+                "stress",
+                "ENTITY"
+            ],
+            [
+                "sleep",
+                "ENTITY"
+            ],
+            [
+                "pain",
+                "ENTITY"
+            ],
+            [
+                "menstrual health",
+                "ENTITY"
+            ],
+            [
+                "SKLM",
+                "ENTITY"
+            ],
+            [
+                "consumption",
+                "ENTITY"
+            ],
+            [
+                "CBD-containing foods/food supplements",
+                "ENTITY"
+            ],
+            [
+                "substantiated",
+                "ENTITY"
+            ],
+            [
+                "health benefits",
+                "ENTITY"
+            ],
+            [
+                "health risk",
+                "ENTITY"
+            ],
+            [
+                "consumers",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Enhancing Gut Microbiome and Metabolic Health in Mice Through Administration of Presumptive Probiotic Strain <i>Lactiplantibacillus pentosus</i> PE11.",
+        "abstract": "<b>Background:</b> Over the past decade, probiotics have gained increasing recognition for their health benefits to the host. While most research has focused on the therapeutic effects of probiotics in the treatment of various diseases, recent years have seen a shift towards exploring their role in enhancing and supporting overall health. <b>Methods:</b> In this work, we have studied the effects of a novel potential probiotic strain, <i>Lactiplantibacillus pentosus</i> PE11, in healthy mice following a six-week dietary intervention. The assessment included monitoring the general health of the animals, biochemical analyses, profiling of the gut and fecal microbial communities, and gene expression analysis. <b>Results:</b> Our results showed that the administration of <i>Lactiplantibacillus pentosus</i> PE11 led to changes in the composition of the fecal microbiome, specifically an increase in the Firmicutes/Bacteroidetes ratio and in the relative abundance of the Lachnospiraceae, Ruminococcaceae, and Rikenellaceae families. Reduced <i>Tnf</i> expression and elevated <i>Zo1</i> expression were also observed in the cecum, pointing to anti-inflammatory properties and improved intestinal barrier integrity. Additionally, a significant reduction in triglycerides and alanine aminotransferase levels-within physiological ranges-was observed, along with a trend toward decreased total cholesterol levels. <b>Conclusions:</b> These findings suggest that in healthy mice, <i>Lactiplantibacillus pentosus</i> PE11 has the potential to positively influence gut microbiome structure and metabolism, thereby supporting improved overall health.",
+        "keywords": [
+            "Lactiplantibacillus pentosus PE11",
+            "alanine aminotransferase levels",
+            "gut microbiota",
+            "overall health",
+            "triglycerides levels"
+        ],
+        "authors": [
+            "Ioanna Farmakioti",
+            "Electra Stylianopoulou",
+            "Nikistratos Siskos",
+            "Evangelia Karagianni",
+            "Dionysios Kandylas",
+            "Andreas Rafail Vasileiou",
+            "Fragkiski Fragkiskatou",
+            "Paraskevi Somalou",
+            "Alexandra Tsaroucha",
+            "Petros Ypsilantis",
+            "Panayiotis Panas",
+            "Yiannis Kourkoutas",
+            "George Skavdis",
+            "Maria E Grigoriou"
+        ],
+        "journal": "Nutrients",
+        "doi": "10.3390/nu17030442",
+        "spacy_entities": [
+            [
+                "decade",
+                "ENTITY"
+            ],
+            [
+                "probiotics",
+                "ENTITY"
+            ],
+            [
+                "increasing",
+                "ENTITY"
+            ],
+            [
+                "recognition",
+                "ENTITY"
+            ],
+            [
+                "health benefits",
+                "ENTITY"
+            ],
+            [
+                "host",
+                "ENTITY"
+            ],
+            [
+                "research",
+                "ENTITY"
+            ],
+            [
+                "therapeutic effects",
+                "ENTITY"
+            ],
+            [
+                "probiotics",
+                "ENTITY"
+            ],
+            [
+                "treatment",
+                "ENTITY"
+            ],
+            [
+                "diseases",
+                "ENTITY"
+            ],
+            [
+                "years",
+                "ENTITY"
+            ],
+            [
+                "shift",
+                "ENTITY"
+            ],
+            [
+                "enhancing",
+                "ENTITY"
+            ],
+            [
+                "overall",
+                "ENTITY"
+            ],
+            [
+                "Methods:</b",
+                "ENTITY"
+            ],
+            [
+                "effects",
+                "ENTITY"
+            ],
+            [
+                "probiotic",
+                "ENTITY"
+            ],
+            [
+                "strain",
+                "ENTITY"
+            ],
+            [
+                "Lactiplantibacillus pentosus</i",
+                "ENTITY"
+            ],
+            [
+                "PE11",
+                "ENTITY"
+            ],
+            [
+                "healthy mice",
+                "ENTITY"
+            ],
+            [
+                "six-week",
+                "ENTITY"
+            ],
+            [
+                "dietary",
+                "ENTITY"
+            ],
+            [
+                "assessment",
+                "ENTITY"
+            ],
+            [
+                "monitoring",
+                "ENTITY"
+            ],
+            [
+                "animals",
+                "ENTITY"
+            ],
+            [
+                "biochemical analyses",
+                "ENTITY"
+            ],
+            [
+                "profiling",
+                "ENTITY"
+            ],
+            [
+                "gut",
+                "ENTITY"
+            ],
+            [
+                "fecal",
+                "ENTITY"
+            ],
+            [
+                "communities",
+                "ENTITY"
+            ],
+            [
+                "gene expression analysis",
+                "ENTITY"
+            ],
+            [
+                "results",
+                "ENTITY"
+            ],
+            [
+                "administration",
+                "ENTITY"
+            ],
+            [
+                "Lactiplantibacillus pentosus</i",
+                "ENTITY"
+            ],
+            [
+                "PE11",
+                "ENTITY"
+            ],
+            [
+                "changes",
+                "ENTITY"
+            ],
+            [
+                "composition",
+                "ENTITY"
+            ],
+            [
+                "fecal microbiome",
+                "ENTITY"
+            ],
+            [
+                "increase",
+                "ENTITY"
+            ],
+            [
+                "Firmicutes/Bacteroidetes",
+                "ENTITY"
+            ],
+            [
+                "ratio",
+                "ENTITY"
+            ],
+            [
+                "abundance",
+                "ENTITY"
+            ],
+            [
+                "Lachnospiraceae",
+                "ENTITY"
+            ],
+            [
+                "Ruminococcaceae",
+                "ENTITY"
+            ],
+            [
+                "Rikenellaceae",
+                "ENTITY"
+            ],
+            [
+                "families",
+                "ENTITY"
+            ],
+            [
+                "Reduced",
+                "ENTITY"
+            ],
+            [
+                "Tnf</i",
+                "ENTITY"
+            ],
+            [
+                "expression",
+                "ENTITY"
+            ],
+            [
+                "elevated",
+                "ENTITY"
+            ],
+            [
+                "Zo1</i>",
+                "ENTITY"
+            ],
+            [
+                "expression",
+                "ENTITY"
+            ],
+            [
+                "cecum",
+                "ENTITY"
+            ],
+            [
+                "anti-inflammatory",
+                "ENTITY"
+            ],
+            [
+                "intestinal barrier",
+                "ENTITY"
+            ],
+            [
+                "integrity",
+                "ENTITY"
+            ],
+            [
+                "reduction",
+                "ENTITY"
+            ],
+            [
+                "triglycerides",
+                "ENTITY"
+            ],
+            [
+                "alanine aminotransferase",
+                "ENTITY"
+            ],
+            [
+                "levels-within",
+                "ENTITY"
+            ],
+            [
+                "decreased",
+                "ENTITY"
+            ],
+            [
+                "total cholesterol",
+                "ENTITY"
+            ],
+            [
+                "Conclusions:</b",
+                "ENTITY"
+            ],
+            [
+                "findings",
+                "ENTITY"
+            ],
+            [
+                "healthy",
+                "ENTITY"
+            ],
+            [
+                "mice",
+                "ENTITY"
+            ],
+            [
+                "Lactiplantibacillus pentosus</i",
+                "ENTITY"
+            ],
+            [
+                "PE11",
+                "ENTITY"
+            ],
+            [
+                "positively",
+                "ENTITY"
+            ],
+            [
+                "influence",
+                "ENTITY"
+            ],
+            [
+                "gut microbiome",
+                "ENTITY"
+            ],
+            [
+                "structure",
+                "ENTITY"
+            ],
+            [
+                "metabolism",
+                "ENTITY"
+            ],
+            [
+                "improved",
+                "ENTITY"
+            ],
+            [
+                "overall health",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Lactobacillomics as a new notion in lactic acid bacteria research through omics integration.",
+        "abstract": "Omics technologies are a set of disciplines that analyze large-scale molecular data to understand biological systems in a holistic way. These technologies aim to reveal the structure, functions and interactions of organisms by studying processes at many levels of biomolecules, from the genome to metabolism. Lactobacillomics is introduced as an interdisciplinary field that integrates multiple \"omics\" technologies-including genomics, transcriptomics, proteomics, metabolomics, and metagenomics- to provide a comprehensive insight into \"lactic acid bacteria\" species. Lactobacillomics aims to elucidate the genetic, metabolic, and functional characteristics of lactic acid bacteria (LAB) species, providing insights into the mechanisms underlying their probiotic effects and contributions to the host microbiome. By analyzing genomes and metabolic pathways, researchers can identify specific genes responsible for health-promoting functions and desirable fermentation characteristics, which can guide the development of targeted probiotic strains with optimized health benefits. The integration of these omics data allows facilitating the discovery of biomarkers for health and disease states, the development of new probiotics tailored to specific populations or health conditions, and the optimization of fermentation processes to enhance the safety, flavor, and nutritional profile of fermented foods. A comprehensive review and bibliometric analysis were conducted to provide an overview of this promising field between 2005 and 2025 by examining Web of Science Core Collection data. Research results reveal trending topics, future perspectives, and key areas of growth within lactic acid bacteria (LAB) studies, particularly as they intersect with omics technologies.",
+        "keywords": [
+            "LAB",
+            "Lactic acid bacteria",
+            "Lactobacillomics",
+            "Omics",
+            "Probiotics"
+        ],
+        "authors": [
+            "Özge Kahraman Ilıkkan"
+        ],
+        "journal": "World journal of microbiology & biotechnology",
+        "doi": "10.1007/s11274-025-04285-y",
+        "spacy_entities": [
+            [
+                "Omics technologies",
+                "ENTITY"
+            ],
+            [
+                "disciplines",
+                "ENTITY"
+            ],
+            [
+                "large-scale",
+                "ENTITY"
+            ],
+            [
+                "molecular data",
+                "ENTITY"
+            ],
+            [
+                "biological systems",
+                "ENTITY"
+            ],
+            [
+                "holistic way",
+                "ENTITY"
+            ],
+            [
+                "technologies",
+                "ENTITY"
+            ],
+            [
+                "structure",
+                "ENTITY"
+            ],
+            [
+                "functions",
+                "ENTITY"
+            ],
+            [
+                "interactions",
+                "ENTITY"
+            ],
+            [
+                "organisms",
+                "ENTITY"
+            ],
+            [
+                "processes",
+                "ENTITY"
+            ],
+            [
+                "levels",
+                "ENTITY"
+            ],
+            [
+                "biomolecules",
+                "ENTITY"
+            ],
+            [
+                "genome",
+                "ENTITY"
+            ],
+            [
+                "metabolism",
+                "ENTITY"
+            ],
+            [
+                "Lactobacillomics",
+                "ENTITY"
+            ],
+            [
+                "interdisciplinary field",
+                "ENTITY"
+            ],
+            [
+                "integrates",
+                "ENTITY"
+            ],
+            [
+                "multiple",
+                "ENTITY"
+            ],
+            [
+                "technologies-including genomics",
+                "ENTITY"
+            ],
+            [
+                "transcriptomics",
+                "ENTITY"
+            ],
+            [
+                "proteomics",
+                "ENTITY"
+            ],
+            [
+                "metabolomics",
+                "ENTITY"
+            ],
+            [
+                "metagenomics- to",
+                "ENTITY"
+            ],
+            [
+                "comprehensive",
+                "ENTITY"
+            ],
+            [
+                "lactic acid bacteria",
+                "ENTITY"
+            ],
+            [
+                "species",
+                "ENTITY"
+            ],
+            [
+                "Lactobacillomics",
+                "ENTITY"
+            ],
+            [
+                "genetic",
+                "ENTITY"
+            ],
+            [
+                "metabolic",
+                "ENTITY"
+            ],
+            [
+                "functional",
+                "ENTITY"
+            ],
+            [
+                "lactic acid bacteria",
+                "ENTITY"
+            ],
+            [
+                "species",
+                "ENTITY"
+            ],
+            [
+                "mechanisms",
+                "ENTITY"
+            ],
+            [
+                "probiotic",
+                "ENTITY"
+            ],
+            [
+                "effects",
+                "ENTITY"
+            ],
+            [
+                "contributions",
+                "ENTITY"
+            ],
+            [
+                "host",
+                "ENTITY"
+            ],
+            [
+                "microbiome",
+                "ENTITY"
+            ],
+            [
+                "genomes",
+                "ENTITY"
+            ],
+            [
+                "metabolic pathways",
+                "ENTITY"
+            ],
+            [
+                "researchers",
+                "ENTITY"
+            ],
+            [
+                "genes",
+                "ENTITY"
+            ],
+            [
+                "health-promoting functions",
+                "ENTITY"
+            ],
+            [
+                "fermentation",
+                "ENTITY"
+            ],
+            [
+                "characteristics",
+                "ENTITY"
+            ],
+            [
+                "development",
+                "ENTITY"
+            ],
+            [
+                "targeted",
+                "ENTITY"
+            ],
+            [
+                "probiotic",
+                "ENTITY"
+            ],
+            [
+                "strains",
+                "ENTITY"
+            ],
+            [
+                "health benefits",
+                "ENTITY"
+            ],
+            [
+                "integration",
+                "ENTITY"
+            ],
+            [
+                "discovery",
+                "ENTITY"
+            ],
+            [
+                "biomarkers",
+                "ENTITY"
+            ],
+            [
+                "health",
+                "ENTITY"
+            ],
+            [
+                "disease states",
+                "ENTITY"
+            ],
+            [
+                "development",
+                "ENTITY"
+            ],
+            [
+                "probiotics",
+                "ENTITY"
+            ],
+            [
+                "populations",
+                "ENTITY"
+            ],
+            [
+                "health conditions",
+                "ENTITY"
+            ],
+            [
+                "optimization",
+                "ENTITY"
+            ],
+            [
+                "fermentation",
+                "ENTITY"
+            ],
+            [
+                "enhance",
+                "ENTITY"
+            ],
+            [
+                "safety",
+                "ENTITY"
+            ],
+            [
+                "flavor",
+                "ENTITY"
+            ],
+            [
+                "nutritional profile",
+                "ENTITY"
+            ],
+            [
+                "fermented foods",
+                "ENTITY"
+            ],
+            [
+                "comprehensive review",
+                "ENTITY"
+            ],
+            [
+                "bibliometric analysis",
+                "ENTITY"
+            ],
+            [
+                "Web of Science Core Collection",
+                "ENTITY"
+            ],
+            [
+                "data",
+                "ENTITY"
+            ],
+            [
+                "Research",
+                "ENTITY"
+            ],
+            [
+                "future",
+                "ENTITY"
+            ],
+            [
+                "perspectives",
+                "ENTITY"
+            ],
+            [
+                "growth",
+                "ENTITY"
+            ],
+            [
+                "lactic acid bacteria",
+                "ENTITY"
+            ],
+            [
+                "intersect",
+                "ENTITY"
+            ],
+            [
+                "omics technologies",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Wild Edible Flowers of Indian Himalayan Region, Their Traditional Uses and Potential Health Benefits: A Way Forward for Food and Nutritional Security.",
+        "abstract": "Wild edible flowers (WEFs) have long been an integral part of the diets and cultures of various communities worldwide. WEFs have untapped potential for use in human diets as food, supplements, or additives. These flowers contain compounds like flavonoids, carotenoids, nutrients, and minerals that contribute to their health-promoting properties. The Indian Himalayan Region (IHR), known for its biodiversity, hosts a wide array of underutilized WEFs with significant potential as food sources. Indigenous communities have long recognized the nutritional and medicinal benefits of these flowers, incorporating them into traditional medicine and culinary practices. However, systematic research on the nutritional and phytochemical properties of WEFs in this region remains limited. Therefore, gaining novel insights into the nutraceutical compounds of these flowers is crucial, highlighting their significance in promoting consumption. This review article focuses on the nutritional and phytochemical profiles of WEFs and their associated health benefits.The review also addresses the issue of toxicity in wildflowers, as well as various limitations on their consumption. Additionally, it explores the traditional and contemporary uses of these flowers in the IHR, highlighting the importance of preserving traditional knowledge and biodiversity.",
+        "keywords": [
+            "Bioactive compounds",
+            "Indian Himalayan Region",
+            "Nutraceutical",
+            "Wild edible flowers"
+        ],
+        "authors": [
+            "Shubham Samkaria",
+            "Poonam Kumari"
+        ],
+        "journal": "Plant foods for human nutrition (Dordrecht, Netherlands)",
+        "doi": "10.1007/s11130-025-01302-1",
+        "spacy_entities": [
+            [
+                "Wild edible flowers",
+                "ENTITY"
+            ],
+            [
+                "WEFs",
+                "ENTITY"
+            ],
+            [
+                "integral",
+                "ENTITY"
+            ],
+            [
+                "diets",
+                "ENTITY"
+            ],
+            [
+                "cultures",
+                "ENTITY"
+            ],
+            [
+                "communities",
+                "ENTITY"
+            ],
+            [
+                "worldwide",
+                "ENTITY"
+            ],
+            [
+                "WEFs",
+                "ENTITY"
+            ],
+            [
+                "potential",
+                "ENTITY"
+            ],
+            [
+                "human",
+                "ENTITY"
+            ],
+            [
+                "diets",
+                "ENTITY"
+            ],
+            [
+                "food",
+                "ENTITY"
+            ],
+            [
+                "supplements",
+                "ENTITY"
+            ],
+            [
+                "additives",
+                "ENTITY"
+            ],
+            [
+                "flowers",
+                "ENTITY"
+            ],
+            [
+                "compounds",
+                "ENTITY"
+            ],
+            [
+                "flavonoids",
+                "ENTITY"
+            ],
+            [
+                "carotenoids",
+                "ENTITY"
+            ],
+            [
+                "nutrients",
+                "ENTITY"
+            ],
+            [
+                "minerals",
+                "ENTITY"
+            ],
+            [
+                "health-promoting",
+                "ENTITY"
+            ],
+            [
+                "properties",
+                "ENTITY"
+            ],
+            [
+                "Indian Himalayan Region",
+                "ENTITY"
+            ],
+            [
+                "IHR",
+                "ENTITY"
+            ],
+            [
+                "biodiversity",
+                "ENTITY"
+            ],
+            [
+                "hosts",
+                "ENTITY"
+            ],
+            [
+                "underutilized",
+                "ENTITY"
+            ],
+            [
+                "WEFs",
+                "ENTITY"
+            ],
+            [
+                "potential",
+                "ENTITY"
+            ],
+            [
+                "food",
+                "ENTITY"
+            ],
+            [
+                "sources",
+                "ENTITY"
+            ],
+            [
+                "Indigenous",
+                "ENTITY"
+            ],
+            [
+                "communities",
+                "ENTITY"
+            ],
+            [
+                "nutritional",
+                "ENTITY"
+            ],
+            [
+                "medicinal benefits",
+                "ENTITY"
+            ],
+            [
+                "flowers",
+                "ENTITY"
+            ],
+            [
+                "traditional medicine",
+                "ENTITY"
+            ],
+            [
+                "culinary practices",
+                "ENTITY"
+            ],
+            [
+                "systematic research",
+                "ENTITY"
+            ],
+            [
+                "nutritional",
+                "ENTITY"
+            ],
+            [
+                "phytochemical properties",
+                "ENTITY"
+            ],
+            [
+                "WEFs",
+                "ENTITY"
+            ],
+            [
+                "region",
+                "ENTITY"
+            ],
+            [
+                "nutraceutical compounds",
+                "ENTITY"
+            ],
+            [
+                "flowers",
+                "ENTITY"
+            ],
+            [
+                "significance",
+                "ENTITY"
+            ],
+            [
+                "promoting",
+                "ENTITY"
+            ],
+            [
+                "consumption",
+                "ENTITY"
+            ],
+            [
+                "nutritional",
+                "ENTITY"
+            ],
+            [
+                "phytochemical profiles",
+                "ENTITY"
+            ],
+            [
+                "WEFs",
+                "ENTITY"
+            ],
+            [
+                "health benefits",
+                "ENTITY"
+            ],
+            [
+                "review",
+                "ENTITY"
+            ],
+            [
+                "issue",
+                "ENTITY"
+            ],
+            [
+                "toxicity",
+                "ENTITY"
+            ],
+            [
+                "wildflowers",
+                "ENTITY"
+            ],
+            [
+                "limitations",
+                "ENTITY"
+            ],
+            [
+                "consumption",
+                "ENTITY"
+            ],
+            [
+                "traditional",
+                "ENTITY"
+            ],
+            [
+                "contemporary",
+                "ENTITY"
+            ],
+            [
+                "flowers",
+                "ENTITY"
+            ],
+            [
+                "IHR",
+                "ENTITY"
+            ],
+            [
+                "preserving",
+                "ENTITY"
+            ],
+            [
+                "traditional",
+                "ENTITY"
+            ],
+            [
+                "knowledge",
+                "ENTITY"
+            ],
+            [
+                "biodiversity",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Personalizing Dietary Polyphenols for Health Maintenance and Disease Management: A Nutrigenetic Approach.",
+        "abstract": "This literature review provides examples of the influence of certain genetic variants on health outcomes after dietary polyphenol consumption or supplementation. Available evidence is organized according to the major classes of polyphenols (flavonoids, phenolic acids, stilbenes, lignans, and tannins) and their derived subgroups. Nutrigenetic studies have identified mainly single nucleotide polymorphisms located within genes involved in the biotransformation of phenolic acids, stilbenes, lignans and several flavonoid molecules. These genetic variants may affect polyphenol metabolism rates and related predisposition to chronic non-communicable diseases. Moreover, differential cardiometabolic outcomes upon polyphenol supplementation as dietary sources or nutraceuticals have been modulated by specific genotypes. Although current evidence is still limited, growing gene-polyphenol interactions are contributing to systematically elucidate the biological functions of polyphenols; determine individual risk phenotypes to specific diseases or particular responses upon polyphenol exposure; and facilitate the prescription of personalized genotype-based doses of dietary polyphenols to optimize related health benefits. Additionally, the integration of genetics with other omics insights (epigenomics, transcriptomics, metagenomics, and metabolomics) trough biological systems and high-dimensional data analyses and interpretation may provide a more comprehensive understanding of polyphenol metabolism for precision nutrition applications in health and disease.",
+        "keywords": [
+            "Genetics",
+            "Nutrigenetics",
+            "Polymorphism",
+            "Polyphenols",
+            "Precision nutrition"
+        ],
+        "authors": [
+            "Omar Ramos-Lopez"
+        ],
+        "journal": "Current nutrition reports",
+        "doi": "10.1007/s13668-025-00620-9",
+        "spacy_entities": [
+            [
+                "literature review",
+                "ENTITY"
+            ],
+            [
+                "influence",
+                "ENTITY"
+            ],
+            [
+                "genetic variants",
+                "ENTITY"
+            ],
+            [
+                "health outcomes",
+                "ENTITY"
+            ],
+            [
+                "dietary",
+                "ENTITY"
+            ],
+            [
+                "supplementation",
+                "ENTITY"
+            ],
+            [
+                "evidence",
+                "ENTITY"
+            ],
+            [
+                "organized",
+                "ENTITY"
+            ],
+            [
+                "classes",
+                "ENTITY"
+            ],
+            [
+                "polyphenols",
+                "ENTITY"
+            ],
+            [
+                "flavonoids",
+                "ENTITY"
+            ],
+            [
+                "phenolic acids",
+                "ENTITY"
+            ],
+            [
+                "stilbenes",
+                "ENTITY"
+            ],
+            [
+                "lignans",
+                "ENTITY"
+            ],
+            [
+                "tannins",
+                "ENTITY"
+            ],
+            [
+                "subgroups",
+                "ENTITY"
+            ],
+            [
+                "Nutrigenetic",
+                "ENTITY"
+            ],
+            [
+                "single nucleotide polymorphisms",
+                "ENTITY"
+            ],
+            [
+                "genes",
+                "ENTITY"
+            ],
+            [
+                "biotransformation",
+                "ENTITY"
+            ],
+            [
+                "phenolic acids",
+                "ENTITY"
+            ],
+            [
+                "stilbenes",
+                "ENTITY"
+            ],
+            [
+                "lignans",
+                "ENTITY"
+            ],
+            [
+                "flavonoid molecules",
+                "ENTITY"
+            ],
+            [
+                "genetic variants",
+                "ENTITY"
+            ],
+            [
+                "polyphenol metabolism",
+                "ENTITY"
+            ],
+            [
+                "rates",
+                "ENTITY"
+            ],
+            [
+                "predisposition",
+                "ENTITY"
+            ],
+            [
+                "chronic non-communicable diseases",
+                "ENTITY"
+            ],
+            [
+                "cardiometabolic",
+                "ENTITY"
+            ],
+            [
+                "outcomes",
+                "ENTITY"
+            ],
+            [
+                "polyphenol supplementation",
+                "ENTITY"
+            ],
+            [
+                "dietary",
+                "ENTITY"
+            ],
+            [
+                "sources",
+                "ENTITY"
+            ],
+            [
+                "nutraceuticals",
+                "ENTITY"
+            ],
+            [
+                "modulated",
+                "ENTITY"
+            ],
+            [
+                "genotypes",
+                "ENTITY"
+            ],
+            [
+                "evidence",
+                "ENTITY"
+            ],
+            [
+                "gene-polyphenol interactions",
+                "ENTITY"
+            ],
+            [
+                "systematically",
+                "ENTITY"
+            ],
+            [
+                "biological functions",
+                "ENTITY"
+            ],
+            [
+                "polyphenols",
+                "ENTITY"
+            ],
+            [
+                "risk",
+                "ENTITY"
+            ],
+            [
+                "phenotypes",
+                "ENTITY"
+            ],
+            [
+                "diseases",
+                "ENTITY"
+            ],
+            [
+                "responses",
+                "ENTITY"
+            ],
+            [
+                "polyphenol exposure",
+                "ENTITY"
+            ],
+            [
+                "prescription",
+                "ENTITY"
+            ],
+            [
+                "personalized",
+                "ENTITY"
+            ],
+            [
+                "genotype-based doses",
+                "ENTITY"
+            ],
+            [
+                "dietary polyphenols",
+                "ENTITY"
+            ],
+            [
+                "optimize",
+                "ENTITY"
+            ],
+            [
+                "health benefits",
+                "ENTITY"
+            ],
+            [
+                "integration",
+                "ENTITY"
+            ],
+            [
+                "genetics",
+                "ENTITY"
+            ],
+            [
+                "epigenomics",
+                "ENTITY"
+            ],
+            [
+                "transcriptomics",
+                "ENTITY"
+            ],
+            [
+                "metagenomics",
+                "ENTITY"
+            ],
+            [
+                "metabolomics",
+                "ENTITY"
+            ],
+            [
+                "biological systems",
+                "ENTITY"
+            ],
+            [
+                "high-dimensional data analyses",
+                "ENTITY"
+            ],
+            [
+                "interpretation",
+                "ENTITY"
+            ],
+            [
+                "comprehensive",
+                "ENTITY"
+            ],
+            [
+                "polyphenol metabolism",
+                "ENTITY"
+            ],
+            [
+                "precision",
+                "ENTITY"
+            ],
+            [
+                "health",
+                "ENTITY"
+            ],
+            [
+                "disease",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Harnessing Sacha Inchi By-Products: Innovations in Functional Food Development.",
+        "abstract": "Sacha inchi (Plukenetia volubilis L.), native to the Amazon rainforest, is widely known for its oil-rich seeds. Its by-products, particularly the press cake, husks, and shells left after oil extraction, have significant nutritional and functional potential. These by-products contain high levels of proteins, dietary fiber, and bioactive compounds that can be repurposed to develop functional foods, nutraceuticals, and dietary supplements. This review article provides a detailed overview of the composition of sacha inchi by-products, recent findings on optimizing extraction processes for proteins, bioactive peptides, and antioxidant compounds, and product innovations using sacha inchi residues. It highlights the health benefits of consuming these products, such as functional bakery items and plant-based beverages with high sensory acceptance, protein hydrolysates with antioxidant and anti-inflammatory properties, beneficial effects on gut microbiota, and oligosaccharides with prebiotic properties, positioning sacha inchi by-products as key ingredients for developing plant-based nutraceutical and functional products. Additionally, the article emphasizes the potential of these by-products to contribute to a circular economy, reduce waste, and align with global efforts to achieve Sustainable Development Goals (SDGs) related to health, sustainable production, and environmental impact.",
+        "keywords": [
+            "By-products",
+            "Circular economy",
+            "Plant-based foods",
+            "Sacha inchi",
+            "Sustainable development goals (SDGs)"
+        ],
+        "authors": [
+            "Jenny-Del-Carmen Valdez-Arana",
+            "Lady Cabrera-de-la-Cruz",
+            "Julio Vidaurre-Ruiz"
+        ],
+        "journal": "Plant foods for human nutrition (Dordrecht, Netherlands)",
+        "doi": "10.1007/s11130-024-01287-3",
+        "spacy_entities": [
+            [
+                "Sacha inchi",
+                "ENTITY"
+            ],
+            [
+                "Plukenetia volubilis L.",
+                "ENTITY"
+            ],
+            [
+                "native",
+                "ENTITY"
+            ],
+            [
+                "Amazon",
+                "ENTITY"
+            ],
+            [
+                "rainforest",
+                "ENTITY"
+            ],
+            [
+                "oil-rich",
+                "ENTITY"
+            ],
+            [
+                "seeds",
+                "ENTITY"
+            ],
+            [
+                "by-products",
+                "ENTITY"
+            ],
+            [
+                "press",
+                "ENTITY"
+            ],
+            [
+                "cake",
+                "ENTITY"
+            ],
+            [
+                "husks",
+                "ENTITY"
+            ],
+            [
+                "shells left",
+                "ENTITY"
+            ],
+            [
+                "oil",
+                "ENTITY"
+            ],
+            [
+                "extraction",
+                "ENTITY"
+            ],
+            [
+                "nutritional",
+                "ENTITY"
+            ],
+            [
+                "functional potential",
+                "ENTITY"
+            ],
+            [
+                "by-products",
+                "ENTITY"
+            ],
+            [
+                "proteins",
+                "ENTITY"
+            ],
+            [
+                "dietary fiber",
+                "ENTITY"
+            ],
+            [
+                "bioactive compounds",
+                "ENTITY"
+            ],
+            [
+                "functional foods",
+                "ENTITY"
+            ],
+            [
+                "nutraceuticals",
+                "ENTITY"
+            ],
+            [
+                "dietary supplements",
+                "ENTITY"
+            ],
+            [
+                "composition",
+                "ENTITY"
+            ],
+            [
+                "sacha inchi",
+                "ENTITY"
+            ],
+            [
+                "by-products",
+                "ENTITY"
+            ],
+            [
+                "findings",
+                "ENTITY"
+            ],
+            [
+                "extraction",
+                "ENTITY"
+            ],
+            [
+                "proteins",
+                "ENTITY"
+            ],
+            [
+                "bioactive peptides",
+                "ENTITY"
+            ],
+            [
+                "antioxidant compounds",
+                "ENTITY"
+            ],
+            [
+                "product innovations",
+                "ENTITY"
+            ],
+            [
+                "sacha inchi residues",
+                "ENTITY"
+            ],
+            [
+                "health benefits",
+                "ENTITY"
+            ],
+            [
+                "products",
+                "ENTITY"
+            ],
+            [
+                "functional bakery",
+                "ENTITY"
+            ],
+            [
+                "items",
+                "ENTITY"
+            ],
+            [
+                "plant-based beverages",
+                "ENTITY"
+            ],
+            [
+                "protein hydrolysates",
+                "ENTITY"
+            ],
+            [
+                "antioxidant",
+                "ENTITY"
+            ],
+            [
+                "anti-inflammatory properties",
+                "ENTITY"
+            ],
+            [
+                "beneficial",
+                "ENTITY"
+            ],
+            [
+                "gut microbiota",
+                "ENTITY"
+            ],
+            [
+                "oligosaccharides",
+                "ENTITY"
+            ],
+            [
+                "prebiotic properties",
+                "ENTITY"
+            ],
+            [
+                "sacha",
+                "ENTITY"
+            ],
+            [
+                "inchi",
+                "ENTITY"
+            ],
+            [
+                "by-products",
+                "ENTITY"
+            ],
+            [
+                "ingredients",
+                "ENTITY"
+            ],
+            [
+                "plant-based nutraceutical",
+                "ENTITY"
+            ],
+            [
+                "functional products",
+                "ENTITY"
+            ],
+            [
+                "potential",
+                "ENTITY"
+            ],
+            [
+                "by-products",
+                "ENTITY"
+            ],
+            [
+                "circular economy",
+                "ENTITY"
+            ],
+            [
+                "reduce",
+                "ENTITY"
+            ],
+            [
+                "waste",
+                "ENTITY"
+            ],
+            [
+                "align",
+                "ENTITY"
+            ],
+            [
+                "global",
+                "ENTITY"
+            ],
+            [
+                "Sustainable Development",
+                "ENTITY"
+            ],
+            [
+                "Goals",
+                "ENTITY"
+            ],
+            [
+                "SDGs",
+                "ENTITY"
+            ],
+            [
+                "health",
+                "ENTITY"
+            ],
+            [
+                "production",
+                "ENTITY"
+            ],
+            [
+                "environmental impact",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Conjugated linoleic acid in cheese: A review of the factors affecting its presence.",
+        "abstract": "Several health benefits of conjugated linoleic acid (CLA) have been documented. The present work is aimed to review data on the various factors affecting the CLA content in cheese of studies accomplished in the last decade and also indicating the factors that increase the CLA levels. The CLA content in cheese depends on CLA levels present in milk, since the lipids with the CLA are transferred from milk into the cheese. Feed types rich in α-linolenic and linoleic acids such as pasture grass, plant oils, cereals rich in oil, or fish oils can affect the CLA level in milk. In contrast to findings of previous reviews made in previous decade, which stated that the CLA levels in cheese were stable during ripening time, the present review reveals that certain lactic acid bacteria, that is, probiotic Lactiplantibacillus plantarum, Lactobacillus acidophilus, or Lacticaseibacillus casei, as well as Bifidobacterium lactis can increase the CLA levels in cheese by converting linoleic acid during ripening time. These bacteria starters increased the CLA levels by 1.19, 1.6, and 6.6 times as much as the control in Ovine model, Miniature, and Cheddar cheese, respectively. Lipid oxidation due to factors like fluorescent light or aerobic conditions can decrease the CLA levels during storage.",
+        "keywords": [
+            "cheese conjugated linoleic acid",
+            "cheese ripening",
+            "cheese storage",
+            "conjugated linoleic acid",
+            "lipid oxidation",
+            "milk conjugated linoleic acid"
+        ],
+        "authors": [
+            "Maria Govari",
+            "Patroklos Vareltzis"
+        ],
+        "journal": "Journal of food science",
+        "doi": "10.1111/1750-3841.70021",
+        "spacy_entities": [
+            [
+                "Several",
+                "ENTITY"
+            ],
+            [
+                "health benefits",
+                "ENTITY"
+            ],
+            [
+                "conjugated linoleic acid",
+                "ENTITY"
+            ],
+            [
+                "CLA",
+                "ENTITY"
+            ],
+            [
+                "documented",
+                "ENTITY"
+            ],
+            [
+                "work",
+                "ENTITY"
+            ],
+            [
+                "review",
+                "ENTITY"
+            ],
+            [
+                "data",
+                "ENTITY"
+            ],
+            [
+                "factors",
+                "ENTITY"
+            ],
+            [
+                "affecting",
+                "ENTITY"
+            ],
+            [
+                "CLA",
+                "ENTITY"
+            ],
+            [
+                "content",
+                "ENTITY"
+            ],
+            [
+                "cheese",
+                "ENTITY"
+            ],
+            [
+                "decade",
+                "ENTITY"
+            ],
+            [
+                "factors",
+                "ENTITY"
+            ],
+            [
+                "increase",
+                "ENTITY"
+            ],
+            [
+                "CLA",
+                "ENTITY"
+            ],
+            [
+                "levels",
+                "ENTITY"
+            ],
+            [
+                "CLA",
+                "ENTITY"
+            ],
+            [
+                "content",
+                "ENTITY"
+            ],
+            [
+                "cheese",
+                "ENTITY"
+            ],
+            [
+                "CLA",
+                "ENTITY"
+            ],
+            [
+                "levels",
+                "ENTITY"
+            ],
+            [
+                "milk",
+                "ENTITY"
+            ],
+            [
+                "lipids",
+                "ENTITY"
+            ],
+            [
+                "CLA",
+                "ENTITY"
+            ],
+            [
+                "transferred",
+                "ENTITY"
+            ],
+            [
+                "milk",
+                "ENTITY"
+            ],
+            [
+                "cheese",
+                "ENTITY"
+            ],
+            [
+                "Feed types",
+                "ENTITY"
+            ],
+            [
+                "α-linolenic",
+                "ENTITY"
+            ],
+            [
+                "linoleic acids",
+                "ENTITY"
+            ],
+            [
+                "pasture grass",
+                "ENTITY"
+            ],
+            [
+                "plant oils",
+                "ENTITY"
+            ],
+            [
+                "cereals",
+                "ENTITY"
+            ],
+            [
+                "oil",
+                "ENTITY"
+            ],
+            [
+                "fish oils",
+                "ENTITY"
+            ],
+            [
+                "CLA",
+                "ENTITY"
+            ],
+            [
+                "level",
+                "ENTITY"
+            ],
+            [
+                "milk",
+                "ENTITY"
+            ],
+            [
+                "findings",
+                "ENTITY"
+            ],
+            [
+                "reviews",
+                "ENTITY"
+            ],
+            [
+                "decade",
+                "ENTITY"
+            ],
+            [
+                "CLA",
+                "ENTITY"
+            ],
+            [
+                "levels",
+                "ENTITY"
+            ],
+            [
+                "cheese",
+                "ENTITY"
+            ],
+            [
+                "stable",
+                "ENTITY"
+            ],
+            [
+                "ripening",
+                "ENTITY"
+            ],
+            [
+                "time",
+                "ENTITY"
+            ],
+            [
+                "review",
+                "ENTITY"
+            ],
+            [
+                "lactic acid bacteria",
+                "ENTITY"
+            ],
+            [
+                "probiotic",
+                "ENTITY"
+            ],
+            [
+                "Lactiplantibacillus plantarum",
+                "ENTITY"
+            ],
+            [
+                "Lactobacillus acidophilus",
+                "ENTITY"
+            ],
+            [
+                "Lacticaseibacillus casei",
+                "ENTITY"
+            ],
+            [
+                "Bifidobacterium lactis",
+                "ENTITY"
+            ],
+            [
+                "increase",
+                "ENTITY"
+            ],
+            [
+                "CLA",
+                "ENTITY"
+            ],
+            [
+                "levels",
+                "ENTITY"
+            ],
+            [
+                "cheese",
+                "ENTITY"
+            ],
+            [
+                "linoleic acid",
+                "ENTITY"
+            ],
+            [
+                "ripening",
+                "ENTITY"
+            ],
+            [
+                "time",
+                "ENTITY"
+            ],
+            [
+                "bacteria",
+                "ENTITY"
+            ],
+            [
+                "starters",
+                "ENTITY"
+            ],
+            [
+                "increased",
+                "ENTITY"
+            ],
+            [
+                "CLA",
+                "ENTITY"
+            ],
+            [
+                "levels",
+                "ENTITY"
+            ],
+            [
+                "control",
+                "ENTITY"
+            ],
+            [
+                "Ovine model",
+                "ENTITY"
+            ],
+            [
+                "Miniature",
+                "ENTITY"
+            ],
+            [
+                "Cheddar cheese",
+                "ENTITY"
+            ],
+            [
+                "Lipid oxidation",
+                "ENTITY"
+            ],
+            [
+                "factors",
+                "ENTITY"
+            ],
+            [
+                "fluorescent light",
+                "ENTITY"
+            ],
+            [
+                "aerobic conditions",
+                "ENTITY"
+            ],
+            [
+                "decrease",
+                "ENTITY"
+            ],
+            [
+                "CLA",
+                "ENTITY"
+            ],
+            [
+                "levels",
+                "ENTITY"
+            ],
+            [
+                "storage",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Improving the selenium supply of vegans and omnivores with Brazil nut butter compared to a dietary supplement in a randomized controlled trial.",
+        "abstract": "A vegan diet is associated with health benefits but may also lead to inadequate intake of essential nutrients. Due to the lower selenium content in plant-based compared to animal-based foods, many vegans do not reach the recommended selenium intake in Europe. The only plant-based food with high selenium content is the Brazil nut, even though there is also a high variability. Therefore, we investigated the effectiveness of Brazil nut butter compared to a dietary supplement as selenium source to improve the selenium status of vegans and omnivores. 44 vegans and 42 omnivores were randomly assigned to one of three intervention groups, either receiving placebo or consuming additional 55 µg of selenium daily as Brazil nut butter or supplement for two weeks. Serum selenium concentrations, glutathione peroxidase 3 (GPX3), and selenoprotein P (SELENOP) were measured at baseline and after intervention. Additionally, dietary selenium intake was estimated using a five-day dietary protocol. The estimated selenium intake was significantly lower in vegans compared to omnivores and correlated with all three selenium biomarkers. Independent of the dietary pattern (vegan or omnivore), Brazil nut butter as well as supplement significantly increased serum selenium and SELENOP concentrations, while there were no changes in the placebo groups. Both interventions were equally effective in increasing selenium levels, but the upregulation of SELENOP was more pronounced in vegans than in omnivores. Brazil nuts are a plant-based source of selenium suitable for vegans and omnivores to improve their selenium status when consumed once in a while. Clinical trials registration number: NCT05814874, April 18 2023.",
+        "keywords": [
+            "Brazil nut",
+            "Selenium status",
+            "Selenium supplement",
+            "Veganism"
+        ],
+        "authors": [
+            "Rebecca Simon",
+            "Kristina Lossow",
+            "Denny Pellowski",
+            "Kristin Kipp",
+            "Michaela Achatz",
+            "Nicole Klasen",
+            "Tanja Schwerdtle",
+            "Christine Dawczynski",
+            "Anna P Kipp"
+        ],
+        "journal": "European journal of nutrition",
+        "doi": "10.1007/s00394-025-03587-z",
+        "spacy_entities": [
+            [
+                "A vegan diet",
+                "ENTITY"
+            ],
+            [
+                "associated with",
+                "ENTITY"
+            ],
+            [
+                "health benefits",
+                "ENTITY"
+            ],
+            [
+                "inadequate",
+                "ENTITY"
+            ],
+            [
+                "intake",
+                "ENTITY"
+            ],
+            [
+                "essential",
+                "ENTITY"
+            ],
+            [
+                "nutrients",
+                "ENTITY"
+            ],
+            [
+                "lower",
+                "ENTITY"
+            ],
+            [
+                "selenium",
+                "ENTITY"
+            ],
+            [
+                "content",
+                "ENTITY"
+            ],
+            [
+                "plant-based",
+                "ENTITY"
+            ],
+            [
+                "animal-based foods",
+                "ENTITY"
+            ],
+            [
+                "vegans",
+                "ENTITY"
+            ],
+            [
+                "recommended",
+                "ENTITY"
+            ],
+            [
+                "selenium",
+                "ENTITY"
+            ],
+            [
+                "intake",
+                "ENTITY"
+            ],
+            [
+                "Europe",
+                "ENTITY"
+            ],
+            [
+                "plant-based food",
+                "ENTITY"
+            ],
+            [
+                "high",
+                "ENTITY"
+            ],
+            [
+                "selenium",
+                "ENTITY"
+            ],
+            [
+                "content",
+                "ENTITY"
+            ],
+            [
+                "Brazil",
+                "ENTITY"
+            ],
+            [
+                "variability",
+                "ENTITY"
+            ],
+            [
+                "investigated",
+                "ENTITY"
+            ],
+            [
+                "effectiveness",
+                "ENTITY"
+            ],
+            [
+                "Brazil",
+                "ENTITY"
+            ],
+            [
+                "compared",
+                "ENTITY"
+            ],
+            [
+                "dietary supplement",
+                "ENTITY"
+            ],
+            [
+                "selenium",
+                "ENTITY"
+            ],
+            [
+                "source",
+                "ENTITY"
+            ],
+            [
+                "improve",
+                "ENTITY"
+            ],
+            [
+                "selenium",
+                "ENTITY"
+            ],
+            [
+                "vegans",
+                "ENTITY"
+            ],
+            [
+                "omnivores",
+                "ENTITY"
+            ],
+            [
+                "vegans",
+                "ENTITY"
+            ],
+            [
+                "omnivores",
+                "ENTITY"
+            ],
+            [
+                "intervention",
+                "ENTITY"
+            ],
+            [
+                "groups",
+                "ENTITY"
+            ],
+            [
+                "placebo",
+                "ENTITY"
+            ],
+            [
+                "selenium",
+                "ENTITY"
+            ],
+            [
+                "Brazil",
+                "ENTITY"
+            ],
+            [
+                "supplement",
+                "ENTITY"
+            ],
+            [
+                "weeks",
+                "ENTITY"
+            ],
+            [
+                "Serum selenium concentrations",
+                "ENTITY"
+            ],
+            [
+                "glutathione peroxidase 3",
+                "ENTITY"
+            ],
+            [
+                "GPX3",
+                "ENTITY"
+            ],
+            [
+                "selenoprotein P",
+                "ENTITY"
+            ],
+            [
+                "SELENOP",
+                "ENTITY"
+            ],
+            [
+                "measured",
+                "ENTITY"
+            ],
+            [
+                "baseline",
+                "ENTITY"
+            ],
+            [
+                "intervention",
+                "ENTITY"
+            ],
+            [
+                "dietary",
+                "ENTITY"
+            ],
+            [
+                "selenium intake",
+                "ENTITY"
+            ],
+            [
+                "estimated",
+                "ENTITY"
+            ],
+            [
+                "five-day dietary protocol",
+                "ENTITY"
+            ],
+            [
+                "estimated",
+                "ENTITY"
+            ],
+            [
+                "selenium intake",
+                "ENTITY"
+            ],
+            [
+                "vegans",
+                "ENTITY"
+            ],
+            [
+                "omnivores",
+                "ENTITY"
+            ],
+            [
+                "correlated",
+                "ENTITY"
+            ],
+            [
+                "selenium",
+                "ENTITY"
+            ],
+            [
+                "biomarkers",
+                "ENTITY"
+            ],
+            [
+                "Independent",
+                "ENTITY"
+            ],
+            [
+                "dietary pattern",
+                "ENTITY"
+            ],
+            [
+                "vegan",
+                "ENTITY"
+            ],
+            [
+                "omnivore",
+                "ENTITY"
+            ],
+            [
+                "Brazil",
+                "ENTITY"
+            ],
+            [
+                "supplement",
+                "ENTITY"
+            ],
+            [
+                "increased",
+                "ENTITY"
+            ],
+            [
+                "serum selenium",
+                "ENTITY"
+            ],
+            [
+                "SELENOP",
+                "ENTITY"
+            ],
+            [
+                "concentrations",
+                "ENTITY"
+            ],
+            [
+                "placebo",
+                "ENTITY"
+            ],
+            [
+                "groups",
+                "ENTITY"
+            ],
+            [
+                "interventions",
+                "ENTITY"
+            ],
+            [
+                "effective",
+                "ENTITY"
+            ],
+            [
+                "increasing",
+                "ENTITY"
+            ],
+            [
+                "selenium",
+                "ENTITY"
+            ],
+            [
+                "levels",
+                "ENTITY"
+            ],
+            [
+                "upregulation",
+                "ENTITY"
+            ],
+            [
+                "SELENOP",
+                "ENTITY"
+            ],
+            [
+                "vegans",
+                "ENTITY"
+            ],
+            [
+                "omnivores",
+                "ENTITY"
+            ],
+            [
+                "Brazil",
+                "ENTITY"
+            ],
+            [
+                "nuts",
+                "ENTITY"
+            ],
+            [
+                "plant-based",
+                "ENTITY"
+            ],
+            [
+                "selenium",
+                "ENTITY"
+            ],
+            [
+                "vegans",
+                "ENTITY"
+            ],
+            [
+                "omnivores",
+                "ENTITY"
+            ],
+            [
+                "selenium",
+                "ENTITY"
+            ],
+            [
+                "status",
+                "ENTITY"
+            ],
+            [
+                "consumed",
+                "ENTITY"
+            ],
+            [
+                "Clinical trials registration number",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Impact of Fermented Milk On Gut Microbiota And Human Health: A Comprehensive Review.",
+        "abstract": "The beneficial impact of gut microbiota on human health has encouraged studies on factors modulating it. Among the different factors, diet plays a vital role in this area. Many studies on animals and humans have been concerned with the effects of fermented milk products on gut microbiota and how they relate to health benefits. Yoghurt, kefir, Koumiss, and fermented kinds of milk made using different probiotic strains were tested for their capability to modulate gut microbiota. It is apparent that the microflora present in fermented milk, specifically probiotics, are capable of enduring the gastrointestinal tract's adverse conditions primarily through transit microorganisms. Meanwhile, they can alter the gut microbiota in several ways that benefit human health. The present article gives a comprehensive overview of the modulation of gut microbiota by consumption of fermented milk, particularly those containing probiotics, and their impact on human health.",
+        "keywords": [
+            "No Keywords"
+        ],
+        "authors": [
+            "Mohamed H Abd El-Salam",
+            "Safinaz El-Shibiny",
+            "Fayza Mohamed Assem",
+            "Gharieb S El-Sayyad",
+            "Yasmeen A Hasanien",
+            "Dounia Elfadil",
+            "Tarek Nour Soliman"
+        ],
+        "journal": "Current microbiology",
+        "doi": "10.1007/s00284-025-04061-z",
+        "spacy_entities": [
+            [
+                "impact",
+                "ENTITY"
+            ],
+            [
+                "gut microbiota",
+                "ENTITY"
+            ],
+            [
+                "human",
+                "ENTITY"
+            ],
+            [
+                "health",
+                "ENTITY"
+            ],
+            [
+                "studies",
+                "ENTITY"
+            ],
+            [
+                "factors",
+                "ENTITY"
+            ],
+            [
+                "factors",
+                "ENTITY"
+            ],
+            [
+                "diet",
+                "ENTITY"
+            ],
+            [
+                "area",
+                "ENTITY"
+            ],
+            [
+                "animals",
+                "ENTITY"
+            ],
+            [
+                "humans",
+                "ENTITY"
+            ],
+            [
+                "effects of",
+                "ENTITY"
+            ],
+            [
+                "fermented milk products",
+                "ENTITY"
+            ],
+            [
+                "gut microbiota",
+                "ENTITY"
+            ],
+            [
+                "health benefits",
+                "ENTITY"
+            ],
+            [
+                "Yoghurt",
+                "ENTITY"
+            ],
+            [
+                "kefir",
+                "ENTITY"
+            ],
+            [
+                "Koumiss",
+                "ENTITY"
+            ],
+            [
+                "milk",
+                "ENTITY"
+            ],
+            [
+                "probiotic",
+                "ENTITY"
+            ],
+            [
+                "strains",
+                "ENTITY"
+            ],
+            [
+                "tested",
+                "ENTITY"
+            ],
+            [
+                "capability",
+                "ENTITY"
+            ],
+            [
+                "gut microbiota",
+                "ENTITY"
+            ],
+            [
+                "microflora",
+                "ENTITY"
+            ],
+            [
+                "fermented milk",
+                "ENTITY"
+            ],
+            [
+                "probiotics",
+                "ENTITY"
+            ],
+            [
+                "gastrointestinal tract's",
+                "ENTITY"
+            ],
+            [
+                "adverse conditions",
+                "ENTITY"
+            ],
+            [
+                "transit microorganisms",
+                "ENTITY"
+            ],
+            [
+                "gut microbiota",
+                "ENTITY"
+            ],
+            [
+                "human",
+                "ENTITY"
+            ],
+            [
+                "health",
+                "ENTITY"
+            ],
+            [
+                "comprehensive",
+                "ENTITY"
+            ],
+            [
+                "modulation",
+                "ENTITY"
+            ],
+            [
+                "gut microbiota",
+                "ENTITY"
+            ],
+            [
+                "consumption",
+                "ENTITY"
+            ],
+            [
+                "fermented milk",
+                "ENTITY"
+            ],
+            [
+                "probiotics",
+                "ENTITY"
+            ],
+            [
+                "impact",
+                "ENTITY"
+            ],
+            [
+                "human",
+                "ENTITY"
+            ],
+            [
+                "health",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Microfluidic design and preparation of hydrogel microcapsules of Mesona chinensis polysaccharide: Characterization, pH-responsive behavior and gastrointestinal protection for Lactobacillus plantarum.",
+        "abstract": "Probiotics have brought many health benefits to the human body. However, their viability during gastrointestinal transit is a concern. Therefore, this study selected Mesona chinensis polysaccharide (MCP), an edible natural polysaccharide, and constructed a new type of microcapsules using MCP as raw material to prepare cross-linked calcium ions through a microfluidic system as an ideal intestinal targeting carrier to achieve precise delivery of bioactive substances. The results showed that the Mesona chinensis polysaccharide microcapsules (MCM) had high monodispersity, stable morphology and uniform particle size (737.25 ± 10.40-511.65 ± 10.99 μm) under various parameters, and had good pH-response ability in simulated body fluids. In vivo imaging demonstrated the targeting and protective effects of the microcapsules. Compared to the free group, MCM had a longer retention time in the intestine. After encapsulating Lactobacillus plantarum, MCM formed a dense protective layer on the outer layer in simulated gastric fluid, which improved the survival and storage stability of Lactobacillus plantarum. It can be reasonably proposed that MCM represents a viable alternative as a carrier with gastric acid protection and intestinal targeting. This has the potential to expand the application of MCP in functional food and medicine, while also facilitating the future delivery of bioactive substances.",
+        "keywords": [
+            "Mesona chinensis polysaccharide",
+            "Microcapsule",
+            "Microfluidic"
+        ],
+        "authors": [
+            "Pengkun Lei",
+            "Lin Luo",
+            "Peng Guo",
+            "Qin Yang",
+            "Wen Shi",
+            "Qiaolin Yang",
+            "Ya Tian",
+            "Yuchun Liu",
+            "Rui Zeng",
+            "Yunxia Li",
+            "Chen Zhang",
+            "Yan Qu"
+        ],
+        "journal": "International journal of biological macromolecules",
+        "doi": "10.1016/j.ijbiomac.2025.140446",
+        "spacy_entities": [
+            [
+                "Probiotics",
+                "ENTITY"
+            ],
+            [
+                "health benefits",
+                "ENTITY"
+            ],
+            [
+                "human",
+                "ENTITY"
+            ],
+            [
+                "body",
+                "ENTITY"
+            ],
+            [
+                "viability",
+                "ENTITY"
+            ],
+            [
+                "gastrointestinal transit",
+                "ENTITY"
+            ],
+            [
+                "study",
+                "ENTITY"
+            ],
+            [
+                "Mesona chinensis polysaccharide",
+                "ENTITY"
+            ],
+            [
+                "MCP",
+                "ENTITY"
+            ],
+            [
+                "edible natural polysaccharide",
+                "ENTITY"
+            ],
+            [
+                "microcapsules",
+                "ENTITY"
+            ],
+            [
+                "MCP",
+                "ENTITY"
+            ],
+            [
+                "raw",
+                "ENTITY"
+            ],
+            [
+                "cross-linked",
+                "ENTITY"
+            ],
+            [
+                "calcium ions",
+                "ENTITY"
+            ],
+            [
+                "microfluidic system",
+                "ENTITY"
+            ],
+            [
+                "ideal",
+                "ENTITY"
+            ],
+            [
+                "intestinal",
+                "ENTITY"
+            ],
+            [
+                "targeting",
+                "ENTITY"
+            ],
+            [
+                "carrier",
+                "ENTITY"
+            ],
+            [
+                "bioactive substances",
+                "ENTITY"
+            ],
+            [
+                "results",
+                "ENTITY"
+            ],
+            [
+                "Mesona chinensis polysaccharide microcapsules",
+                "ENTITY"
+            ],
+            [
+                "MCM",
+                "ENTITY"
+            ],
+            [
+                "monodispersity",
+                "ENTITY"
+            ],
+            [
+                "stable",
+                "ENTITY"
+            ],
+            [
+                "morphology",
+                "ENTITY"
+            ],
+            [
+                "uniform particle size",
+                "ENTITY"
+            ],
+            [
+                "parameters",
+                "ENTITY"
+            ],
+            [
+                "pH-response ability",
+                "ENTITY"
+            ],
+            [
+                "simulated body fluids",
+                "ENTITY"
+            ],
+            [
+                "In vivo",
+                "ENTITY"
+            ],
+            [
+                "imaging",
+                "ENTITY"
+            ],
+            [
+                "targeting",
+                "ENTITY"
+            ],
+            [
+                "protective effects",
+                "ENTITY"
+            ],
+            [
+                "microcapsules",
+                "ENTITY"
+            ],
+            [
+                "free group",
+                "ENTITY"
+            ],
+            [
+                "MCM",
+                "ENTITY"
+            ],
+            [
+                "intestine",
+                "ENTITY"
+            ],
+            [
+                "encapsulating",
+                "ENTITY"
+            ],
+            [
+                "Lactobacillus plantarum",
+                "ENTITY"
+            ],
+            [
+                "MCM",
+                "ENTITY"
+            ],
+            [
+                "dense",
+                "ENTITY"
+            ],
+            [
+                "outer layer",
+                "ENTITY"
+            ],
+            [
+                "simulated gastric fluid",
+                "ENTITY"
+            ],
+            [
+                "improved",
+                "ENTITY"
+            ],
+            [
+                "survival",
+                "ENTITY"
+            ],
+            [
+                "storage stability",
+                "ENTITY"
+            ],
+            [
+                "Lactobacillus plantarum",
+                "ENTITY"
+            ],
+            [
+                "MCM",
+                "ENTITY"
+            ],
+            [
+                "carrier",
+                "ENTITY"
+            ],
+            [
+                "gastric acid",
+                "ENTITY"
+            ],
+            [
+                "protection",
+                "ENTITY"
+            ],
+            [
+                "intestinal",
+                "ENTITY"
+            ],
+            [
+                "targeting",
+                "ENTITY"
+            ],
+            [
+                "potential",
+                "ENTITY"
+            ],
+            [
+                "application",
+                "ENTITY"
+            ],
+            [
+                "MCP",
+                "ENTITY"
+            ],
+            [
+                "functional food",
+                "ENTITY"
+            ],
+            [
+                "medicine",
+                "ENTITY"
+            ],
+            [
+                "delivery",
+                "ENTITY"
+            ],
+            [
+                "bioactive substances",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [
+                "Probiotics"
+            ],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Assessment of Opuntia ficus-indica supplementation on enhancing antioxidant levels.",
+        "abstract": "Opuntia ficus-indica (OFi) is a major fruit source prevalent in semiarid and arid regions across various countries worldwide. It is widely recognised for its potential health benefits; however, most studies investigating its effects have been limited to pre-clinical models, highlighting the need for further validation through clinical trials. This study aimed to evaluate the effectiveness of OFi supplementation in enhancing antioxidant levels. Fifty healthy participants, aged 18 years and older, including males and females, received a daily OFi supplement of 1500 mg for 3 months. These findings revealed a significant 48.1% increase in salivary total antioxidant capacity (TAC) (P < 0.001), indicating improved antioxidant activity. Simultaneously, oxidative stress biomarkers showed substantial reductions: malondialdehyde (MDA) decreased by 28.3%, nitrotyrosine (3-NT) decreased by 51.5%, and 8-hydroxy-2'-deoxyguanosine (8-OHdG) decreased by 59.8% (P < 0.001). Furthermore, participants reported a 20.1% improvement (P < 0.001) in Visual Analogue Scales (VAS), reflecting a notable enhancement in overall well-being. In conclusion, OFi exhibited promising efficacy in elevating antioxidant levels and mitigating oxidative stress. These findings suggest its potential as an adjuvant therapy for managing chronic conditions associated with oxidative stress.",
+        "keywords": [
+            "Opuntia ficus-indica",
+            "Antioxidant",
+            "Clinical trial",
+            "Reactive oxygen species (ROS)",
+            "Supplement"
+        ],
+        "authors": [
+            "Rahela Zaman",
+            "Eugenie Sin Sing Tan",
+            "Normina Ahmad Bustami",
+            "Farahnaz Amini",
+            "Marjan Sadat Seghayat",
+            "Yu Bin Ho",
+            "Chung Keat Tan"
+        ],
+        "journal": "Scientific reports",
+        "doi": "10.1038/s41598-025-87680-7",
+        "spacy_entities": [
+            [
+                "Opuntia ficus-indica",
+                "ENTITY"
+            ],
+            [
+                "OFi",
+                "ENTITY"
+            ],
+            [
+                "fruit",
+                "ENTITY"
+            ],
+            [
+                "semiarid",
+                "ENTITY"
+            ],
+            [
+                "arid regions",
+                "ENTITY"
+            ],
+            [
+                "countries",
+                "ENTITY"
+            ],
+            [
+                "potential",
+                "ENTITY"
+            ],
+            [
+                "health benefits",
+                "ENTITY"
+            ],
+            [
+                "studies",
+                "ENTITY"
+            ],
+            [
+                "investigating",
+                "ENTITY"
+            ],
+            [
+                "effects",
+                "ENTITY"
+            ],
+            [
+                "pre-clinical models",
+                "ENTITY"
+            ],
+            [
+                "validation",
+                "ENTITY"
+            ],
+            [
+                "clinical trials",
+                "ENTITY"
+            ],
+            [
+                "study",
+                "ENTITY"
+            ],
+            [
+                "evaluate",
+                "ENTITY"
+            ],
+            [
+                "effectiveness",
+                "ENTITY"
+            ],
+            [
+                "OFi",
+                "ENTITY"
+            ],
+            [
+                "supplementation",
+                "ENTITY"
+            ],
+            [
+                "antioxidant",
+                "ENTITY"
+            ],
+            [
+                "healthy",
+                "ENTITY"
+            ],
+            [
+                "participants",
+                "ENTITY"
+            ],
+            [
+                "aged",
+                "ENTITY"
+            ],
+            [
+                "years",
+                "ENTITY"
+            ],
+            [
+                "older",
+                "ENTITY"
+            ],
+            [
+                "males",
+                "ENTITY"
+            ],
+            [
+                "females",
+                "ENTITY"
+            ],
+            [
+                "daily",
+                "ENTITY"
+            ],
+            [
+                "OFi",
+                "ENTITY"
+            ],
+            [
+                "months",
+                "ENTITY"
+            ],
+            [
+                "findings",
+                "ENTITY"
+            ],
+            [
+                "significant",
+                "ENTITY"
+            ],
+            [
+                "increase",
+                "ENTITY"
+            ],
+            [
+                "salivary",
+                "ENTITY"
+            ],
+            [
+                "TAC",
+                "ENTITY"
+            ],
+            [
+                "antioxidant activity",
+                "ENTITY"
+            ],
+            [
+                "oxidative stress",
+                "ENTITY"
+            ],
+            [
+                "biomarkers",
+                "ENTITY"
+            ],
+            [
+                "reductions",
+                "ENTITY"
+            ],
+            [
+                "malondialdehyde",
+                "ENTITY"
+            ],
+            [
+                "MDA",
+                "ENTITY"
+            ],
+            [
+                "decreased",
+                "ENTITY"
+            ],
+            [
+                "nitrotyrosine",
+                "ENTITY"
+            ],
+            [
+                "3-NT",
+                "ENTITY"
+            ],
+            [
+                "decreased",
+                "ENTITY"
+            ],
+            [
+                "8-hydroxy-2'-deoxyguanosine",
+                "ENTITY"
+            ],
+            [
+                "decreased",
+                "ENTITY"
+            ],
+            [
+                "participants",
+                "ENTITY"
+            ],
+            [
+                "improvement",
+                "ENTITY"
+            ],
+            [
+                "Visual Analogue Scales",
+                "ENTITY"
+            ],
+            [
+                "VAS",
+                "ENTITY"
+            ],
+            [
+                "enhancement",
+                "ENTITY"
+            ],
+            [
+                "OFi",
+                "ENTITY"
+            ],
+            [
+                "efficacy",
+                "ENTITY"
+            ],
+            [
+                "antioxidant levels",
+                "ENTITY"
+            ],
+            [
+                "mitigating",
+                "ENTITY"
+            ],
+            [
+                "oxidative stress",
+                "ENTITY"
+            ],
+            [
+                "findings",
+                "ENTITY"
+            ],
+            [
+                "potential",
+                "ENTITY"
+            ],
+            [
+                "adjuvant therapy",
+                "ENTITY"
+            ],
+            [
+                "managing",
+                "ENTITY"
+            ],
+            [
+                "chronic conditions",
+                "ENTITY"
+            ],
+            [
+                "associated with",
+                "ENTITY"
+            ],
+            [
+                "oxidative stress",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Oyster powder supplementation enhances immune function in mice partly through modulating the gut microbiota and arginine metabolism.",
+        "abstract": "Oysters are well-known for their health benefits such as immuno-modulatory functions. The intestinal microbiome serves as a key mediator between diet and immune regulation. This study aimed to investigate whether oyster consumption could alleviate cyclophosphamide (Cy)-induced immunosuppression by promoting intestinal homeostasis. In mice treated with Cy, a significant decrease in immune cells and cytokines was observed. In contrast, mice supplemented with oyster powder demonstrated elevated numbers of immune cells in the spleen and small intestine, as well as enhanced serum production of IL-1β, IL-2, TNF-α, and IFN-γ. Furthermore, oyster consumption improved the composition of the gut microbiota by promoting beneficial bacteria and inhibiting harmful ones. Metabolomics analysis revealed that oyster powder treatment significantly enhanced the arginine biosynthesis pathway, and further analysis found that the consumption of oysters led to increased arginine levels. Correlation analysis showed a significant positive correlation between L-arginine and immune-related markers. Collectively, these findings suggest that oyster consumption may enhance immunity by modulating the gut microbiota and boosting arginine biosynthesis pathways. Dietary oyster consumption could be an effective strategy to support immune health.",
+        "keywords": [
+            "No Keywords"
+        ],
+        "authors": [
+            "Jinhui Jia",
+            "Jian Guo",
+            "Chunhong Yan",
+            "Yunqi Gu",
+            "Xiaodong Xia"
+        ],
+        "journal": "Food & function",
+        "doi": "10.1039/d4fo06068g",
+        "spacy_entities": [
+            [
+                "Oysters",
+                "ENTITY"
+            ],
+            [
+                "health benefits",
+                "ENTITY"
+            ],
+            [
+                "immuno-modulatory functions",
+                "ENTITY"
+            ],
+            [
+                "intestinal",
+                "ENTITY"
+            ],
+            [
+                "diet",
+                "ENTITY"
+            ],
+            [
+                "immune regulation",
+                "ENTITY"
+            ],
+            [
+                "study",
+                "ENTITY"
+            ],
+            [
+                "investigate",
+                "ENTITY"
+            ],
+            [
+                "oyster",
+                "ENTITY"
+            ],
+            [
+                "consumption",
+                "ENTITY"
+            ],
+            [
+                "alleviate",
+                "ENTITY"
+            ],
+            [
+                "cyclophosphamide",
+                "ENTITY"
+            ],
+            [
+                "immunosuppression",
+                "ENTITY"
+            ],
+            [
+                "intestinal",
+                "ENTITY"
+            ],
+            [
+                "homeostasis",
+                "ENTITY"
+            ],
+            [
+                "mice",
+                "ENTITY"
+            ],
+            [
+                "treated with",
+                "ENTITY"
+            ],
+            [
+                "Cy",
+                "ENTITY"
+            ],
+            [
+                "decrease",
+                "ENTITY"
+            ],
+            [
+                "immune cells",
+                "ENTITY"
+            ],
+            [
+                "cytokines",
+                "ENTITY"
+            ],
+            [
+                "mice",
+                "ENTITY"
+            ],
+            [
+                "supplemented",
+                "ENTITY"
+            ],
+            [
+                "oyster powder",
+                "ENTITY"
+            ],
+            [
+                "elevated",
+                "ENTITY"
+            ],
+            [
+                "immune cells",
+                "ENTITY"
+            ],
+            [
+                "spleen",
+                "ENTITY"
+            ],
+            [
+                "intestine",
+                "ENTITY"
+            ],
+            [
+                "serum production",
+                "ENTITY"
+            ],
+            [
+                "IL-1β",
+                "ENTITY"
+            ],
+            [
+                "IL-2",
+                "ENTITY"
+            ],
+            [
+                "TNF-α",
+                "ENTITY"
+            ],
+            [
+                "IFN-γ",
+                "ENTITY"
+            ],
+            [
+                "oyster",
+                "ENTITY"
+            ],
+            [
+                "consumption",
+                "ENTITY"
+            ],
+            [
+                "improved",
+                "ENTITY"
+            ],
+            [
+                "composition",
+                "ENTITY"
+            ],
+            [
+                "gut microbiota",
+                "ENTITY"
+            ],
+            [
+                "beneficial bacteria",
+                "ENTITY"
+            ],
+            [
+                "inhibiting",
+                "ENTITY"
+            ],
+            [
+                "Metabolomics",
+                "ENTITY"
+            ],
+            [
+                "oyster",
+                "ENTITY"
+            ],
+            [
+                "powder treatment",
+                "ENTITY"
+            ],
+            [
+                "enhanced",
+                "ENTITY"
+            ],
+            [
+                "arginine",
+                "ENTITY"
+            ],
+            [
+                "biosynthesis",
+                "ENTITY"
+            ],
+            [
+                "pathway",
+                "ENTITY"
+            ],
+            [
+                "analysis",
+                "ENTITY"
+            ],
+            [
+                "consumption",
+                "ENTITY"
+            ],
+            [
+                "oysters",
+                "ENTITY"
+            ],
+            [
+                "increased",
+                "ENTITY"
+            ],
+            [
+                "arginine",
+                "ENTITY"
+            ],
+            [
+                "Correlation analysis",
+                "ENTITY"
+            ],
+            [
+                "positive",
+                "ENTITY"
+            ],
+            [
+                "correlation",
+                "ENTITY"
+            ],
+            [
+                "L-arginine",
+                "ENTITY"
+            ],
+            [
+                "immune-related",
+                "ENTITY"
+            ],
+            [
+                "markers",
+                "ENTITY"
+            ],
+            [
+                "findings",
+                "ENTITY"
+            ],
+            [
+                "oyster",
+                "ENTITY"
+            ],
+            [
+                "consumption",
+                "ENTITY"
+            ],
+            [
+                "enhance",
+                "ENTITY"
+            ],
+            [
+                "immunity",
+                "ENTITY"
+            ],
+            [
+                "gut microbiota",
+                "ENTITY"
+            ],
+            [
+                "arginine",
+                "ENTITY"
+            ],
+            [
+                "biosynthesis",
+                "ENTITY"
+            ],
+            [
+                "Dietary",
+                "ENTITY"
+            ],
+            [
+                "oyster",
+                "ENTITY"
+            ],
+            [
+                "consumption",
+                "ENTITY"
+            ],
+            [
+                "immune health",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Examining the Influence of Omega-3 Fatty Acids on Performance, Recovery, and Injury Management for Health Optimization: A Systematic Review Focused on Military Service Members.",
+        "abstract": "Omega-3 fatty acids (<i>n</i>-3), recognized for their anti-inflammatory and brain health benefits, are being studied to enhance cognitive function, aid physical recovery, and reduce injury rates among military service members (SMs). Given the unique demands faced by this tactical population, this systematic review aims to evaluate the evidence of <i>n</i>-3 to support physical and mental resilience and overall performance. This review was conducted in accordance with Preferred Reporting Items for Systematic reviews and Meta-Analyses (PRISMA) guidelines and includes articles that assessed <i>n</i>-3 status or implemented <i>n</i>-3 interventions in relation to physical and cognitive performance, recovery, and injury outcomes (2006 to 2024). Of the 1606 articles yielded in screening through Covidence, 755 were irrelevant, leaving 226 studies for full-text eligibility. Of those 226 studies, 165 studies were excluded, and 61 studies were included in this review. The results highlighted evidence-based findings in five key areas where omega-3 fatty acids are being evaluated to benefit military service members. These key areas include cardiopulmonary function, exercise recovery, cognitive function, injury recovery, and strength and power. While existing research suggests promising benefits, the most significant evidence was seen with cardiopulmonary function, exercise recovery, and cognitive function. Current research is promising and shows potential benefits, but the results are inconclusive and inconsistent. Future research is needed to determine optimal <i>n</i>-3 status, dose, and possibly type of <i>n</i>-3 across the various performance outcomes. Understanding these gaps in research will be essential to creating evidence-based <i>n</i>-3 guidelines for optimal performance of SMs.",
+        "keywords": [
+            "injury",
+            "military",
+            "omega-3 fatty acids",
+            "omega-3 index",
+            "performance",
+            "recovery"
+        ],
+        "authors": [
+            "Melissa Rittenhouse",
+            "Saachi Khurana",
+            "Stephen Scholl",
+            "Christopher Emerson"
+        ],
+        "journal": "Nutrients",
+        "doi": "10.3390/nu17020307",
+        "spacy_entities": [
+            [
+                "Omega-3 fatty acids",
+                "ENTITY"
+            ],
+            [
+                "n</i>-3",
+                "ENTITY"
+            ],
+            [
+                "anti-inflammatory",
+                "ENTITY"
+            ],
+            [
+                "brain health benefits",
+                "ENTITY"
+            ],
+            [
+                "enhance",
+                "ENTITY"
+            ],
+            [
+                "cognitive function",
+                "ENTITY"
+            ],
+            [
+                "physical recovery",
+                "ENTITY"
+            ],
+            [
+                "reduce",
+                "ENTITY"
+            ],
+            [
+                "injury",
+                "ENTITY"
+            ],
+            [
+                "rates",
+                "ENTITY"
+            ],
+            [
+                "military service members",
+                "ENTITY"
+            ],
+            [
+                "SMs",
+                "ENTITY"
+            ],
+            [
+                "unique",
+                "ENTITY"
+            ],
+            [
+                "demands",
+                "ENTITY"
+            ],
+            [
+                "tactical population",
+                "ENTITY"
+            ],
+            [
+                "systematic review",
+                "ENTITY"
+            ],
+            [
+                "evaluate",
+                "ENTITY"
+            ],
+            [
+                "evidence",
+                "ENTITY"
+            ],
+            [
+                "n</i>-3",
+                "ENTITY"
+            ],
+            [
+                "physical",
+                "ENTITY"
+            ],
+            [
+                "mental resilience",
+                "ENTITY"
+            ],
+            [
+                "overall",
+                "ENTITY"
+            ],
+            [
+                "performance",
+                "ENTITY"
+            ],
+            [
+                "review",
+                "ENTITY"
+            ],
+            [
+                "Preferred Reporting",
+                "ENTITY"
+            ],
+            [
+                "Items",
+                "ENTITY"
+            ],
+            [
+                "Systematic reviews",
+                "ENTITY"
+            ],
+            [
+                "Meta-Analyses",
+                "ENTITY"
+            ],
+            [
+                "PRISMA",
+                "ENTITY"
+            ],
+            [
+                "guidelines",
+                "ENTITY"
+            ],
+            [
+                "articles",
+                "ENTITY"
+            ],
+            [
+                "assessed",
+                "ENTITY"
+            ],
+            [
+                "n</i>-3",
+                "ENTITY"
+            ],
+            [
+                "status",
+                "ENTITY"
+            ],
+            [
+                "implemented",
+                "ENTITY"
+            ],
+            [
+                "n</i>-3",
+                "ENTITY"
+            ],
+            [
+                "interventions",
+                "ENTITY"
+            ],
+            [
+                "physical",
+                "ENTITY"
+            ],
+            [
+                "cognitive performance",
+                "ENTITY"
+            ],
+            [
+                "recovery",
+                "ENTITY"
+            ],
+            [
+                "injury",
+                "ENTITY"
+            ],
+            [
+                "outcomes",
+                "ENTITY"
+            ],
+            [
+                "articles",
+                "ENTITY"
+            ],
+            [
+                "screening",
+                "ENTITY"
+            ],
+            [
+                "Covidence",
+                "ENTITY"
+            ],
+            [
+                "irrelevant",
+                "ENTITY"
+            ],
+            [
+                "studies",
+                "ENTITY"
+            ],
+            [
+                "full-text",
+                "ENTITY"
+            ],
+            [
+                "eligibility",
+                "ENTITY"
+            ],
+            [
+                "studies",
+                "ENTITY"
+            ],
+            [
+                "studies",
+                "ENTITY"
+            ],
+            [
+                "excluded",
+                "ENTITY"
+            ],
+            [
+                "studies",
+                "ENTITY"
+            ],
+            [
+                "review",
+                "ENTITY"
+            ],
+            [
+                "evidence-based",
+                "ENTITY"
+            ],
+            [
+                "findings",
+                "ENTITY"
+            ],
+            [
+                "omega-3 fatty acids",
+                "ENTITY"
+            ],
+            [
+                "evaluated",
+                "ENTITY"
+            ],
+            [
+                "military service members",
+                "ENTITY"
+            ],
+            [
+                "cardiopulmonary function",
+                "ENTITY"
+            ],
+            [
+                "exercise",
+                "ENTITY"
+            ],
+            [
+                "recovery",
+                "ENTITY"
+            ],
+            [
+                "cognitive function",
+                "ENTITY"
+            ],
+            [
+                "injury",
+                "ENTITY"
+            ],
+            [
+                "recovery",
+                "ENTITY"
+            ],
+            [
+                "strength",
+                "ENTITY"
+            ],
+            [
+                "power",
+                "ENTITY"
+            ],
+            [
+                "research",
+                "ENTITY"
+            ],
+            [
+                "benefits",
+                "ENTITY"
+            ],
+            [
+                "evidence",
+                "ENTITY"
+            ],
+            [
+                "cardiopulmonary function",
+                "ENTITY"
+            ],
+            [
+                "exercise",
+                "ENTITY"
+            ],
+            [
+                "recovery",
+                "ENTITY"
+            ],
+            [
+                "cognitive function",
+                "ENTITY"
+            ],
+            [
+                "research",
+                "ENTITY"
+            ],
+            [
+                "potential",
+                "ENTITY"
+            ],
+            [
+                "benefits",
+                "ENTITY"
+            ],
+            [
+                "results",
+                "ENTITY"
+            ],
+            [
+                "inconclusive",
+                "ENTITY"
+            ],
+            [
+                "inconsistent",
+                "ENTITY"
+            ],
+            [
+                "research",
+                "ENTITY"
+            ],
+            [
+                "optimal",
+                "ENTITY"
+            ],
+            [
+                "n</i>-3",
+                "ENTITY"
+            ],
+            [
+                "dose",
+                "ENTITY"
+            ],
+            [
+                "n</i>-3",
+                "ENTITY"
+            ],
+            [
+                "performance",
+                "ENTITY"
+            ],
+            [
+                "outcomes",
+                "ENTITY"
+            ],
+            [
+                "gaps",
+                "ENTITY"
+            ],
+            [
+                "research",
+                "ENTITY"
+            ],
+            [
+                "evidence-based",
+                "ENTITY"
+            ],
+            [
+                "n</i>-3",
+                "ENTITY"
+            ],
+            [
+                "guidelines",
+                "ENTITY"
+            ],
+            [
+                "optimal",
+                "ENTITY"
+            ],
+            [
+                "performance",
+                "ENTITY"
+            ],
+            [
+                "SMs",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [
+                "Omega-3 fatty acids"
+            ],
+            "pharmaceuticals": []
+        }
+    },
+    {
+        "title": "Vitamin D: Evidence-Based Health Benefits and Recommendations for Population Guidelines.",
+        "abstract": "Vitamin D offers numerous under-recognized health benefits beyond its well-known role in musculoskeletal health. It is vital for extra-renal tissues, prenatal health, brain function, immunity, pregnancy, cancer prevention, and cardiovascular health. Existing guidelines issued by governmental and health organizations are bone-centric and largely overlook the abovementioned extra-skeletal benefits and optimal thresholds for vitamin D. In addition, they rely on randomized controlled trials (RCTs), which seldom show benefits due to high baseline 25-hydroxyvitamin D [25(OH)D] concentrations, moderate supplementation doses, and flawed study designs. This review emphasizes the findings from prospective cohort studies showing that higher 25(OH)D concentrations reduce the risks of major diseases and mortality, including pregnancy and birth outcomes. Serum concentrations > 30 ng/mL (75 nmol/L) significantly lower disease and mortality risks compared to <20 ng/mL. With 25% of the U.S. population and 60% of Central Europeans having levels <20 ng/mL, concentrations should be raised above 30 ng/mL. This is achievable through daily supplementation with 2000 IU/day (50 mcg/day) of vitamin D<sub>3</sub>, which prevent diseases and deaths. Furthermore, a daily dose between 4000 and 6000 IU of vitamin D<sub>3</sub> to achieve serum 25(OH)D levels between 40 and 70 ng/mL would provide greater protection against many adverse health outcomes. Future guidelines and recommendations should integrate the findings from observational prospective cohort studies and well-designed RCTs to improve public health and personalized care.",
+        "keywords": [
+            "COVID-19",
+            "Endocrine Society",
+            "cancer",
+            "cardiovascular disease",
+            "chronic kidney disease",
+            "chronic lower respiratory diseases",
+            "dementia",
+            "diabetes mellitus",
+            "pregnancy"
+        ],
+        "authors": [
+            "William B Grant",
+            "Sunil J Wimalawansa",
+            "Pawel Pludowski",
+            "Richard Z Cheng"
+        ],
+        "journal": "Nutrients",
+        "doi": "10.3390/nu17020277",
+        "spacy_entities": [
+            [
+                "Vitamin D",
+                "ENTITY"
+            ],
+            [
+                "under-recognized health benefits",
+                "ENTITY"
+            ],
+            [
+                "musculoskeletal health",
+                "ENTITY"
+            ],
+            [
+                "extra-renal tissues",
+                "ENTITY"
+            ],
+            [
+                "prenatal health",
+                "ENTITY"
+            ],
+            [
+                "brain function",
+                "ENTITY"
+            ],
+            [
+                "immunity",
+                "ENTITY"
+            ],
+            [
+                "pregnancy",
+                "ENTITY"
+            ],
+            [
+                "cancer prevention",
+                "ENTITY"
+            ],
+            [
+                "cardiovascular",
+                "ENTITY"
+            ],
+            [
+                "guidelines",
+                "ENTITY"
+            ],
+            [
+                "governmental",
+                "ENTITY"
+            ],
+            [
+                "health organizations",
+                "ENTITY"
+            ],
+            [
+                "bone-centric",
+                "ENTITY"
+            ],
+            [
+                "extra-skeletal benefits",
+                "ENTITY"
+            ],
+            [
+                "optimal",
+                "ENTITY"
+            ],
+            [
+                "thresholds",
+                "ENTITY"
+            ],
+            [
+                "vitamin D.",
+                "ENTITY"
+            ],
+            [
+                "randomized controlled trials",
+                "ENTITY"
+            ],
+            [
+                "RCTs",
+                "ENTITY"
+            ],
+            [
+                "seldom",
+                "ENTITY"
+            ],
+            [
+                "benefits",
+                "ENTITY"
+            ],
+            [
+                "baseline",
+                "ENTITY"
+            ],
+            [
+                "25-hydroxyvitamin D",
+                "ENTITY"
+            ],
+            [
+                "25(OH)D",
+                "ENTITY"
+            ],
+            [
+                "concentrations",
+                "ENTITY"
+            ],
+            [
+                "moderate",
+                "ENTITY"
+            ],
+            [
+                "supplementation doses",
+                "ENTITY"
+            ],
+            [
+                "study designs",
+                "ENTITY"
+            ],
+            [
+                "review",
+                "ENTITY"
+            ],
+            [
+                "findings",
+                "ENTITY"
+            ],
+            [
+                "prospective cohort studies",
+                "ENTITY"
+            ],
+            [
+                "higher",
+                "ENTITY"
+            ],
+            [
+                "25(OH)D",
+                "ENTITY"
+            ],
+            [
+                "concentrations",
+                "ENTITY"
+            ],
+            [
+                "risks",
+                "ENTITY"
+            ],
+            [
+                "diseases",
+                "ENTITY"
+            ],
+            [
+                "mortality",
+                "ENTITY"
+            ],
+            [
+                "pregnancy",
+                "ENTITY"
+            ],
+            [
+                "birth outcomes",
+                "ENTITY"
+            ],
+            [
+                "Serum concentrations",
+                "ENTITY"
+            ],
+            [
+                "significantly lower disease",
+                "ENTITY"
+            ],
+            [
+                "mortality",
+                "ENTITY"
+            ],
+            [
+                "risks",
+                "ENTITY"
+            ],
+            [
+                "U.S.",
+                "ENTITY"
+            ],
+            [
+                "population",
+                "ENTITY"
+            ],
+            [
+                "Central Europeans",
+                "ENTITY"
+            ],
+            [
+                "levels",
+                "ENTITY"
+            ],
+            [
+                "concentrations",
+                "ENTITY"
+            ],
+            [
+                "daily",
+                "ENTITY"
+            ],
+            [
+                "supplementation",
+                "ENTITY"
+            ],
+            [
+                "IU/day",
+                "ENTITY"
+            ],
+            [
+                "vitamin D",
+                "ENTITY"
+            ],
+            [
+                "diseases",
+                "ENTITY"
+            ],
+            [
+                "deaths",
+                "ENTITY"
+            ],
+            [
+                "daily",
+                "ENTITY"
+            ],
+            [
+                "dose",
+                "ENTITY"
+            ],
+            [
+                "IU",
+                "ENTITY"
+            ],
+            [
+                "vitamin D",
+                "ENTITY"
+            ],
+            [
+                "serum",
+                "ENTITY"
+            ],
+            [
+                "25(OH)D",
+                "ENTITY"
+            ],
+            [
+                "levels",
+                "ENTITY"
+            ],
+            [
+                "protection",
+                "ENTITY"
+            ],
+            [
+                "adverse",
+                "ENTITY"
+            ],
+            [
+                "health outcomes",
+                "ENTITY"
+            ],
+            [
+                "guidelines",
+                "ENTITY"
+            ],
+            [
+                "recommendations",
+                "ENTITY"
+            ],
+            [
+                "integrate",
+                "ENTITY"
+            ],
+            [
+                "findings",
+                "ENTITY"
+            ],
+            [
+                "observational prospective cohort studies",
+                "ENTITY"
+            ],
+            [
+                "well-designed",
+                "ENTITY"
+            ],
+            [
+                "RCTs",
+                "ENTITY"
+            ],
+            [
+                "public health",
+                "ENTITY"
+            ],
+            [
+                "personalized care",
+                "ENTITY"
+            ]
+        ],
+        "spacy_matched_terms": {
+            "diseases": [],
+            "supplements": [
+                "Vitamin D"
+            ],
+            "pharmaceuticals": []
+        }
+    }
+]

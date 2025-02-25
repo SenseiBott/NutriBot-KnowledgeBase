@@ -2,11 +2,13 @@ import sys
 import os
 from dotenv import load_dotenv
 
+from modules.europePMC_utils import search_europe_pmc
+from modules.pubmed_utils import configure_entrez, fetch_article_details, save_results_to_json, search_pubmed
+
 # Add the 'modules' directory to the import path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'modules')))
 
-from pubmed_utils import configure_entrez, search_pubmed, fetch_article_details, save_results_to_json
-from europePMC_utils import search_europe_pmc, save_results_to_json as save_europe_results
+
 from datetime import datetime
 
 # Load environment variables from the .env file
@@ -40,7 +42,7 @@ def main():
     europe_pmc_articles = search_europe_pmc(query)
     if europe_pmc_articles:
         europe_filename = f"data/articles_EuropePMC_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json"
-        save_europe_results(europe_pmc_articles, filename=europe_filename)
+        save_results_to_json(europe_pmc_articles, filename=europe_filename)
 
 if __name__ == "__main__":
     main()

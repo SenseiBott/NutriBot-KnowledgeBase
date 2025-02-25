@@ -3,10 +3,11 @@ import os
 from dotenv import load_dotenv
 from datetime import datetime
 
+from modules.semanticscholar_utils import save_results_to_json, search_semantic_scholar
+
 # Add the 'modules' directory to the import path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'modules')))
 
-from semanticscholar_utils import search_semantic_scholar, save_results_to_json as save_semantic_results
 
 # Load environment variables from the .env file
 load_dotenv()
@@ -23,7 +24,7 @@ def main():
     semantic_scholar_articles = search_semantic_scholar(query, max_results=max_articles)
     if semantic_scholar_articles:
         semantic_filename = f"data/articles_SemanticScholar_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json"
-        save_semantic_results(semantic_scholar_articles, filename=semantic_filename)
+        save_results_to_json(semantic_scholar_articles, filename=semantic_filename)
 
 if __name__ == "__main__":
     main()
