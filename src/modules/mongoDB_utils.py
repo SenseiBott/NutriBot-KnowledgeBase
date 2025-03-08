@@ -22,10 +22,14 @@ def save_to_mongo(papers,source):
         collection = configure_mongoDB_connection()
         if source == "PubMed":
             for paper in tqdm(papers, desc="Saving PubMed articles to MongoDB"):
+                year = paper.get("year", 0)
+                if year == "No Year Available":
+                    year = 0
+                    
                 doc = {
                     "title": paper.get("title", ""),
                     "authors": paper.get("authors", []),
-                    "year": int(paper.get("year", 0)),
+                    "year": int(paper.get(year, 0)),
                     "source": "PubMed",
                     "abstract": paper.get("abstract", ""),
                     "keywords": paper.get("keywords", []),

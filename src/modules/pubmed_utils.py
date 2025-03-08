@@ -18,7 +18,11 @@ def fetch_papers(id_list):
         article_data = medline["Article"]
 
         title = article_data.get("ArticleTitle", "No Title Available")
-        year = article_data.get("ArticleDate", [{}])[0].get("Year", "No Year Available")
+        article_date = article_data.get("ArticleDate", [])
+        if article_date:
+            year = article_date[0].get("Year", "No Year Available")
+        else:
+            year = "No Year Available"
         abstract_data = article_data.get("Abstract", {}).get("AbstractText", ["No Abstract"])
         abstract = " ".join(abstract_data) if isinstance(abstract_data, list) else str(abstract_data)
         keywords = [kw for sublist in medline.get("KeywordList", []) for kw in sublist] or ["No Keywords"]

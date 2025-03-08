@@ -15,17 +15,7 @@ def normalize_text(text):
     text = re.sub(r'\s+', ' ', text)  # Remove extra spaces
     return text.strip()
 
-# Function to load pharmaceutical terms from a .txt file
-def load_pharmaceuticals_from_file(filename):
-    """Loads pharmaceutical names from a text file and normalizes the terms."""
-    with open(filename, 'r', encoding='utf-8') as file:
-        pharmaceuticals = file.readlines()
-    return [normalize_text(pharmaceutical) for pharmaceutical in pharmaceuticals]
-
-# Load and normalize the list of pharmaceuticals
-pharmaceutical_terms = load_pharmaceuticals_from_file("data/drugs.txt")
-
-# Lists of other biomedical terms (diseases, supplements, and medical concepts)
+# Lists of biomedical terms (diseases, supplements, pharmaceuticals, and medical concepts)
 disease_terms = [
     "cardiovascular diseases", "cancer", "diabetes", "hypertension", "obesity", 
     "asthma", "alzheimer's disease", "parkinson's disease", "rheumatoid arthritis", 
@@ -41,14 +31,20 @@ supplement_terms = [
     "melatonin", "elderberry", "fish oil", "flaxseed oil", "beta-glucan", "biotin", "collagen", "nutritional supplements"
 ]
 
+pharmaceutical_terms = [
+    "aspirin", "paracetamol", "ibuprofen", "metformin", "atorvastatin", 
+    "omeprazole", "simvastatin", "amlodipine", "losartan", "metoprolol"
+]
+
 medical_concept_terms = [
     "immune function", "oxidative stress", "antioxidant properties", "cellular health", "immune response"
 ]
 
 # Normalize all terms
-disease_terms = [normalize_text(term) for term in disease_terms]
-supplement_terms = [normalize_text(term) for term in supplement_terms]
-medical_concept_terms = [normalize_text(term) for term in medical_concept_terms]
+disease_terms = set(normalize_text(term) for term in disease_terms)
+supplement_terms = set(normalize_text(term) for term in supplement_terms)
+pharmaceutical_terms = set(normalize_text(term) for term in pharmaceutical_terms)
+medical_concept_terms = set(normalize_text(term) for term in medical_concept_terms)
 
 # Function to create a PhraseMatcher
 def create_matcher(nlp, terms):
@@ -75,32 +71,22 @@ def process_text(text):
     entities = [(ent.text, ent.label_) for ent in doc.ents]
 
     # Extract matched terms
-    disease_matches = [doc[start:end].text for _, start, end in disease_matcher(doc)]
-    supplement_matches = [doc[start:end].text for _, start, end in supplement_matcher(doc)]
-    pharmaceutical_matches = [doc[start:end].text for _, start, end in pharmaceutical_matcher(doc)]
-    medical_concept_matches = [doc[start:end].text for _, start, end in medical_concept_matcher(doc)]
+    matches = {
+        "DISEASE": [doc[start:end].text for _, start, end in disease_matcher(doc)],
+        "SUPPLEMENT": [doc[start:end].text for _, start, end in supplement_matcher(doc)],
+        "PHARMACEUTICAL": [doc[start:end].text for _, start, end in pharmaceutical_matcher(doc)],
+        "MEDICAL_CONCEPT": [doc[start:end].text for _, start, end in medical_concept_matcher(doc)]
+    }
 
     # Categorize entities with priority
     categorized_entities = []
     for ent_text, ent_label in entities:
-        if ent_text in pharmaceutical_matches:
-            categorized_entities.append((ent_text, "PHARMACEUTICAL"))
-        elif ent_text in disease_matches:
-            categorized_entities.append((ent_text, "DISEASE"))
-        elif ent_text in supplement_matches:
-            categorized_entities.append((ent_text, "SUPPLEMENT"))
-        elif ent_text in medical_concept_matches:
-            categorized_entities.append((ent_text, "MEDICAL_CONCEPT"))
-        else:
-            # Ignore generic terms like "essential", "patients", etc.
-            continue
+        for category, matched_terms in matches.items():
+            if ent_text in matched_terms:
+                categorized_entities.append((ent_text, category))
+                break
 
     return {
         "entities": categorized_entities,
-        "matched_terms": {
-            "diseases": disease_matches,
-            "supplements": supplement_matches,
-            "pharmaceuticals": pharmaceutical_matches,
-            "medical_concepts": medical_concept_matches
-        }
+        "matched_terms": matches
     }
