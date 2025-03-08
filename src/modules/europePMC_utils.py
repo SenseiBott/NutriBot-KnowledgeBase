@@ -1,7 +1,6 @@
 import requests
-from tqdm import tqdm
 
-from modules.mongoDB_utils import configure_mongoDB_connection, save_to_mongo
+from modules.mongoDB_utils import save_to_mongo
 
 def fetch_papers(query, num_results):
     """Fetch articles from the Europe PMC API."""
@@ -22,7 +21,6 @@ def fetch_papers(query, num_results):
 
 def search_europe_pmc(query, num_results):
     """Fetch articles from the Europe PMC API and save them to MongoDB."""
-    collection = configure_mongoDB_connection()
     papers = fetch_papers(query, num_results)
-    save_to_mongo(papers, collection, "Europe PMC")
+    save_to_mongo(papers, "Europe PMC")
     return papers

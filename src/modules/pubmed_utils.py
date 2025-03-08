@@ -1,9 +1,7 @@
 import json
 import os
 from Bio import Entrez
-from pymongo import MongoClient
-from tqdm import tqdm
-from modules.mongoDB_utils import configure_mongoDB_connection, save_to_mongo
+from modules.mongoDB_utils import save_to_mongo
 from modules.spaCy_utils import process_text
 
 def configure_entrez(email, api_key):
@@ -97,7 +95,6 @@ def save_results_to_json(articles, filename="pubmed_results.json"):
 def search_pubmed(query, num_results):
     """Fetch articles from the PubMed API and save them to MongoDB."""
     
-    collection = configure_mongoDB_connection()
     articles_json = fetch_papers(query, num_results)
     
     # Parse JSON string into Python dictionary
@@ -106,5 +103,5 @@ def search_pubmed(query, num_results):
     # Extract the list of articles
     articles = articles_dict.get("results", [])
 
-    save_to_mongo(articles, collection, "PubMed")
+    save_to_mongo(articles, "PubMed")
     return articles
