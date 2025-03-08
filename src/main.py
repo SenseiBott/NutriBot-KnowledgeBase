@@ -31,18 +31,16 @@ def main():
     max_articles = 20
 
     # Search for articles on PubMed
-    print("🔎 Searching for articles on PubMed...")
-    article_ids = search_pubmed(query, max_results=max_articles)
-    articles = fetch_article_details(article_ids)
-    pubmed_filename = f"data/articles_PubMed_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json"
-    save_results_to_json(articles, filename=pubmed_filename)
+    #print("🔎 Searching for articles on PubMed...")
+    #article_ids = search_pubmed(query, max_results=max_articles)
+    #articles = fetch_article_details(article_ids)
+    #pubmed_filename = f"data/articles_PubMed_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json"
+    #save_results_to_json(articles, filename=pubmed_filename)
 
     # Search for articles on Europe PMC
     print("🔎 Searching for articles on Europe PMC...")
-    europe_pmc_articles = search_europe_pmc(query)
-    if europe_pmc_articles:
-        europe_filename = f"data/articles_EuropePMC_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json"
-        save_results_to_json(europe_pmc_articles, filename=europe_filename)
+    europe_pmc_articles = search_europe_pmc(query, max_articles)
+    
 
 if __name__ == "__main__":
     main()

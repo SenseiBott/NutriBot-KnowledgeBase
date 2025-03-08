@@ -1,25 +1,53 @@
 import requests
 import json
+from pymongo import MongoClient
+from tqdm import tqdm
 
-def search_europe_pmc(query, max_results=20):
-    """Search for articles in Europe PMC."""
+from modules.mongoDB_utils import configure_mongoDB_connection
+
+def fetch_papers(query, num_results):
+    """Fetch articles from the Europe PMC API."""
     url = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
     params = {
         "query": query,
         "resultType": "core",
-        "pageSize": max_results,
-        "format": "json" 
+        "pageSize": num_results,
+        "format": "json"
     }
     
     response = requests.get(url, params=params)
     if response.status_code == 200:
-        return response.json()
+        return response.json().get("resultList", {}).get("result", [])
     else:
-        print(f"Error: {response.status_code}")
-        return None
+        print(f"Error fetching data: {response.status_code}")
+        return []
 
-def save_results_to_json(articles, filename="europe_pmc_results.json"):
-    """Saves the results to a JSON file."""
-    with open(filename, "w", encoding="utf-8") as file:
-        json.dump(articles, file, ensure_ascii=False, indent=4)
-    print(f"Results saved in {filename}")
+
+def save_to_mongo(papers, collection):
+    """Save articles to MongoDB."""
+    if not papers:
+        print("No articles to save.")
+        return
+    
+    for paper in tqdm(papers, desc="Saving articles to MongoDB"):
+        doc = {
+            "title": paper.get("title", ""),
+            "authors": paper.get("authorString", ""),
+            "year": int(paper.get("pubYear", 0)),
+            "source": "Europe PMC",
+            "abstract": paper.get("abstractText", ""),
+            "keywords": paper.get("keywordList", {}).get("keyword", []),
+            "doi": paper.get("doi", ""),
+            "paper_id": paper.get("id", ""),
+            "last_updated": paper.get("firstPublicationDate", ""),
+        }
+        collection.insert_one(doc)
+    
+    print("All articles have been successfully saved to MongoDB!")
+
+def search_europe_pmc(query, num_results):
+    """Fetch articles from the Europe PMC API and save them to MongoDB."""
+    collection = configure_mongoDB_connection()
+    papers = fetch_papers(query, num_results)
+    save_to_mongo(papers, collection)
+    return papers
