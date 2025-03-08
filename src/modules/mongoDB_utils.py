@@ -54,7 +54,7 @@ def save_to_mongo(papers,source):
                     doc = {
                         "title": paper.get("title", ""),
                         "authors": authors,
-                        "year": int(paper.get("year", 0) or 0),
+                        "year": int(paper.get("pubYear", 0) or 0),
                         "source": "Europe PMC",
                         "abstract": paper.get("abstractText", ""),
                         "keywords": paper.get("keywordList", {}).get("keyword", []),
