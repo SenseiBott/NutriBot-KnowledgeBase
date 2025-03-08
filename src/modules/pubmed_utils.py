@@ -1,20 +1,39 @@
 import json
+import os
 from Bio import Entrez
-
+from pymongo import MongoClient
+from tqdm import tqdm
+from modules.mongoDB_utils import configure_mongoDB_connection, save_to_mongo
 from modules.spaCy_utils import process_text
 
-
 def configure_entrez(email, api_key):
-    """Configures Entrez credentials."""
+    """Configure the Entrez module with the provided email and API key."""
     Entrez.email = email
     Entrez.api_key = api_key
 
-def search_pubmed(query, max_results=10):
-    """Searches PubMed articles and returns a list of IDs."""
-    handle = Entrez.esearch(db="pubmed", term=query, retmax=max_results)
+def configure_pubmed(email, api_key):
+    # PubMed configuration
+    email = os.getenv("EMAIL")
+    api_key = os.getenv("API_KEY_PUBMED")
+
+    if not email or not api_key:
+        raise ValueError("Missing EMAIL or API_KEY_PUBMED in environment variables.")
+    
+    configure_entrez(email, api_key)
+
+def fetch_papers(query, num_results=20):
+    """Fetch articles from the PubMed API and return results in JSON format."""
+    handle = Entrez.esearch(db="pubmed", term=query, retmax=num_results)
     record = Entrez.read(handle)
     handle.close()
-    return record["IdList"]
+    
+    id_list = record.get("IdList", [])
+    if not id_list:
+        return json.dumps({"results": []}, indent=4)
+
+    articles = fetch_article_details(id_list)
+    return json.dumps({"results": articles}, ensure_ascii=False, indent=4)
+
 
 def fetch_article_details(id_list):
     """Fetches article details including title, abstract, authors, keywords, journal, and DOI."""
@@ -68,9 +87,24 @@ def fetch_article_details(id_list):
 
     return results
 
-
 def save_results_to_json(articles, filename="pubmed_results.json"):
     """Saves the results in a JSON file."""
     with open(filename, mode='w', encoding='utf-8') as file:
         json.dump(articles, file, ensure_ascii=False, indent=4)
     print(f"Results saved in {filename}")
+
+
+def search_pubmed(query, num_results):
+    """Fetch articles from the PubMed API and save them to MongoDB."""
+    
+    collection = configure_mongoDB_connection()
+    articles_json = fetch_papers(query, num_results)
+    
+    # Parse JSON string into Python dictionary
+    articles_dict = json.loads(articles_json)
+
+    # Extract the list of articles
+    articles = articles_dict.get("results", [])
+
+    save_to_mongo(articles, collection, "PubMed")
+    return articles
