@@ -4,44 +4,13 @@ from Bio import Entrez
 from modules.mongoDB_utils import save_to_mongo
 from modules.spaCy_utils import process_text
 
-def configure_entrez(email, api_key):
-    """Configure the Entrez module with the provided email and API key."""
-    Entrez.email = email
-    Entrez.api_key = api_key
-
-def configure_pubmed(email, api_key):
-    # PubMed configuration
-    email = os.getenv("EMAIL")
-    api_key = os.getenv("API_KEY_PUBMED")
-
-    if not email or not api_key:
-        raise ValueError("Missing EMAIL or API_KEY_PUBMED in environment variables.")
-    
-    configure_entrez(email, api_key)
-
-def fetch_papers(query, num_results=20):
-    """Fetch articles from the PubMed API and return results in JSON format."""
-    handle = Entrez.esearch(db="pubmed", term=query, retmax=num_results)
-    record = Entrez.read(handle)
-    handle.close()
-    
-    id_list = record.get("IdList", [])
-    if not id_list:
-        return json.dumps({"results": []}, indent=4)
-
-    articles = fetch_article_details(id_list)
-    return json.dumps({"results": articles}, ensure_ascii=False, indent=4)
-
-
-def fetch_article_details(id_list):
-    """Fetches article details including title, abstract, authors, keywords, journal, and DOI."""
+def fetch_papers(id_list):
+    """Fetches article details from PubMed."""
     if not id_list:
         return []
 
-    ids = ",".join(id_list)
-    handle = Entrez.efetch(db="pubmed", id=ids, rettype="abstract", retmode="xml")
-    records = Entrez.read(handle)
-    handle.close()
+    with Entrez.efetch(db="pubmed", id=",".join(id_list), rettype="abstract", retmode="xml") as handle:
+        records = Entrez.read(handle)
 
     results = []
     for article in records["PubmedArticle"]:
@@ -49,32 +18,26 @@ def fetch_article_details(id_list):
         article_data = medline["Article"]
 
         title = article_data.get("ArticleTitle", "No Title Available")
+        year = article_data.get("ArticleDate", [{}])[0].get("Year", "No Year Available")
         abstract_data = article_data.get("Abstract", {}).get("AbstractText", ["No Abstract"])
         abstract = " ".join(abstract_data) if isinstance(abstract_data, list) else str(abstract_data)
-        keywords = medline.get("KeywordList", [])
-        keywords = [kw for sublist in keywords for kw in sublist] if keywords else ["No Keywords"]
-        
-        # Extracting authors
-        authors = []
-        if "AuthorList" in article_data:
-            for author in article_data["AuthorList"]:
-                if "LastName" in author and "ForeName" in author:
-                    authors.append(f"{author['ForeName']} {author['LastName']}")
+        keywords = [kw for sublist in medline.get("KeywordList", []) for kw in sublist] or ["No Keywords"]
 
-        # Extracting journal name and DOI
+        authors = [
+            f"{author['ForeName']} {author['LastName']}"
+            for author in article_data.get("AuthorList", [])
+            if "LastName" in author and "ForeName" in author
+        ]
+
         journal = article_data.get("Journal", {}).get("Title", "No Journal Info")
-        doi = "No DOI"
-        if "ELocationID" in article_data:
-            for eloc in article_data["ELocationID"]:
-                if eloc.attributes.get("EIdType") == "doi":
-                    doi = eloc.lower()
+        doi = next((eloc.lower() for eloc in article_data.get("ELocationID", []) if eloc.attributes.get("EIdType") == "doi"), "No DOI")
 
-        # spaCy processing
         spacy_results = process_text(abstract)
 
         results.append({
-            "title": title, 
-            "abstract": abstract, 
+            "title": title,
+            "year": year,
+            "abstract": abstract,
             "keywords": keywords,
             "authors": authors,
             "journal": journal,
@@ -85,23 +48,28 @@ def fetch_article_details(id_list):
 
     return results
 
+def search_pubmed(query, num_results):
+    """Searches for articles on PubMed and saves them to MongoDB."""
+    with Entrez.esearch(db="pubmed", term=query, retmax=num_results) as handle:
+        record = Entrez.read(handle)
+
+    articles = fetch_papers(record.get("IdList", []))
+    save_to_mongo(articles, "PubMed")
+    return articles
+
 def save_results_to_json(articles, filename="pubmed_results.json"):
-    """Saves the results in a JSON file."""
-    with open(filename, mode='w', encoding='utf-8') as file:
+    """Saves the articles to a JSON file."""
+    with open(filename, "w", encoding="utf-8") as file:
         json.dump(articles, file, ensure_ascii=False, indent=4)
     print(f"Results saved in {filename}")
 
+def configure_entrez():
+    """Configures Entrez using environment variables."""
+    email = os.getenv("EMAIL")
+    api_key = os.getenv("API_KEY_PUBMED")
 
-def search_pubmed(query, num_results):
-    """Fetch articles from the PubMed API and save them to MongoDB."""
-    
-    articles_json = fetch_papers(query, num_results)
-    
-    # Parse JSON string into Python dictionary
-    articles_dict = json.loads(articles_json)
+    if not email or not api_key:
+        raise ValueError("Missing EMAIL or API_KEY_PUBMED in environment variables.")
 
-    # Extract the list of articles
-    articles = articles_dict.get("results", [])
-
-    save_to_mongo(articles, "PubMed")
-    return articles
+    Entrez.email = email
+    Entrez.api_key = api_key

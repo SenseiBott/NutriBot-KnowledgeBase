@@ -2,6 +2,8 @@
 from pymongo import MongoClient
 from tqdm import tqdm
 
+from modules.spaCy_utils import process_text
+
 def configure_mongoDB_connection():
     """Configure MongoDB connection."""
     client = MongoClient("mongodb://localhost:27017/")  
@@ -37,20 +39,42 @@ def save_to_mongo(papers,source):
         else:
             if source == "Europe PMC":
                 for paper in tqdm(papers, desc="Saving EuropePMC articles to MongoDB"):
+                    
+                    # Process Text
+                    if paper.get("abstractText", ""):
+                        abstract = paper.get("abstractText", "")
+                        spacy_results = process_text(abstract)
+                    else:
+                        abstract = ""
+                    
+                    # Transform authors into a list of strings
+                    authors = paper.get("authorList", {}).get("author", [])
+                    authors = [f"{author.get('firstName', '')} {author.get('lastName', '')}" for author in authors]
+                    
                     doc = {
                         "title": paper.get("title", ""),
-                        "authors": paper.get("authorString", ""),
+                        "authors": authors,
                         "year": int(paper.get("year", 0) or 0),
                         "source": "Europe PMC",
                         "abstract": paper.get("abstractText", ""),
                         "keywords": paper.get("keywordList", {}).get("keyword", []),
                         "doi": paper.get("doi", ""),
                         "last_updated": paper.get("firstPublicationDate", ""),
+                        "spacy_entities": spacy_results.get("entities", []),
+                        "spacy_matched_terms": spacy_results.get("matched_terms", [])
                     }
                     collection.insert_one(doc)
             else:
                 if source == "Semantic Scholar":
                     for paper in tqdm(papers, desc="Saving Semantic Scholar articles to MongoDB"):
+                        
+                        # Process Text
+                        if paper.get("abstract", ""):
+                            abstract = paper.get("abstract", "")
+                            spacy_results = process_text(abstract)
+                        else:
+                            abstract = ""
+                            
                         doc = {
                             "title": paper.get("title", ""),
                             "authors": [author.get("name", "") for author in paper.get("authors", [])],
@@ -60,7 +84,9 @@ def save_to_mongo(papers,source):
                             "keywords": [],  
                             "doi": paper.get("externalIds", {}).get("DOI", ""), 
                             "journal": paper.get("journal", {}).get("name", ""),
-                            "last_updated": ""  
+                            "last_updated": "",
+                            "spacy_entities": spacy_results.get("entities", []),
+                            "spacy_matched_terms": spacy_results.get("matched_terms", [])
                         }
                         collection.insert_one(doc)
 
