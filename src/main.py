@@ -1,4 +1,3 @@
-from dotenv import load_dotenv
 from modules.europePMC_utils import search_europe_pmc
 from modules.pubmed_utils import search_pubmed
 from modules.semanticscholar_utils import search_semanticscholar
@@ -18,9 +17,6 @@ def search_and_print(source_name, search_function, query, max_articles=None, yea
 
 def main():
     """Main function to fetch and save articles from multiple sources."""
-    
-    # Load environment variables from the .env file
-    load_dotenv()
     
     # Define the search query
     query = '("supplement AND disease prevention")'

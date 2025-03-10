@@ -1,10 +1,12 @@
 import json
 import os
 from Bio import Entrez
+from dotenv import load_dotenv
 from modules.mongoDB_utils import save_to_mongo
 from modules.spaCy_utils import process_text
 
 def fetch_papers(id_list):
+    
     """Fetches article details from PubMed."""
     if not id_list:
         return []
@@ -56,6 +58,9 @@ def fetch_papers(id_list):
 
 def search_pubmed(query, num_results, year_range=None):
     """Searches for articles on PubMed and saves them to MongoDB."""
+    load_dotenv()
+    configure_entrez()
+    
     if year_range:
         start_year, end_year = year_range
         query += f" AND ({start_year}[PDAT] : {end_year}[PDAT])"
