@@ -52,14 +52,21 @@ def fetch_papers(id_list):
 
     return results
 
-def search_pubmed(query, num_results):
+
+
+def search_pubmed(query, num_results, year_range=None):
     """Searches for articles on PubMed and saves them to MongoDB."""
-    with Entrez.esearch(db="pubmed", term=query, retmax=num_results) as handle:
+    if year_range:
+        start_year, end_year = year_range
+        query += f" AND ({start_year}[PDAT] : {end_year}[PDAT])"
+
+    with Entrez.esearch(db="pubmed", term=query, retmax=num_results, sort="pub_date") as handle:
         record = Entrez.read(handle)
 
     articles = fetch_papers(record.get("IdList", []))
     save_to_mongo(articles, "PubMed")
     return articles
+
 
 def save_results_to_json(articles, filename="pubmed_results.json"):
     """Saves the articles to a JSON file."""

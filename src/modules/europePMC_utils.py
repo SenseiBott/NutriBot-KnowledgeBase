@@ -19,7 +19,7 @@ def fetch_papers(query, num_results):
         print(f"Error fetching data: {response.status_code}")
         return []
 
-def search_europe_pmc(query, num_results):
+def search_europe_pmc(query, num_results, year_range=None):
     """Fetch articles from the Europe PMC API and save them to MongoDB."""
     papers = fetch_papers(query, num_results)
     save_to_mongo(papers, "Europe PMC")
