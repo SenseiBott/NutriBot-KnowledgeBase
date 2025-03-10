@@ -4,7 +4,7 @@ from modules.pubmed_utils import search_pubmed
 from modules.semanticscholar_utils import search_semanticscholar
 from modules.wikipedia_utils import search_wikipedia 
 
-def search_and_print(source_name, search_function, query, max_articles, year_range):
+def search_and_print(source_name, search_function, query, max_articles=None, year_range=None):
     """Generic function to search for articles from a given source."""
     print(f"🔎 Searching for articles on {source_name}...")
     
