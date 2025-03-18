@@ -85,7 +85,7 @@ def save_to_mongo(papers, source):
                     "abstract": paper.get("abstract", ""),
                     "keywords": [],  
                     "doi": paper.get("externalIds", {}).get("DOI", ""), 
-                    "journal": paper.get("journal", {}).get("name", ""),
+                    "journal": paper.get("journal", {}).get("name", "") if paper.get("journal") else "",
                     "last_updated": "",
                     "spacy_entities": spacy_results.get("entities", []),
                     "spacy_matched_terms": spacy_results.get("matched_terms", [])

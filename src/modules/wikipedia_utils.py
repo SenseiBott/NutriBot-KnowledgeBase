@@ -22,7 +22,7 @@ def search_wikipedia(query, lang="en"):
     )
     
     # Busque a página
-    page = wiki_wiki.page("Vitamin C")
+    page = wiki_wiki.page(query)
     
     if page.exists():
         return {
