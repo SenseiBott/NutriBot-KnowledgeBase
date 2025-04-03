@@ -1,6 +1,7 @@
 import requests
 
-from modules.mongoDB_utils import save_to_mongo
+from modules.mongoDB_utils import save_to_mongo_and_pinecone
+
 
 def fetch_papers(query, num_results):
     """Fetch articles from the Europe PMC API."""
@@ -22,5 +23,5 @@ def fetch_papers(query, num_results):
 def search_europe_pmc(query, num_results, year_range=None):
     """Fetch articles from the Europe PMC API and save them to MongoDB."""
     papers = fetch_papers(query, num_results)
-    save_to_mongo(papers, "Europe PMC")
+    save_to_mongo_and_pinecone(papers, "Europe PMC")
     return papers

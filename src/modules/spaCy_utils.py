@@ -111,7 +111,7 @@ def generate_embeddings(chunks):
             outputs = model(**inputs)
             embedding = outputs.last_hidden_state.mean(dim=1).squeeze().cpu().numpy()
             embeddings.append(embedding)
-    return np.array(embeddings)
+    return np.mean(embeddings, axis=0) if embeddings else np.zeros(384)
 
 # Função para processar o texto
 def process_text(text):
