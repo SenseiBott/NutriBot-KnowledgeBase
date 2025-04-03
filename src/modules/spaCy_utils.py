@@ -1,9 +1,18 @@
+import json
 import spacy
 from spacy.matcher import PhraseMatcher
 import re
 from transformers import AutoTokenizer, AutoModel
 import torch
 import numpy as np
+
+# Função para carregar termos de um arquivo JSON
+def load_terms_from_json(file_path):
+    with open(file_path, "r") as file:
+        data = json.load(file)
+    # Retorna a lista de termos a partir da chave correspondente
+    return set(data[list(data.keys())[0]])
+
 
 # Verificar dispositivo
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -24,30 +33,13 @@ def normalize_text(text):
     text = re.sub(r'\s+', ' ', text)
     return text.strip()
 
-# Listas de termos biomédicos
-disease_terms = [
-    "cardiovascular diseases", "cancer", "diabetes", "hypertension", "obesity", 
-    "asthma", "alzheimer's disease", "parkinson's disease", "rheumatoid arthritis", 
-    "osteoporosis", "stroke", "copd", "depression", "anxiety", "insomnia", "migraine", 
-    "epilepsy", "ibd", "hepatitis", "tuberculosis", "malaria", "hiv/aids", "mental health disorders", "disease prevention"
-]
 
-supplement_terms = [
-    "vitamin c", "vitamin d", "vitamin e", "vitamin b12", "calcium", "magnesium", 
-    "omega-3 fatty acids", "probiotics", "fiber", "zinc", "iron", "turmeric", 
-    "coenzyme q10", "glucosamine", "chondroitin", "ginseng", "echinacea", "green tea extract", 
-    "garcinia cambogia", "spirulina", "aloe vera", "ashwagandha", "l-carnitine", "resveratrol", 
-    "melatonin", "elderberry", "fish oil", "flaxseed oil", "beta-glucan", "biotin", "collagen", "nutritional supplements"
-]
+# Carregar os termos de cada JSON
+disease_terms = load_terms_from_json("src/terms/diseases.json")
+supplement_terms = load_terms_from_json("src/terms/supplement.json")
+pharmaceutical_terms = load_terms_from_json("src/terms/pharmaceutical.json")
+medical_concept_terms = load_terms_from_json("src/terms/medical.json")
 
-pharmaceutical_terms = [
-    "aspirin", "paracetamol", "ibuprofen", "metformin", "atorvastatin", 
-    "omeprazole", "simvastatin", "amlodipine", "losartan", "metoprolol"
-]
-
-medical_concept_terms = [
-    "immune function", "oxidative stress", "antioxidant properties", "cellular health", "immune response"
-]
 
 # Normalizar todos os termos
 disease_terms = set(normalize_text(term) for term in disease_terms)
