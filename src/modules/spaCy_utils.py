@@ -147,33 +147,3 @@ def process_text(text):
         "embeddings": embeddings
     }
 
-# Exemplo de uso
-if __name__ == "__main__":
-    sample_text = """
-    This study explores the potential of ultrasound-assisted extraction (UAE) 
-    for efficiently recovering bioactive compounds, particularly rutin, 
-    from the often-overlooked leaves of Capparis spinosa. 
-    By fine-tuning important extraction parameters such as ultrasound power, 
-    temperature, and ethanol concentration, the research achieved maximum yields of total 
-    phenolic content and rutin, establishing these leaves as a sustainable and valuable 
-    source of phytochemicals for applications in functional foods, nutraceuticals, and pharmaceuticals. 
-    High-performance liquid chromatography (HPLC) analysis revealed a high rutin content (15.51 mg/g DW),
-    accompanied by considerable amounts of quercetin-3-glucoside and catechin.
-    In vitro assays revealed the extract's strong antioxidative properties, 
-    effectively safeguarding Caco-2 and Hep G2 cells against oxidative stress and 
-    significantly lowering reactive oxygen species levels. Additionally, the extract 
-    enhanced the expression of vital antioxidative enzymes and demonstrated no toxicity 
-    at the tested concentrations, confirming its safety for dietary supplement use. These
-    findings underscore the extract’s strong safety profile and notable bioefficacy, reinforcing 
-    its suitability for incorporation into health-oriented formulations such as functional foods, 
-    dietary supplements, or nutraceutical products. Beyond demonstrating biological relevance, this
-    research also advances the sustainable valorization of Capparis spinosa leaf biomass—an underutilized
-    resource with high phytochemical potential—while contributing to the development of innovative, 
-    plant-based strategies for disease prevention and overall health enhancement.
-    """
-    result = process_text(sample_text)
-    
-    print("Entidades categorizadas:", result["entities"])
-    print("Termos encontrados:", result["matched_terms"])
-    print("Chunks:", result["chunks"])
-    print("Embeddings (primeiros 5 valores de cada):", [emb[:5] for emb in result["embeddings"]])

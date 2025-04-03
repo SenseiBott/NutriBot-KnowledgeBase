@@ -9,7 +9,6 @@ def configure_mongoDB_connection():
     collection = db["papers"] 
     return collection
 
-
 def save_to_mongo(papers, source):
     """Save articles to MongoDB."""
     if not papers:
@@ -24,32 +23,38 @@ def save_to_mongo(papers, source):
                 if year == "No Year Available":
                     year = 0
 
+                # Processar o abstract, se disponível
+                abstract = paper.get("abstract", "")
+                spacy_results = process_text(abstract) if abstract else {
+                    "entities": [], "matched_terms": {}, "chunks": [], "embeddings": []
+                }
+
                 doc = {
                     "title": paper.get("title", ""),
                     "authors": paper.get("authors", []),
-                    "year": int(paper.get(year, 0)),
+                    "year": int(year),
                     "source": "PubMed",
-                    "abstract": paper.get("abstract", ""),
+                    "abstract": abstract,
                     "keywords": paper.get("keywords", []),
                     "doi": paper.get("doi", ""),
                     "journal": paper.get("journal", ""),
                     "last_updated": paper.get("last_updated", ""),
-                    "spacy_entities": paper.get("spacy_entities", []),
-                    "spacy_matched_terms": paper.get("spacy_matched_terms", [])
+                    "spacy_entities": spacy_results["entities"],
+                    "spacy_matched_terms": spacy_results["matched_terms"],
+                    "chunks": spacy_results["chunks"],
+                    "embeddings": spacy_results["embeddings"].tolist()  # Converter numpy array para lista
                 }
                 collection.insert_one(doc)
         
         elif source == "Europe PMC":
             for paper in tqdm(papers, desc="Saving EuropePMC articles to MongoDB"):
-                
-                # Process Text
-                if paper.get("abstractText", ""):
-                    abstract = paper.get("abstractText", "")
-                    spacy_results = process_text(abstract)
-                else:
-                    abstract = ""
+                # Processar o abstract, se disponível
+                abstract = paper.get("abstractText", "")
+                spacy_results = process_text(abstract) if abstract else {
+                    "entities": [], "matched_terms": {}, "chunks": [], "embeddings": []
+                }
 
-                # Transform authors into a list of strings
+                # Transformar autores em lista de strings
                 authors = paper.get("authorList", {}).get("author", [])
                 authors = [f"{author.get('firstName', '')} {author.get('lastName', '')}" for author in authors]
 
@@ -58,66 +63,68 @@ def save_to_mongo(papers, source):
                     "authors": authors,
                     "year": int(paper.get("pubYear", 0) or 0),
                     "source": "Europe PMC",
-                    "abstract": paper.get("abstractText", ""),
+                    "abstract": abstract,
                     "keywords": paper.get("keywordList", {}).get("keyword", []),
                     "doi": paper.get("doi", ""),
                     "last_updated": paper.get("firstPublicationDate", ""),
-                    "spacy_entities": spacy_results.get("entities", []),
-                    "spacy_matched_terms": spacy_results.get("matched_terms", [])
+                    "spacy_entities": spacy_results["entities"],
+                    "spacy_matched_terms": spacy_results["matched_terms"],
+                    "chunks": spacy_results["chunks"],
+                    "embeddings": spacy_results["embeddings"].tolist()  # Converter numpy array para lista
                 }
                 collection.insert_one(doc)
 
         elif source == "Semantic Scholar":
             for paper in tqdm(papers, desc="Saving Semantic Scholar articles to MongoDB"):
-                
-                # Process Text
-                if paper.get("abstract", ""):
-                    abstract = paper.get("abstract", "")
-                    spacy_results = process_text(abstract)
-                else:
-                    abstract = ""
+                # Processar o abstract, se disponível
+                abstract = paper.get("abstract", "")
+                spacy_results = process_text(abstract) if abstract else {
+                    "entities": [], "matched_terms": {}, "chunks": [], "embeddings": []
+                }
 
                 doc = {
                     "title": paper.get("title", ""),
                     "authors": [author.get("name", "") for author in paper.get("authors", [])],
                     "year": int(paper.get("year", 0) or 0),
-                    "source": "Semantic Scholar", 
-                    "abstract": paper.get("abstract", ""),
-                    "keywords": [],  
-                    "doi": paper.get("externalIds", {}).get("DOI", ""), 
+                    "source": "Semantic Scholar",
+                    "abstract": abstract,
+                    "keywords": [],
+                    "doi": paper.get("externalIds", {}).get("DOI", ""),
                     "journal": paper.get("journal", {}).get("name", "") if paper.get("journal") else "",
                     "last_updated": "",
-                    "spacy_entities": spacy_results.get("entities", []),
-                    "spacy_matched_terms": spacy_results.get("matched_terms", [])
+                    "spacy_entities": spacy_results["entities"],
+                    "spacy_matched_terms": spacy_results["matched_terms"],
+                    "chunks": spacy_results["chunks"],
+                    "embeddings": spacy_results["embeddings"].tolist()  # Converter numpy array para lista
                 }
                 collection.insert_one(doc)
         
         elif source == "GoogleScholar":
             for paper in tqdm(papers, desc="Saving Google Scholar articles to MongoDB"):
-
-                # Process Text
-                if paper.get("abstract", ""):
-                    abstract = paper.get("abstract", "")
-                    spacy_results = process_text(abstract)
-                else:
-                    abstract = ""
+                # Processar o abstract, se disponível
+                abstract = paper.get("abstract", "")
+                spacy_results = process_text(abstract) if abstract else {
+                    "entities": [], "matched_terms": {}, "chunks": [], "embeddings": []
+                }
 
                 authors = paper.get("authors", "No Authors")
                 if isinstance(authors, list):
-                    authors = ", ".join(authors)  # Combine authors into a single string
+                    authors = ", ".join(authors)  # Combinar autores em uma string
 
                 doc = {
                     "title": paper.get("title", ""),
                     "authors": authors,
                     "year": int(paper.get("year", 0) or 0),
-                    "source": "Google Scholar", 
-                    "abstract": paper.get("abstract", ""),
-                    "keywords": paper.get("keywords", []),  
+                    "source": "Google Scholar",
+                    "abstract": abstract,
+                    "keywords": paper.get("keywords", []),
                     "doi": paper.get("doi", ""),
                     "journal": paper.get("journal", ""),
                     "last_updated": "",
-                    "spacy_entities": spacy_results.get("entities", []),
-                    "spacy_matched_terms": spacy_results.get("matched_terms", [])
+                    "spacy_entities": spacy_results["entities"],
+                    "spacy_matched_terms": spacy_results["matched_terms"],
+                    "chunks": spacy_results["chunks"],
+                    "embeddings": spacy_results["embeddings"].tolist()  # Converter numpy array para lista
                 }
                 collection.insert_one(doc)
 
