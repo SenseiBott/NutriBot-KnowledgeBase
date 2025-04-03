@@ -67,7 +67,7 @@ def search_google_scholar(query, num_results, year_range=None):
         print("No articles found for the query.")
     else:
         # Save to MongoDB and Pinecone
-        save_to_mongo_and_pinecone(papers, "GoogleScholar")
+        save_to_mongo_and_pinecone(papers, "Google Scholar")
         print(f"{len(papers)} articles saved to MongoDB.")
 
     return papers
