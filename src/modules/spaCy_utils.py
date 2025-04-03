@@ -111,7 +111,7 @@ def generate_embeddings(chunks):
             outputs = model(**inputs)
             embedding = outputs.last_hidden_state.mean(dim=1).squeeze().cpu().numpy()
             embeddings.append(embedding)
-    return np.mean(embeddings, axis=0) if embeddings else np.zeros(384)
+    return np.array(embeddings) if embeddings else np.zeros((0, 384))  # Return [n_chunks, 384] array
 
 # Função para processar o texto
 def process_text(text):
@@ -131,11 +131,10 @@ def process_text(text):
                 categorized_entities.append((ent_text, category))
                 break
     chunks = split_into_chunks(text)
-    embeddings = generate_embeddings(chunks)
+    embeddings = generate_embeddings(chunks)  # Should return [n_chunks, 384]
     return {
         "entities": categorized_entities,
         "matched_terms": matches,
         "chunks": chunks,
         "embeddings": embeddings
     }
-

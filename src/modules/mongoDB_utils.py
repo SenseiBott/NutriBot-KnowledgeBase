@@ -1,5 +1,6 @@
 import os
 import uuid
+import numpy as np
 from pymongo import MongoClient
 from tqdm import tqdm
 from modules.spaCy_utils import process_text
@@ -48,13 +49,12 @@ def save_to_mongo_and_pinecone(papers, source):
                 if year == "No Year Available":
                     year = 0
 
-                # Processar o abstract, se disponível
                 abstract = paper.get("abstract", "")
                 spacy_results = process_text(abstract) if abstract else {
-                    "entities": [], "matched_terms": {}, "chunks": [], "embeddings": []
+                    "entities": [], "matched_terms": {}, "chunks": [], "embeddings": np.zeros((0, 384))
                 }
 
-                paper_id = generate_unique_id()  # Gerar um ID único para o artigo  
+                paper_id = generate_unique_id()
                 
                 doc = {
                     "paper_id": paper_id,
@@ -73,21 +73,27 @@ def save_to_mongo_and_pinecone(papers, source):
                 }
                 collection.insert_one(doc)
                 
-                metadata = {
-                    "title": paper.get("title", ""),
-                    "authors": paper.get("authors", []),
-                    "year": int(year),
-                    "source": "PubMed",
-                    "abstract": abstract,
-                    "keywords": paper.get("keywords", []),
-                    "doi": paper.get("doi", ""),
-                    "journal": paper.get("journal", ""),
-                    "last_updated": paper.get("last_updated", ""),
-                }
-                
-                # Save embeddings and metadata to Pinecone
-                index.upsert(vectors=[(paper_id, spacy_results["embeddings"], metadata)])
-        
+                # Save embeddings and chunk text to Pinecone
+                embeddings = spacy_results["embeddings"]  # Shape: [n_chunks, 384]
+                chunks = spacy_results["chunks"]
+                if len(embeddings) != len(chunks):
+                    print(f"Warning: Mismatch between embeddings ({len(embeddings)}) and chunks ({len(chunks)}) for paper {paper_id}")
+                    continue
+                for i, (embedding, chunk) in enumerate(zip(embeddings, chunks)):
+                    if embedding.shape != (384,):
+                        print(f"Invalid embedding shape for chunk {i} of paper {paper_id}: {embedding.shape}")
+                        continue
+                    chunk_id = f"{paper_id}_chunk_{i}"
+                    metadata = {
+                        "paper_id": paper_id,
+                        "chunk_idx": i,
+                        "chunk_text": chunk,  # Store the chunk text in Pinecone metadata
+                        "title": paper.get("title", ""),
+                        "source": "PubMed",
+                        "year": int(year),
+                        "doi": paper.get("doi", "")
+                    }
+                    index.upsert(vectors=[(chunk_id, embedding.tolist(), metadata)])
         elif source == "Europe PMC":
             for paper in tqdm(papers, desc="Saving EuropePMC articles to MongoDB"):
                 # Processar o abstract, se disponível
