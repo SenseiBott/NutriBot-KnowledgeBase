@@ -24,7 +24,7 @@ def search_and_print(source, func, query, max_articles=1, year_range=(2020, 2025
 def main():
     """Runs searches based on user choice."""
     console = Console()
-    query = '("dietary supplements" AND "disease prevention" AND "pharmaceuticals")'
+    query = '("vitamin D supplementation benefits")'
     
     sources = {
         "1": ("PubMed", search_pubmed),
