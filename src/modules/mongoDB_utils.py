@@ -1,17 +1,16 @@
 import os
 import uuid
 import numpy as np
-from pymongo import MongoClient
 from tqdm import tqdm
 from modules.spaCy_utils import process_text
 from pinecone import Pinecone, ServerlessSpec
 
-def configure_mongoDB_connection():
-    """Configure MongoDB connection."""
-    client = MongoClient("mongodb://localhost:27017/")
-    db = client["supplement_agent"]
-    collection = db["papers"]
-    return collection
+# def configure_mongoDB_connection():
+#     """Configure MongoDB connection."""
+#     client = MongoClient("mongodb://localhost:27017/")
+#     db = client["supplement_agent"]
+#     collection = db["papers"]
+#     return collection
 
 def configure_pinecone_connection():
     """Configure Pinecone connection."""
@@ -92,8 +91,8 @@ def extract_paper_attributes(paper, source):
     else:
         raise ValueError(f"Unsupported source: {source}")
 
-def save_paper_to_mongo_and_pinecone(paper, source, collection, index):
-    """Save a single paper to MongoDB and Pinecone."""
+def save_paper_to_mongo_and_pinecone(paper, source, index):  # Removi 'collection' dos parâmetros
+    """Save a single paper to Pinecone."""
     # Extract paper attributes
     paper_data = extract_paper_attributes(paper, source)
     abstract = paper_data["abstract"]
@@ -106,23 +105,23 @@ def save_paper_to_mongo_and_pinecone(paper, source, collection, index):
     # Generate a unique paper ID
     paper_id = generate_unique_id()
     
-    # Create MongoDB document
-    doc = {
-        "paper_id": paper_id,
-        "title": paper_data["title"],
-        "authors": paper_data["authors"],
-        "year": paper_data["year"],
-        "source": paper_data["source"],
-        "abstract": abstract,
-        "keywords": paper_data["keywords"],
-        "doi": paper_data["doi"],
-        "journal": paper_data["journal"],
-        "last_updated": paper_data["last_updated"],
-        "spacy_entities": spacy_results["entities"],
-        "spacy_matched_terms": spacy_results["matched_terms"],
-        "chunks": spacy_results["chunks"],
-    }
-    collection.insert_one(doc)
+    # Create MongoDB document (comentado)
+    # doc = {
+    #     "paper_id": paper_id,
+    #     "title": paper_data["title"],
+    #     "authors": paper_data["authors"],
+    #     "year": paper_data["year"],
+    #     "source": paper_data["source"],
+    #     "abstract": abstract,
+    #     "keywords": paper_data["keywords"],
+    #     "doi": paper_data["doi"],
+    #     "journal": paper_data["journal"],
+    #     "last_updated": paper_data["last_updated"],
+    #     "spacy_entities": spacy_results["entities"],
+    #     "spacy_matched_terms": spacy_results["matched_terms"],
+    #     "chunks": spacy_results["chunks"],
+    # }
+    # collection.insert_one(doc)
     
     # Save embeddings and chunk text to Pinecone
     embeddings = spacy_results["embeddings"]  # Shape: [n_chunks, 384]
@@ -147,17 +146,17 @@ def save_paper_to_mongo_and_pinecone(paper, source, collection, index):
         index.upsert(vectors=[(chunk_id, embedding.tolist(), metadata)])
 
 def save_to_mongo_and_pinecone(papers, source):
-    """Save articles to MongoDB and Pinecone."""
+    """Save articles to Pinecone."""
     if not papers:
         print("No articles to save.")
         return
     
     # Configure connections
-    collection = configure_mongoDB_connection()
+    # collection = configure_mongoDB_connection()  # Comentado
     index = configure_pinecone_connection()
     
     # Process each paper
     for paper in tqdm(papers, desc=f"Saving {source} articles"):
-        save_paper_to_mongo_and_pinecone(paper, source, collection, index)
+        save_paper_to_mongo_and_pinecone(paper, source, index)  # Removi 'collection' dos argumentos
     
     print(f"All {source} articles have been successfully saved!")

@@ -38,17 +38,17 @@ def query_pinecone(query_text, index, top_k=5):
         })
     return retrieved_chunks
 
-# Configurar o Pinecone
+# Configure Pinecone connection
 index = configure_pinecone_connection()
 
-# Definir a consulta
+# Define the query text
 query_text = "vitamin D supplementation benefits"
 
-# Buscar os chunks mais relevantes
+# Search the index for the top-k most similar chunks
 top_k = 5
 retrieved_chunks = query_pinecone(query_text, index, top_k=top_k)
 
-# Exibir os resultados
+# Show the results
 if not retrieved_chunks:
     print("Nenhum chunk encontrado para a consulta.")
 else:
