@@ -149,14 +149,15 @@ def process_pdf(pdf_path):
     raw_text = extract_text_from_pdf(pdf_path)
     cleaned_text = clean_text(raw_text) 
 
-    filtered_text = filter_relevant_text(cleaned_text, keywords)
+    #filtered_text = filter_relevant_text(cleaned_text, keywords)
     
-    final_text = []
-    for line in filtered_text.split("\n"):  
-        if len(line.split()) >= 30: 
-            summarized_line = summarize_text(line)
-            final_text.append(summarized_line)
+    # final_text = []
+    # for line in filtered_text.split("\n"):  
+    #     if len(line.split()) >= 30: 
+    #         summarized_line = summarize_text(line)
+    #         final_text.append(summarized_line)
     
+    return cleaned_text
     return "\n".join(final_text)
 
 

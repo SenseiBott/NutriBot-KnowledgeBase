@@ -5,8 +5,6 @@ O objetivo para já é o uso de scripts em `python` para extração de dados. Os
 ## Estrutura do Projeto
 ```
 .
-├── .env                             # PI_KEY=key_do_hugging_face
-│
 ├── JSON/
 │   ├── keywords.json                # Lista de palavras-chave para pesquisa
 │   ├── FirstLevel.json              # Dados processados e organizados em JSON
@@ -26,8 +24,6 @@ O objetivo para já é o uso de scripts em `python` para extração de dados. Os
 └── README.md                        # Documentação do projeto
 
 ```
-
-
 
 ## Como Usar
 1. Definir as palavras-chave no arquivo `keywords.json`.
