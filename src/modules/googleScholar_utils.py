@@ -1,7 +1,7 @@
 import json
 import os
 from dotenv import load_dotenv
-from modules.mongoDB_utils import save_to_mongo
+from modules.pinecone_utils import save_to_mongo_and_pinecone
 from modules.spaCy_utils import process_text
 from scholarly import scholarly
 
@@ -66,8 +66,8 @@ def search_google_scholar(query, num_results, year_range=None):
     if not papers:
         print("No articles found for the query.")
     else:
-        # Save to MongoDB
-        save_to_mongo(papers, "GoogleScholar")
+        # Save to MongoDB and Pinecone
+        save_to_mongo_and_pinecone(papers, "Google Scholar")
         print(f"{len(papers)} articles saved to MongoDB.")
 
     return papers

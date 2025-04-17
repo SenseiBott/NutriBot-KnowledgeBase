@@ -1,5 +1,6 @@
 import requests
-from modules.mongoDB_utils import configure_mongoDB_connection, save_to_mongo
+
+from modules.pinecone_utils import save_to_mongo_and_pinecone
 
 def fetch_papers(query, num_results):
     """Fetch articles from the Semantic Scholar API."""
@@ -20,5 +21,5 @@ def fetch_papers(query, num_results):
 def search_semanticscholar(query, num_results, year_range=None):
     """Fetch articles from the Semantic Scholar API and save them to MongoDB."""
     papers = fetch_papers(query, num_results)
-    save_to_mongo(papers, "Semantic Scholar")
+    save_to_mongo_and_pinecone(papers, "Semantic Scholar")
     return papers
