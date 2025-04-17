@@ -1,7 +1,7 @@
 import json
 import os
 from dotenv import load_dotenv
-from modules.mongoDB_utils import save_to_mongo_and_pinecone
+from modules.pinecone_utils import save_to_mongo_and_pinecone
 from modules.spaCy_utils import process_text
 from scholarly import scholarly
 

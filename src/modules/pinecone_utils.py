@@ -91,8 +91,8 @@ def extract_paper_attributes(paper, source):
     else:
         raise ValueError(f"Unsupported source: {source}")
 
-def save_paper_to_mongo_and_pinecone(paper, source, index):  # Removi 'collection' dos parâmetros
-    """Save a single paper to Pinecone."""
+def save_paper_to_mongo_and_pinecone(paper, source, index):
+    """Save a single paper to Pinecone with the new vector structure."""
     # Extract paper attributes
     paper_data = extract_paper_attributes(paper, source)
     abstract = paper_data["abstract"]
@@ -105,7 +105,7 @@ def save_paper_to_mongo_and_pinecone(paper, source, index):  # Removi 'collectio
     # Generate a unique paper ID
     paper_id = generate_unique_id()
     
-    # Create MongoDB document (comentado)
+    # Create MongoDB document (mantido comentado conforme original)
     # doc = {
     #     "paper_id": paper_id,
     #     "title": paper_data["title"],
@@ -123,27 +123,37 @@ def save_paper_to_mongo_and_pinecone(paper, source, index):  # Removi 'collectio
     # }
     # collection.insert_one(doc)
     
-    # Save embeddings and chunk text to Pinecone
+    # Save embeddings and chunk text to Pinecone with the new structure
     embeddings = spacy_results["embeddings"]  # Shape: [n_chunks, 384]
     chunks = spacy_results["chunks"]
     if len(embeddings) != len(chunks):
         print(f"Warning: Mismatch between embeddings ({len(embeddings)}) and chunks ({len(chunks)}) for paper {paper_id}")
         return
+
+    vectors = []
     for i, (embedding, chunk) in enumerate(zip(embeddings, chunks)):
         if embedding.shape != (384,):
             print(f"Invalid embedding shape for chunk {i} of paper {paper_id}: {embedding.shape}")
             continue
         chunk_id = f"{paper_id}_chunk_{i}"
+        # New metadata structure
         metadata = {
-            "paper_id": paper_id,
-            "chunk_idx": i,
-            "chunk_text": chunk,  # Store the chunk text in Pinecone metadata
+            "text": chunk,  # 'text' replaces 'chunk_text'
             "title": paper_data["title"],
-            "source": paper_data["source"],
-            "year": paper_data["year"],
-            "doi": paper_data["doi"]
+            "link": paper_data.get("doi", ""),  # Use DOI as link, or empty string if not available
+            "year": str(paper_data["year"]) if paper_data["year"] else "",  # Convert year to string, handle None/0
+            "topic": paper_data.get("keywords", [])[0] if paper_data.get("keywords") else "",  # Use first keyword as topic, or empty string
+            "hierarchy": 2  # Static value for now, as no hierarchical level is provided
         }
-        index.upsert(vectors=[(chunk_id, embedding.tolist(), metadata)])
+        vectors.append({
+            "id": chunk_id,
+            "values": embedding.tolist(),
+            "metadata": metadata
+        })
+
+    # Upsert vectors to Pinecone in batch
+    if vectors:
+        index.upsert(vectors=vectors)
 
 def save_to_mongo_and_pinecone(papers, source):
     """Save articles to Pinecone."""
@@ -157,6 +167,6 @@ def save_to_mongo_and_pinecone(papers, source):
     
     # Process each paper
     for paper in tqdm(papers, desc=f"Saving {source} articles"):
-        save_paper_to_mongo_and_pinecone(paper, source, index)  # Removi 'collection' dos argumentos
+        save_paper_to_mongo_and_pinecone(paper, source, index)
     
     print(f"All {source} articles have been successfully saved!")

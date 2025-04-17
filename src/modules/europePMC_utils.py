@@ -1,6 +1,6 @@
 import requests
 
-from modules.mongoDB_utils import save_to_mongo_and_pinecone
+from modules.pinecone_utils import save_to_mongo_and_pinecone
 
 
 def fetch_papers(query, num_results):

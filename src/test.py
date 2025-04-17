@@ -42,7 +42,7 @@ def query_pinecone(query_text, index, top_k=5):
 index = configure_pinecone_connection()
 
 # Define the query text
-query_text = "vitamin D supplementation benefits"
+query_text = "what supplements prevent diseases?"
 
 # Search the index for the top-k most similar chunks
 top_k = 5
