@@ -88,6 +88,15 @@ def extract_paper_attributes(paper, source):
             "journal": paper.get("journal", ""),
             "last_updated": ""
         }
+    elif source == "level1":
+        # Extract data for trusted sources (hierarchy level 1)
+        return {
+            "title": paper.get("title", ""),
+            "source": paper.get("source", "Unknown Source"),
+            "link": paper.get("link", ""),
+            "content": paper.get("content", ""),
+            "scraped_at": paper.get("scraped_at", "")
+        }
     else:
         raise ValueError(f"Unsupported source: {source}")
 
@@ -95,12 +104,20 @@ def save_paper_to_mongo_and_pinecone(paper, source, index):
     """Save a single paper to Pinecone with the new vector structure."""
     # Extract paper attributes
     paper_data = extract_paper_attributes(paper, source)
-    abstract = paper_data["abstract"]
     
     # Process the abstract with spaCy
-    spacy_results = process_text(abstract) if abstract else {
-        "entities": [], "matched_terms": {}, "chunks": [], "embeddings": np.zeros((0, 384))
-    }
+    if source == "level1":
+        content = paper_data["content"]
+        # Process the content with spaCy
+        spacy_results = process_text(content) if content else {
+            "entities": [], "matched_terms": {}, "chunks": [], "embeddings": np.zeros((0, 384))
+        }
+    else:
+        abstract = paper_data["abstract"]
+        # Process the abstract with spaCy
+        spacy_results = process_text(abstract) if abstract else {
+            "entities": [], "matched_terms": {}, "chunks": [], "embeddings": np.zeros((0, 384))
+        }
 
     # Generate a unique paper ID
     paper_id = generate_unique_id()
@@ -136,15 +153,29 @@ def save_paper_to_mongo_and_pinecone(paper, source, index):
             print(f"Invalid embedding shape for chunk {i} of paper {paper_id}: {embedding.shape}")
             continue
         chunk_id = f"{paper_id}_chunk_{i}"
+
+        # Define hierarchy level based on source
+        hierarchy_level = 1 if source == "level1" else 2
+
         # New metadata structure
-        metadata = {
-            "text": chunk,  # 'text' replaces 'chunk_text'
-            "title": paper_data["title"],
-            "link": paper_data.get("doi", ""),  # Use DOI as link, or empty string if not available
-            "year": str(paper_data["year"]) if paper_data["year"] else "",  # Convert year to string, handle None/0
-            "topic": paper_data.get("keywords", [])[0] if paper_data.get("keywords") else "",  # Use first keyword as topic, or empty string
-            "hierarchy": 2  # Static value for now, as no hierarchical level is provided
-        }
+        if source == "level1":
+            metadata = {
+                "text": chunk,
+                "title": paper_data["title"],
+                "link": paper_data["link"],
+                "source": paper_data["source"],  # Added source information for level1 (NIH, FDA, etc.)
+                "topic": paper_data["title"].split()[0] if paper_data["title"] else "",  # Use first word of title as topic
+                "hierarchy": hierarchy_level
+            }
+        else:
+            metadata = {
+                "text": chunk,  # 'text' replaces 'chunk_text'
+                "title": paper_data["title"],
+                "link": paper_data.get("doi", ""),  # Use DOI as link, or empty string if not available
+                "year": str(paper_data["year"]) if paper_data["year"] else "",  # Convert year to string, handle None/0
+                "topic": paper_data.get("keywords", [])[0] if paper_data.get("keywords") else "",  # Use first keyword as topic, or empty string
+                "hierarchy": 2  # Static value for now, as no hierarchical level is provided
+            }
         vectors.append({
             "id": chunk_id,
             "values": embedding.tolist(),
