@@ -2,68 +2,57 @@ import time
 from datetime import datetime
 import json
 import re
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+import requests
 from bs4 import BeautifulSoup
 import traceback
 
 def format_url_name(name):
-    formatted = re.sub(r'[^a-zA-Z0-9\s]', '', name.lower())
-    formatted = formatted.replace(' ', '')
+    formatted = re.sub(r'[^a-zA-Z0-9\s]', '', name)
+    formatted = ''.join(word.capitalize() for word in formatted.split())
     return formatted
 
-def dismiss_modal(driver):
+def check_page_exists(response):
     try:
-        no_thanks_button = WebDriverWait(driver, 5).until(
-            EC.element_to_be_clickable((By.ID, "prefix-dismissButton"))
-        )
-        no_thanks_button.click()
-    except:
-        pass
-
-
-def check_page_exists(driver, timeout=5):
-    try:
-        WebDriverWait(driver, timeout).until(
-            EC.presence_of_element_located((By.TAG_NAME, "body"))
-        )
+        if response.status_code != 200:
+            print(f"Página retornou status code: {response.status_code}")
+            return False
+            
+        soup = BeautifulSoup(response.text, 'html.parser')
         
-        # Verificar expressões específicas que indicam que a página não existe
-        error_indicators = [
-            "Page not found", 
-            "404", 
-            "The requested page could not be found",
-            "We can't find the page"
-        ]
-        
-        for indicator in error_indicators:
-            if indicator in driver.page_source:
-                return False
-        
-        # Verificar a presença de elementos que devem existir em páginas válidas
-        try:
-            article = WebDriverWait(driver, 3).until(
-                EC.presence_of_element_located((By.TAG_NAME, "article"))
-            )
+        # Verificar pelo título
+        title_element = soup.find('title')
+        if title_element and "404" in title_element.text:
+            print(f"Error in page title: {title_element.text}")
+            return False
+            
+        error_elements = soup.find_all(class_="error-page")
+        if error_elements:
+            print("Found error page container")
+            return False
+            
+        content_elements = soup.find_all("article")
+        if content_elements:
             return True
-        except:
-            try:
-                fact_sheet = WebDriverWait(driver, 3).until(
-                    EC.presence_of_element_located((By.ID, "fact-sheet"))
-                )
-                return True
-            except:
-                h1_elements = driver.find_elements(By.TAG_NAME, "h1")
-                if h1_elements:
-                    return True
-                return False
-    except:
+            
+        fact_sheet = soup.find(id="fact-sheet")
+        if fact_sheet:
+            return True
+            
+        h1_elements = soup.find_all("h1")
+        if h1_elements and len(h1_elements[0].text.strip()) > 0:
+            return True
+            
+        main_content = soup.find("main")
+        if main_content:
+            return True
+            
         return False
-    
+            
+    except Exception as e:
+        print(f"Error checking page existence: {str(e)}")
+        traceback.print_exc()
+        return False
+
 def clean_text(text):
     """Remove citações e \n """
     cleaned_text = re.sub(r'\[\s*\d+(?:\s*,\s*\d+)*\s*\]', '', text)
@@ -75,14 +64,14 @@ def process_table(table_element):
     caption = table_element.find('caption')
     table_caption = caption.get_text().strip() if caption else "Tabela"
     
-    # Obter linhas do cabeçalho
+    # Linhas do cabeçalho
     headers = []
     thead = table_element.find('thead')
     if thead:
         for th in thead.find_all('th'):
             headers.append(clean_text(th.get_text().strip()))
     
-    # Obter linhas de dados
+    # Linhas de dados
     rows = []
     tbody = table_element.find('tbody')
     if tbody:
@@ -111,120 +100,78 @@ def process_table(table_element):
             sentence = f"{item_name}: {', '.join(value_parts)}"
             text_output.append(sentence)
         else:
-            text_output.append(f"• {row[0]}")
+            text_output.append(f"{row[0]}")
     
     return " ".join(text_output)
 
-def extract_section_content(section_header):
-    """Extrai o conteúdo de uma seção específica e retorna como texto formatado"""
-    formatted_content = []
-    current = section_header.find_next_sibling()
+def extract_all_text(article):
+    text_parts = []
     
-    if current and current.name == 'div':
-        section_container = current
-        elements = section_container.find_all(['p', 'table', 'ul', 'ol', 'h3'])
-    else:
-        elements = []
-        while current and current.name != 'h2':
-            if current.name in ['p', 'table', 'ul', 'ol', 'h3']:
-                elements.append(current)
-            current = current.find_next_sibling()
-    
-    for elem in elements:
-        if elem.name == 'h3':
-            formatted_content.append(f"{clean_text(elem.get_text().strip())}")
-        elif elem.name == 'p':
-            text = clean_text(elem.get_text())
+    for element in article.find_all(['h1', 'h2', 'h3', 'p', 'ul', 'ol', 'li', 'table']):
+        if element.name == 'table':
+            text_parts.append(process_table(element))
+        else:
+            text = clean_text(element.get_text().strip())
             if text:
-                formatted_content.append(text)
-        elif elem.name == 'table':
-            formatted_content.append(process_table(elem))
-        elif elem.name in ['ul', 'ol']:
-            list_items = []
-            for li in elem.find_all('li'):
-                marker = "• " if elem.name == 'ul' else "1. "
-                list_items.append(f"{marker}{clean_text(li.get_text())}")
-            formatted_content.extend(list_items)
+                text_parts.append(text)
     
-    return " ".join(formatted_content)
+    return " ".join(text_parts)
 
-def scrape_article_content(driver):
-    """Extrai o conteúdo do artigo excluindo referências e disclaimers"""
-    soup = BeautifulSoup(driver.page_source, 'html.parser')
-    
-    title_element = soup.find('h1', class_='fsTitle')
-    title = title_element.get_text().strip() if title_element else "Sem título"
-    
+def scrape_article_content(soup):
     article = soup.find('article') or soup.find('div', id='fact-sheet')
     
     if not article:
-        print("Não foi possível encontrar o conteúdo do artigo.")
         return None
     
+    article_copy = BeautifulSoup(str(article), 'html.parser')
+    
     for section_id in ['ref', 'disc', 'divCitations', 'divDisclaimer']:
-        reference_sections = article.find_all(['section', 'div'], id=lambda x: x and section_id in x)
+        reference_sections = article_copy.find_all(['section', 'div'], id=lambda x: x and section_id in x)
         for section in reference_sections:
             section.extract()
     
-    content_data = {
-        "title": title,
-        "content": []  
+    for header in article_copy.find_all(['h2']):
+        header_text = header.get_text().lower()
+        if 'reference' in header_text or 'disclaimer' in header_text or 'table of contents' in header_text:
+            current = header
+            while current and current.name != 'h2':
+                next_elem = current.find_next_sibling()
+                current.extract()
+                current = next_elem
+            header.extract()
+    
+    return extract_all_text(article_copy)
+
+def scrape_supplement_page(url, supplement_name):
+    print(f"\nURL: {url}")
+    
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Connection': 'keep-alive',
+        'Upgrade-Insecure-Requests': '1',
+        'Cache-Control': 'max-age=0'
     }
     
-    section_headers = article.find_all('h2')
-    
-    for header in section_headers:
-        section_id = header.get('id')
-        section_title = clean_text(header.get_text().strip())
-        
-        if (section_id and (section_id in ['ref', 'disc'])) or \
-           ('reference' in section_title.lower()) or \
-           ('disclaimer' in section_title.lower()) or \
-           ('table of contents' in section_title.lower()):
-            continue
-        
-        section_content = f"{section_title} "
-        
-        section_content += extract_section_content(header)
-        
-        content_data["content"].append(section_content)
-    
-    content_data["full_content"] = " ".join(content_data["content"])
-    
-    return content_data
-
-def scrape_supplement_page(url, supplement_name, driver):
-    """Faz o scraping de uma página de suplemento"""
-    print(f"\nNavegando para a URL: {url}")
-    
     try:
-        driver.get(url)
-        final_url = driver.current_url
+        response = requests.get(url, headers=headers, timeout=30)
+        final_url = response.url
 
-        if not check_page_exists(driver):
+        if not check_page_exists(response):
             print(f"A página para {supplement_name} não existe.")
             return None
         
-        dismiss_modal(driver)
-        
-        try:
-            WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.TAG_NAME, "article"))
-            )
-        except:
-            WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.ID, "fact-sheet"))
-            )
-        
-        content = scrape_article_content(driver)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        content = scrape_article_content(soup)
         
         if content:
             simplified_content = {
                 "title": supplement_name,
                 "link": final_url,
-                "source" : "NIH",
-                "scraped_at": datetime.now().isoformat(),  
-                "content": content["full_content"]
+                "source": "NIH",
+                "accessed_at": datetime.now().isoformat(),  
+                "content": content
             }
             return simplified_content
         else:
@@ -236,12 +183,11 @@ def scrape_supplement_page(url, supplement_name, driver):
         traceback.print_exc()
         return None
 
-import os
-
 def process_supplements(supplement_file, output_file="supplements_data.json"):
     with open(supplement_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
+    import os
     if os.path.exists(output_file):
         with open(output_file, 'r', encoding='utf-8') as f:
             saved_data = json.load(f)
@@ -249,13 +195,6 @@ def process_supplements(supplement_file, output_file="supplements_data.json"):
         saved_data = {"supplements": []}
 
     processed_names = {s['title'] for s in saved_data.get("supplements", [])}
-
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--window-size=1920,1080")
-
-    driver = webdriver.Chrome(options=chrome_options)
 
     supplements = data.get("supplement_terms", [])
     success_count = 0
@@ -271,7 +210,7 @@ def process_supplements(supplement_file, output_file="supplements_data.json"):
             url_name = format_url_name(supplement)
             url = f"https://ods.od.nih.gov/factsheets/{url_name}-HealthProfessional"
 
-            content = scrape_supplement_page(url, supplement, driver)
+            content = scrape_supplement_page(url, supplement)
 
             if content:
                 saved_data["supplements"].append(content)
@@ -289,8 +228,6 @@ def process_supplements(supplement_file, output_file="supplements_data.json"):
     except Exception as e:
         print(f"Erro ao processar suplementos: {str(e)}")
         traceback.print_exc()
-    finally:
-        driver.quit()
 
 if __name__ == "__main__":
     supplement_file = "../terms/supplement.json"
