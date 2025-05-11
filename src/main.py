@@ -24,7 +24,7 @@ def search_and_print(source, func, query, max_articles=1, year_range=(2020, 2025
 def main():
     """Runs searches based on user choice."""
     console = Console()
-    query = '("dietary supplements" AND "disease prevention")'
+    query = '("Vitamin D benefits" OR "Vitamin D deficiency")'
     
     sources = {
         "1": ("PubMed", search_pubmed),
@@ -35,6 +35,7 @@ def main():
         "6": ("All Sources", None)
     }
     
+
     while True:
         choice = display_menu()
         if choice.lower() == 'q':

@@ -1,10 +1,12 @@
 import json
+from pinecone import Pinecone
 import spacy
 from spacy.matcher import PhraseMatcher
 import re
 from transformers import AutoTokenizer, AutoModel
 import torch
 import numpy as np
+import os
 
 # Função para carregar termos de um arquivo JSON
 def load_terms_from_json(file_path):
@@ -101,17 +103,22 @@ def split_into_chunks(text, max_length=150):  # Ajustado para RAG
 
     return chunks
 
-# Função para gerar embeddings
+
 def generate_embeddings(chunks):
+    pinecone_api_key = os.getenv("PINECONE_API_KEY")
+    pc = Pinecone(api_key=pinecone_api_key)
     embeddings = []
     for chunk in chunks:
-        inputs = tokenizer(chunk, return_tensors="pt", padding=True, truncation=True, max_length=512)
-        inputs = {key: value.to(device) for key, value in inputs.items()}
-        with torch.no_grad():
-            outputs = model(**inputs)
-            embedding = outputs.last_hidden_state.mean(dim=1).squeeze().cpu().numpy()
-            embeddings.append(embedding)
-    return np.array(embeddings) if embeddings else np.zeros((0, 384))  # Return [n_chunks, 384] array
+        # Chamar a API de embedding do Pinecone
+        response = pc.inference.embed(
+            model="llama-text-embed-v2",
+            inputs=[{"text": chunk}],
+            parameters={"input_type": "passage"}
+        )
+        # Extrair o embedding (response.data contém uma lista de dicionários)
+        embedding = response.data[0]["values"]
+        embeddings.append(embedding)
+    return np.array(embeddings)  # Retorna array [n_chunks, dimensão]
 
 # Função para processar o texto
 def process_text(text):
@@ -131,7 +138,7 @@ def process_text(text):
                 categorized_entities.append((ent_text, category))
                 break
     chunks = split_into_chunks(text)
-    embeddings = generate_embeddings(chunks)  # Should return [n_chunks, 384]
+    embeddings = generate_embeddings(chunks)  # Usa a nova função com Pinecone
     return {
         "entities": categorized_entities,
         "matched_terms": matches,

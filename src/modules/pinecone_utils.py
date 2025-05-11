@@ -15,12 +15,14 @@ from pinecone import Pinecone, ServerlessSpec
 def configure_pinecone_connection():
     """Configure Pinecone connection."""
     pinecone_api_key = os.getenv("PINECONE_API_KEY")
+    if not pinecone_api_key:
+        raise ValueError("PINECONE_API_KEY não está definida.")
     pc = Pinecone(api_key=pinecone_api_key)
-    index_name = "papers"
+    index_name = "test-index"  # Replace with your index name
     if index_name not in pc.list_indexes().names():
         pc.create_index(
             name=index_name,
-            dimension=384,  # Match BGE-small-en
+            dimension=1024,  # Match llama-text-embed-v2
             metric='cosine',
             spec=ServerlessSpec(cloud='aws', region='us-east-1')
         )
@@ -110,13 +112,13 @@ def save_paper_to_mongo_and_pinecone(paper, source, index):
         content = paper_data["content"]
         # Process the content with spaCy
         spacy_results = process_text(content) if content else {
-            "entities": [], "matched_terms": {}, "chunks": [], "embeddings": np.zeros((0, 384))
+            "entities": [], "matched_terms": {}, "chunks": [], "embeddings": np.zeros((0, 1024))
         }
     else:
         abstract = paper_data["abstract"]
         # Process the abstract with spaCy
         spacy_results = process_text(abstract) if abstract else {
-            "entities": [], "matched_terms": {}, "chunks": [], "embeddings": np.zeros((0, 384))
+            "entities": [], "matched_terms": {}, "chunks": [], "embeddings": np.zeros((0, 1024))
         }
 
     # Generate a unique paper ID
@@ -149,7 +151,7 @@ def save_paper_to_mongo_and_pinecone(paper, source, index):
 
     vectors = []
     for i, (embedding, chunk) in enumerate(zip(embeddings, chunks)):
-        if embedding.shape != (384,):
+        if embedding.shape != (1024,):
             print(f"Invalid embedding shape for chunk {i} of paper {paper_id}: {embedding.shape}")
             continue
         chunk_id = f"{paper_id}_chunk_{i}"
