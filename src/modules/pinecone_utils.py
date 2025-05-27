@@ -5,24 +5,18 @@ from tqdm import tqdm
 from modules.spaCy_utils import process_text
 from pinecone import Pinecone, ServerlessSpec
 
-# def configure_mongoDB_connection():
-#     """Configure MongoDB connection."""
-#     client = MongoClient("mongodb://localhost:27017/")
-#     db = client["supplement_agent"]
-#     collection = db["papers"]
-#     return collection
-
 def configure_pinecone_connection():
     """Configure Pinecone connection."""
     pinecone_api_key = os.getenv("PINECONE_API_KEY")
+    print(f"PINECONE_API_KEY: {pinecone_api_key}")  # Debugging line to check API key
     if not pinecone_api_key:
         raise ValueError("PINECONE_API_KEY não está definida.")
     pc = Pinecone(api_key=pinecone_api_key)
-    index_name = "test-index"  # Replace with your index name
+    index_name = "project" 
     if index_name not in pc.list_indexes().names():
         pc.create_index(
             name=index_name,
-            dimension=1024,  # Match llama-text-embed-v2
+            dimension=1024,  
             metric='cosine',
             spec=ServerlessSpec(cloud='aws', region='us-east-1')
         )
@@ -124,24 +118,6 @@ def save_paper_to_mongo_and_pinecone(paper, source, index):
     # Generate a unique paper ID
     paper_id = generate_unique_id()
     
-    # Create MongoDB document (mantido comentado conforme original)
-    # doc = {
-    #     "paper_id": paper_id,
-    #     "title": paper_data["title"],
-    #     "authors": paper_data["authors"],
-    #     "year": paper_data["year"],
-    #     "source": paper_data["source"],
-    #     "abstract": abstract,
-    #     "keywords": paper_data["keywords"],
-    #     "doi": paper_data["doi"],
-    #     "journal": paper_data["journal"],
-    #     "last_updated": paper_data["last_updated"],
-    #     "spacy_entities": spacy_results["entities"],
-    #     "spacy_matched_terms": spacy_results["matched_terms"],
-    #     "chunks": spacy_results["chunks"],
-    # }
-    # collection.insert_one(doc)
-    
     # Save embeddings and chunk text to Pinecone with the new structure
     embeddings = spacy_results["embeddings"]  # Shape: [n_chunks, 384]
     chunks = spacy_results["chunks"]
@@ -184,9 +160,9 @@ def save_paper_to_mongo_and_pinecone(paper, source, index):
             "metadata": metadata
         })
 
-    # Upsert vectors to Pinecone in batch
+    # Upsert vectors to Pinecone in batch with namespace "ns1"
     if vectors:
-        index.upsert(vectors=vectors)
+        index.upsert(vectors=vectors, namespace="ns1")
 
 def save_to_mongo_and_pinecone(papers, source):
     """Save articles to Pinecone."""
@@ -195,7 +171,6 @@ def save_to_mongo_and_pinecone(papers, source):
         return
     
     # Configure connections
-    # collection = configure_mongoDB_connection()  # Comentado
     index = configure_pinecone_connection()
     
     # Process each paper
