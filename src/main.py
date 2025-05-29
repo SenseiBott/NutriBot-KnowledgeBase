@@ -3,113 +3,19 @@ from rich.prompt import Prompt
 from rich.table import Table
 from modules.europePMC_utils import search_europe_pmc
 from modules.googleScholar_utils import search_google_scholar
-from modules.menu_utils import display_menu
 from modules.pubmed_utils import search_pubmed
 from modules.semanticscholar_utils import search_semanticscholar
 from modules.wikipedia_utils import search_wikipedia
-
-# Lista de 50 queries relevantes sobre vitaminas no contexto de suplementos e fármacos
-VITAMIN_QUERIES = [
-    # Vitamina D
-    '("Vitamin D supplementation" AND "disease prevention")',
-    '("Vitamin D deficiency" AND "immune system")',
-    '("Vitamin D" AND "bone health" AND "osteoporosis")',
-    '("Vitamin D" AND "cardiovascular disease" AND "prevention")',
-    '("Vitamin D" AND "respiratory infections" AND "prevention")',
-    
-    # Vitamina C
-    '("Vitamin C supplementation" AND "antioxidant" AND "disease")',
-    '("Ascorbic acid" AND "immune function" AND "prevention")',
-    '("Vitamin C" AND "collagen synthesis" AND "wound healing")',
-    '("Vitamin C" AND "cancer prevention" AND "antioxidant")',
-    '("Vitamin C" AND "iron absorption" AND "anemia")',
-    
-    # Vitamina B12
-    '("Vitamin B12 deficiency" AND "neurological disorders")',
-    '("Cobalamin supplementation" AND "cognitive function")',
-    '("Vitamin B12" AND "pernicious anemia" AND "treatment")',
-    '("Vitamin B12" AND "methylation" AND "homocysteine")',
-    '("Vitamin B12" AND "vegan diet" AND "supplementation")',
-    
-    # Folato/Ácido Fólico
-    '("Folic acid supplementation" AND "neural tube defects")',
-    '("Folate deficiency" AND "pregnancy" AND "prevention")',
-    '("Folic acid" AND "cardiovascular disease" AND "homocysteine")',
-    '("Folate" AND "cancer prevention" AND "DNA methylation")',
-    '("Folic acid fortification" AND "public health")',
-    
-    # Vitamina A
-    '("Vitamin A supplementation" AND "vision" AND "night blindness")',
-    '("Retinol" AND "immune function" AND "infection")',
-    '("Beta-carotene" AND "cancer prevention" AND "antioxidant")',
-    '("Vitamin A deficiency" AND "developing countries")',
-    '("Vitamin A" AND "skin health" AND "epithelial tissue")',
-    
-    # Vitamina E
-    '("Vitamin E supplementation" AND "cardiovascular disease")',
-    '("Alpha-tocopherol" AND "antioxidant" AND "aging")',
-    '("Vitamin E" AND "cognitive decline" AND "Alzheimer")',
-    '("Vitamin E" AND "muscle damage" AND "exercise")',
-    '("Vitamin E deficiency" AND "neurological symptoms")',
-    
-    # Vitamina K
-    '("Vitamin K supplementation" AND "bone health")',
-    '("Vitamin K2" AND "cardiovascular calcification")',
-    '("Vitamin K" AND "blood coagulation" AND "warfarin")',
-    '("Menaquinone" AND "bone metabolism" AND "osteoporosis")',
-    '("Vitamin K deficiency" AND "bleeding disorders")',
-    
-    # Complexo B geral
-    '("B vitamins" AND "energy metabolism" AND "fatigue")',
-    '("B complex supplementation" AND "stress" AND "mood")',
-    '("B vitamins deficiency" AND "peripheral neuropathy")',
-    '("Thiamine deficiency" AND "beriberi" AND "alcoholism")',
-    '("Riboflavin supplementation" AND "migraine prevention")',
-    
-    # Múltiplas vitaminas e interações
-    '("Multivitamin supplementation" AND "mortality" AND "prevention")',
-    '("Vitamin deficiency" AND "elderly" AND "supplementation")',
-    '("Fat-soluble vitamins" AND "absorption" AND "malabsorption")',
-    '("Water-soluble vitamins" AND "kidney disease" AND "dialysis")',
-    '("Vitamin overdose" AND "toxicity" AND "hypervitaminosis")',
-    
-    # Contextos específicos
-    '("Prenatal vitamins" AND "pregnancy outcomes")',
-    '("Vitamin supplementation" AND "chronic kidney disease")',
-    '("Vitamins" AND "cancer chemotherapy" AND "interaction")',
-    '("Vitamin supplements" AND "drug interactions")',
-    '("Vitamin supplementation" AND "COVID-19" AND "prevention")'
-]
-
-def display_vitamin_queries():
-    """Displays the list of vitamin queries in a formatted table."""
-    console = Console()
-    table = Table(title="🧪 Vitamin Research Queries", show_header=True, header_style="bold magenta")
-    table.add_column("ID", style="dim", width=3)
-    table.add_column("Query", style="cyan")
-    
-    for i, query in enumerate(VITAMIN_QUERIES, 1):
-        table.add_row(str(i), query)
-    
-    console.print(table)
-    return len(VITAMIN_QUERIES)
-
-def select_query():
-    """Allows user to select a query from the list."""
-    console = Console()
-    total_queries = display_vitamin_queries()
-    
-    while True:
-        try:
-            choice = int(Prompt.ask(f"[bold white]Select a query (1-{total_queries}) or 0 for custom query[/bold white]"))
-            if choice == 0:
-                return Prompt.ask("[bold white]Enter your custom query:[/bold white]")
-            elif 1 <= choice <= total_queries:
-                return VITAMIN_QUERIES[choice - 1]
-            else:
-                console.print(f"[bold red]❌ Please enter a number between 0 and {total_queries}[/bold red]")
-        except ValueError:
-            console.print("[bold red]❌ Please enter a valid number[/bold red]")
+from modules.menu_utils import (
+    VITAMIN_QUERIES, 
+    display_vitamin_queries, 
+    select_query, 
+    display_enhanced_menu,
+    display_source_selection_menu,
+    get_source_map,
+    get_sources_dict,
+    display_batch_confirmation
+)
 
 def search_google_scholar_batch(query, num_documents=10):
     """Searches Google Scholar for a specified number of documents with timeout and error handling."""
@@ -187,7 +93,7 @@ def search_all_vitamin_queries(num_documents_per_query=5, source_choice="google_
     """Executes all vitamin queries at once."""
     console = Console()
     
-    console.print(f"\n[bold magenta]🚀 Starting batch search of ALL {len(VITAMIN_QUERIES)} vitamin queries![/bold magenta]")
+    console.print(f"\n[bold magenta]🚀 Starting batch search of ALL {len(VITAMIN_QUERIES)} research queries![/bold magenta]")
     console.print(f"[bold white]Documents per query:[/bold white] {num_documents_per_query}")
     console.print(f"[bold white]Source:[/bold white] {source_choice.replace('_', ' ').title()}")
     
@@ -283,7 +189,7 @@ def save_batch_results(results, source_name):
     
     console = Console()
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"vitamin_research_batch_{source_name}_{timestamp}.json"
+    filename = f"research_batch_{source_name}_{timestamp}.json"
     
     try:
         with open(filename, 'w', encoding='utf-8') as f:
@@ -292,7 +198,7 @@ def save_batch_results(results, source_name):
         console.print(f"[bold green]💾 Results saved to: {filename}[/bold green]")
         
         # Also create a summary CSV
-        csv_filename = f"vitamin_research_summary_{source_name}_{timestamp}.csv"
+        csv_filename = f"research_summary_{source_name}_{timestamp}.csv"
         import csv
         
         with open(csv_filename, 'w', newline='', encoding='utf-8') as csvfile:
@@ -336,50 +242,56 @@ def search_and_print(source, func, query, max_articles=1, year_range=(2020, 2025
     
     return results
 
-def display_enhanced_menu():
-    """Displays the enhanced menu with vitamin queries option."""
+def handle_batch_mode():
+    """Handles the batch mode execution logic."""
     console = Console()
+    console.print("\n[bold magenta]🚀 BATCH MODE: Execute All Research Queries[/bold magenta]")
     
-    menu_table = Table(title="🔬 Enhanced Research Tool", show_header=True, header_style="bold green")
-    menu_table.add_column("Option", style="bold blue", width=8)
-    menu_table.add_column("Description", style="white")
+    # Choose source
+    source_options = display_source_selection_menu()
+    source_choice = Prompt.ask("[bold white]Select source for batch search[/bold white]", default="1")
+    source_map = get_source_map()
     
-    menu_options = [
-        ("1", "PubMed Search"),
-        ("2", "Europe PMC Search"),
-        ("3", "Semantic Scholar Search"),
-        ("4", "Wikipedia Search"),
-        ("5", "Google Scholar Search"),
-        ("6", "Search All Sources"),
-        ("7", "🧪 Google Scholar Batch (Single Query)"),
-        ("8", "📋 View Vitamin Queries List"),
-        ("9", "🚀 Execute ALL Vitamin Queries (Batch Mode)"),
-        ("T", "🔧 Test Google Scholar Connection"),
-        ("Q", "Quit")
-    ]
+    if source_choice in source_map:
+        selected_source = source_map[source_choice]
+        num_docs_per_query = int(Prompt.ask("[bold white]Documents per query (recommended: 3-5)[/bold white]", default="5"))
+        
+        # Confirmation
+        confirm = display_batch_confirmation(len(VITAMIN_QUERIES), selected_source, num_docs_per_query)
+        if confirm.lower() == 'y':
+            search_all_vitamin_queries(num_docs_per_query, selected_source)
+        else:
+            console.print("[bold yellow]🔄 Batch search cancelled[/bold yellow]")
+    else:
+        console.print("[bold red]❌ Invalid source selection[/bold red]")
+
+def handle_single_source_search(choice, sources):
+    """Handles single source search logic."""
+    source_name, search_func = sources[choice]
+     
+    if source_name == "Wikipedia":
+        query = Prompt.ask("[bold white]Enter a search term:[/bold white]")
+        search_and_print(source_name, search_func, query)
+    else:
+        query = select_query()
+        max_articles = int(Prompt.ask("[bold white]How many articles?[/bold white]", default="1"))
+        search_and_print(source_name, search_func, query, max_articles)
+
+def handle_all_sources_search(sources):
+    """Handles searching all sources."""
+    query = select_query()
+    max_articles = int(Prompt.ask("[bold white]How many articles per source?[/bold white]", default="1"))
     
-    for option, description in menu_options:
-        menu_table.add_row(option, description)
-    
-    console.print(menu_table)
-    return Prompt.ask("\n[bold white]Choose an option[/bold white]", default="1")
+    for key, (source_name, search_func) in sources.items():
+        if key != "4" and key != "6":  # Exclude Wikipedia and All Sources
+            search_and_print(source_name, search_func, query, max_articles)
 
 def main():
     """Runs searches based on user choice."""
     console = Console()
-    console.print("\n[bold green]🧬 Welcome to the Enhanced Research Tool for Vitamins & Supplements![/bold green]\n")
+    console.print("\n[bold green]🧬 Welcome to the Enhanced Research Tool for Preventive Pharmacology![/bold green]\n")
     
-    # Default query for non-vitamin specific searches
-    default_query = '("Vitamin D benefits" OR "Vitamin D deficiency")'
-    
-    sources = {
-        "1": ("PubMed", search_pubmed),
-        "2": ("Europe PMC", search_europe_pmc),
-        "3": ("Semantic Scholar", search_semanticscholar),
-        "4": ("Wikipedia", search_wikipedia),
-        "5": ("Google Scholar", search_google_scholar),
-        "6": ("All Sources", None)
-    }
+    sources = get_sources_dict()
     
     while True:
         choice = display_enhanced_menu()
@@ -393,81 +305,26 @@ def main():
             test_google_scholar_connection()
             
         elif choice == "7":
-            # New option: Google Scholar batch search with vitamin queries
+            # Google Scholar batch search with queries
             query = select_query()
             num_docs = int(Prompt.ask("[bold white]How many documents to retrieve?[/bold white]", default="10"))
             search_google_scholar_batch(query, num_docs)
             
         elif choice == "9":
-            # New option: Execute ALL vitamin queries at once
-            console.print("\n[bold magenta]🚀 BATCH MODE: Execute All 50 Vitamin Queries[/bold magenta]")
-            
-            # Choose source
-            source_table = Table(title="Choose Source for Batch Search", show_header=True, header_style="bold cyan")
-            source_table.add_column("Option", style="bold blue", width=8)
-            source_table.add_column("Source", style="white")
-            
-            source_options = [
-                ("1", "Google Scholar"),
-                ("2", "PubMed"),
-                ("3", "Europe PMC"),
-                ("4", "Semantic Scholar")
-            ]
-            
-            for opt, src in source_options:
-                source_table.add_row(opt, src)
-            
-            console.print(source_table)
-            
-            source_choice = Prompt.ask("[bold white]Select source for batch search[/bold white]", default="1")
-            source_map = {
-                "1": "google_scholar",
-                "2": "pubmed", 
-                "3": "europe_pmc",
-                "4": "semantic_scholar"
-            }
-            
-            if source_choice in source_map:
-                selected_source = source_map[source_choice]
-                num_docs_per_query = int(Prompt.ask("[bold white]Documents per query (recommended: 3-5)[/bold white]", default="5"))
-                
-                # Confirmation
-                console.print(f"\n[bold yellow]⚠️  About to execute {len(VITAMIN_QUERIES)} queries on {selected_source.replace('_', ' ').title()}[/bold yellow]")
-                console.print(f"[bold yellow]⚠️  This will retrieve up to {len(VITAMIN_QUERIES) * num_docs_per_query} documents total[/bold yellow]")
-                console.print(f"[bold yellow]⚠️  Estimated time: {len(VITAMIN_QUERIES) * 2} seconds (with API delays)[/bold yellow]")
-                
-                confirm = Prompt.ask("[bold white]Continue? (y/n)[/bold white]", default="n")
-                if confirm.lower() == 'y':
-                    search_all_vitamin_queries(num_docs_per_query, selected_source)
-                else:
-                    console.print("[bold yellow]🔄 Batch search cancelled[/bold yellow]")
-            else:
-                console.print("[bold red]❌ Invalid source selection[/bold red]")
+            # Execute ALL research queries at once
+            handle_batch_mode()
             
         elif choice == "8":
-            # New option: View vitamin queries list
+            # View research queries list
             display_vitamin_queries()
             
         elif choice in sources:
             if choice == "6":
                 # Search all sources
-                query = select_query()
-                max_articles = int(Prompt.ask("[bold white]How many articles per source?[/bold white]", default="1"))
-                
-                for key, (source_name, search_func) in sources.items():
-                    if key != "4" and key != "6":  # Exclude Wikipedia and All Sources
-                        search_and_print(source_name, search_func, query, max_articles)
+                handle_all_sources_search(sources)
             else:
                 # Individual source search
-                source_name, search_func = sources[choice]
-                 
-                if source_name == "Wikipedia":
-                    query = Prompt.ask("[bold white]Enter a search term:[/bold white]")
-                    search_and_print(source_name, search_func, query)
-                else:
-                    query = select_query()
-                    max_articles = int(Prompt.ask("[bold white]How many articles?[/bold white]", default="1"))
-                    search_and_print(source_name, search_func, query, max_articles)
+                handle_single_source_search(choice, sources)
         else:
             console.print("\n[bold red]❌ Invalid choice! Please select a valid option.[/bold red]")
 
