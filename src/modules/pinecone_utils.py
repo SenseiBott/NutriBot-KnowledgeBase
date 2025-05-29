@@ -96,7 +96,7 @@ def extract_paper_attributes(paper, source):
     else:
         raise ValueError(f"Unsupported source: {source}")
 
-def save_paper_to_mongo_and_pinecone(paper, source, index):
+def save_paper_to_pinecone(paper, source, index):
     """Save a single paper to Pinecone with the new vector structure."""
     # Extract paper attributes
     paper_data = extract_paper_attributes(paper, source)
@@ -164,7 +164,7 @@ def save_paper_to_mongo_and_pinecone(paper, source, index):
     if vectors:
         index.upsert(vectors=vectors, namespace="ns1")
 
-def save_to_mongo_and_pinecone(papers, source):
+def save_to_pinecone(papers, source):
     """Save articles to Pinecone."""
     if not papers:
         print("No articles to save.")
@@ -175,6 +175,6 @@ def save_to_mongo_and_pinecone(papers, source):
     
     # Process each paper
     for paper in tqdm(papers, desc=f"Saving {source} articles"):
-        save_paper_to_mongo_and_pinecone(paper, source, index)
+        save_paper_to_pinecone(paper, source, index)
     
     print(f"All {source} articles have been successfully saved!")

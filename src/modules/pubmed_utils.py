@@ -2,7 +2,7 @@ import json
 import os
 from Bio import Entrez
 from dotenv import load_dotenv
-from modules.pinecone_utils import save_to_mongo_and_pinecone
+from modules.pinecone_utils import save_to_pinecone
 from modules.spaCy_utils import process_text
 
 def fetch_papers(id_list):
@@ -57,7 +57,7 @@ def fetch_papers(id_list):
 
 
 def search_pubmed(query, num_results, year_range=None):
-    """Searches for articles on PubMed and saves them to MongoDB."""
+    """Searches for articles on PubMed and saves them to Pinecone."""
     load_dotenv()
     configure_entrez()
     
@@ -69,7 +69,7 @@ def search_pubmed(query, num_results, year_range=None):
         record = Entrez.read(handle)
 
     articles = fetch_papers(record.get("IdList", []))
-    save_to_mongo_and_pinecone(articles, "PubMed")
+    save_to_pinecone(articles, "PubMed")
     return articles
 
 
