@@ -4,6 +4,129 @@ from rich.table import Table
 
 # Lista de queries relevantes sobre prevenção farmacológica
 VITAMIN_QUERIES = [
+    # Vitamina D
+    '("Vitamin D supplementation" AND "disease prevention")',
+    '("Vitamin D deficiency" AND "immune system")',
+    '("Vitamin D" AND "bone health" AND "osteoporosis")',
+    '("Vitamin D" AND "cardiovascular disease" AND "prevention")',
+    '("Vitamin D" AND "respiratory infections" AND "prevention")',
+    
+    # Vitamina C
+    '("Vitamin C supplementation" AND "antioxidant" AND "disease")',
+    '("Ascorbic acid" AND "immune function" AND "prevention")',
+    '("Vitamin C" AND "collagen synthesis" AND "wound healing")',
+    '("Vitamin C" AND "cancer prevention" AND "antioxidant")',
+    '("Vitamin C" AND "iron absorption" AND "anemia")',
+    '"vitamin C" OR "ascorbic acid" OR "L-ascorbic acid"',
+    '"vitamin C deficiency" OR "scurvy" OR "hypovitaminosis C"',
+    '"vitamin C supplementation" OR "ascorbic acid supplement"',
+    'antioxidant AND ("vitamin C" OR "ascorbic acid")',
+    '"collagen synthesis" AND "vitamin C"',
+    '"vitamin C" AND ("immune system" OR "immunity")',
+    '"dietary vitamin C" OR "vitamin C content" AND food',
+    '"vitamin C absorption" OR "ascorbate transport"',
+    '"vitamin C dosage" OR "ascorbic acid dose"',
+    '"vitamin C" AND ("iron absorption" OR "wound healing")',
+    
+    # Vitamina B12
+    '("Vitamin B12 deficiency" AND "neurological disorders")',
+    '("Cobalamin supplementation" AND "cognitive function")',
+    '("Vitamin B12" AND "pernicious anemia" AND "treatment")',
+    '("Vitamin B12" AND "methylation" AND "homocysteine")',
+    '("Vitamin B12" AND "vegan diet" AND "supplementation")',
+    
+    # Folato/Ácido Fólico
+    '("Folic acid supplementation" AND "neural tube defects")',
+    '("Folate deficiency" AND "pregnancy" AND "prevention")',
+    '("Folic acid" AND "cardiovascular disease" AND "homocysteine")',
+    '("Folate" AND "cancer prevention" AND "DNA methylation")',
+    '("Folic acid fortification" AND "public health")',
+    
+    # Vitamina A
+    '("Vitamin A supplementation" AND "vision" AND "night blindness")',
+    '("Retinol" AND "immune function" AND "infection")',
+    '("Beta-carotene" AND "cancer prevention" AND "antioxidant")',
+    '("Vitamin A deficiency" AND "developing countries")',
+    '("Vitamin A" AND "skin health" AND "epithelial tissue")',
+    
+    # Vitamina E
+    '("Vitamin E supplementation" AND "cardiovascular disease")',
+    '("Alpha-tocopherol" AND "antioxidant" AND "aging")',
+    '("Vitamin E" AND "cognitive decline" AND "Alzheimer")',
+    '("Vitamin E" AND "muscle damage" AND "exercise")',
+    '("Vitamin E deficiency" AND "neurological symptoms")',
+    
+    # Vitamina K
+    '("Vitamin K supplementation" AND "bone health")',
+    '("Vitamin K2" AND "cardiovascular calcification")',
+    '("Vitamin K" AND "blood coagulation" AND "warfarin")',
+    '("Menaquinone" AND "bone metabolism" AND "osteoporosis")',
+    '("Vitamin K deficiency" AND "bleeding disorders")',
+    
+    # Complexo B geral
+    '("B vitamins" AND "energy metabolism" AND "fatigue")',
+    '("B complex supplementation" AND "stress" AND "mood")',
+    '("B vitamins deficiency" AND "peripheral neuropathy")',
+    '("Thiamine deficiency" AND "beriberi" AND "alcoholism")',
+    '("Riboflavin supplementation" AND "migraine prevention")',
+    
+    # Múltiplas vitaminas e interações
+    '("Multivitamin supplementation" AND "mortality" AND "prevention")',
+    '("Vitamin deficiency" AND "elderly" AND "supplementation")',
+    '("Fat-soluble vitamins" AND "absorption" AND "malabsorption")',
+    '("Water-soluble vitamins" AND "kidney disease" AND "dialysis")',
+    '("Vitamin overdose" AND "toxicity" AND "hypervitaminosis")',
+    
+    # Contextos específicos
+    '("Prenatal vitamins" AND "pregnancy outcomes")',
+    '("Vitamin supplementation" AND "chronic kidney disease")',
+    '("Vitamins" AND "cancer chemotherapy" AND "interaction")',
+    '("Vitamin supplements" AND "drug interactions")',
+    '("Vitamin supplementation" AND "COVID-19" AND "prevention")',
+    
+    # Informações Gerais sobre Suplementos e Fármacos
+    "Dietary supplements definition and purpose",
+    "Difference between dietary supplements and medications",
+    "Regulation of dietary supplements vs pharmaceutical drugs",
+    "Safety of over-the-counter dietary supplements",
+    "Drug-supplement interactions review",
+
+    # Suplementos Populares
+    "Vitamin D health benefits and functions",
+    "Omega-3 cardiovascular disease prevention meta-analysis",
+    "Magnesium physiological functions and deficiency symptoms",
+    "Curcumin anti-inflammatory properties clinical trials",
+    "Biotin supplementation hair nail skin health evidence",
+
+    # Prevenção de Doenças
+    "Supplements for immune system support review",
+    "Supplements for influenza prevention evidence-based",
+    "Vitamin D calcium bone health osteoporosis prevention",
+    "Cardiovascular disease prevention supplements Cochrane",
+    "Long-term drug use and micronutrient deficiencies",
+
+    # Suplementos por Fase da Vida ou Condição
+    "Nutritional supplements for elderly health outcomes",
+    "Prenatal vitamins and supplements during pregnancy",
+    "Menopause supplements efficacy and safety",
+    "Iron supplementation in anemia management",
+    "Supplements for mental health depression anxiety evidence",
+
+    # Dieta e Estilo de Vida
+    "Vitamin B12 and vegan diet supplementation",
+    "Balanced diet vs supplementation necessity",
+    "Dietary supplements vs healthy diet outcomes",
+    "Health risks of excessive supplement intake",
+    "Biomarkers to assess supplement need clinical practice",
+
+    # Uso, Eficácia e Segurança
+    "Time to effectiveness of dietary supplements",
+    "Signs of ineffective supplementation",
+    "How to choose high-quality dietary supplements",
+    "Nutritional blood tests before supplementation",
+    "Risks of buying dietary supplements online",
+    
+    # Prevenção Farmacológica
     '(TITLE:preventive OR ABSTRACT:preventive) AND pharmacology AND ("chronic disease" OR "chronic diseases")',
     '"primary prevention" AND (pharmaceuticals OR drugs OR medications)',
     'statins AND ("disease prevention" OR "cardiovascular prevention")',
@@ -15,7 +138,6 @@ VITAMIN_QUERIES = [
     'antihypertensives AND ("preventive use" OR "primary prevention")',
     'chemoprevention AND ("randomized controlled trial" OR RCT)'
 ]
-
 def display_vitamin_queries():
     """Displays the list of vitamin queries in a formatted table."""
     console = Console()
