@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 from dotenv import load_dotenv
-from modules.pinecone_utils import save_to_mongo_and_pinecone
+from modules.pinecone_utils import save_to_pinecone
 
 def load_json_list(json_file_path: Path) -> list:
     try:
@@ -34,14 +34,14 @@ def process_and_index(json_file_path: Path, source_level: str):
         return []
 
     print(f"   ✅ Encontrados {len(items)} itens em {json_file_path.name}.")
-    save_to_mongo_and_pinecone(items, source_level)
+    save_to_pinecone(items, source_level)
     return items
 
 def main():
     base = Path(__file__).parent / "trusted_data"
 
     all_items = []
-    for fname in ["supplements_data.json", "data.json"]:
+    for fname in ["supplements_data.json", "data.json","farmacos_medlineplus.json"]:
         path = base / fname
         items = process_and_index(path, source_level="level1")
         all_items.extend(items)
