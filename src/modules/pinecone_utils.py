@@ -91,7 +91,7 @@ def extract_paper_attributes(paper, source):
             "source": paper.get("source", "Unknown Source"),
             "link": paper.get("link", ""),
             "content": paper.get("content", ""),
-            "scraped_at": paper.get("scraped_at", "")
+            "scraped_at": paper.get("accessed_at", "") or paper.get("date", "") or ""
         }
     else:
         raise ValueError(f"Unsupported source: {source}")
@@ -142,7 +142,7 @@ def save_paper_to_pinecone(paper, source, index):
                 "title": paper_data["title"],
                 "link": paper_data["link"],
                 "source": paper_data["source"],  # Added source information for level1 (NIH, FDA, etc.)
-                "topic": paper_data["title"].split()[0] if paper_data["title"] else "",  # Use first word of title as topic
+                "topic": paper_data["title"],
                 "hierarchy": hierarchy_level
             }
         else:
