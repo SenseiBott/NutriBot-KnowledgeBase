@@ -385,7 +385,7 @@ def delete_duplicate_records(
 if __name__ == "__main__":
     # Configurações - substitua pelos seus valores
     PINECONE_API_KEY = "pcsk_6qf8kj_9w61ctrpQNzrNVadceiUsV5sW2cbnTv9qLw9H4n14B1sgWyDxpmZComrJCsWNLu"
-    INDEX_NAME = "project-clone"
+    INDEX_NAME = "project"
     NAMESPACE = "ns1"  # deixe vazio se não usar namespaces
     
     # PASSO 1: ANÁLISE COMPLETA COM DEBUG
