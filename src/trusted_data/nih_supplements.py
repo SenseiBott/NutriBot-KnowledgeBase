@@ -183,7 +183,7 @@ def scrape_supplement_page(url, supplement_name):
         traceback.print_exc()
         return None
 
-def process_supplements(supplement_file, output_file="supplements_data.json"):
+def process_supplements(supplement_file, output_file="supplements_NIH.json.json"):
     with open(supplement_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
@@ -231,6 +231,6 @@ def process_supplements(supplement_file, output_file="supplements_data.json"):
 
 if __name__ == "__main__":
     supplement_file = "../terms/supplement.json"
-    output_file = "supplements_data.json"
+    output_file = "supplements_NIH.json"
     
     process_supplements(supplement_file, output_file)

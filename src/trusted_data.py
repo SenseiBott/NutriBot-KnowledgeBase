@@ -41,7 +41,7 @@ def main():
     base = Path(__file__).parent / "trusted_data"
 
     all_items = []
-    for fname in ["supplements_data.json", "data.json","farmacos_medlineplus.json"]:
+    for fname in ["supplements_NIH.json", "data.json","farmacos_medlineplus.json","suplementos_medlineplus.json"]:
         path = base / fname
         items = process_and_index(path, source_level="level1")
         all_items.extend(items)
